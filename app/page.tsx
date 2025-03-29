@@ -10,7 +10,7 @@ export default function Home() {
       {/* Header */}
       <header className="container mx-auto py-4 px-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <Image src="/om-symbol.svg" alt="Om Symbol" width={40} height={40} className="text-[#e07c24]" />
+          <Image src="/om-symbol.jpg" alt="Om Symbol" width={40} height={40} className="text-[#e07c24]" />
           <h1 className="text-xl font-serif font-semibold text-[#8b5d33] dark:text-[#e07c24]">
             Wisdom of Adi Shankaracharya
           </h1>
@@ -39,7 +39,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center">
           <div className="mb-8 relative">
             <Image
-              src="/shankaracharya-meditation.svg"
+              src="/shankaracharya-meditation.png"
               alt="Adi Shankaracharya Meditating"
               width={300}
               height={300}
@@ -214,7 +214,7 @@ export default function Home() {
             ].map((concept, index) => (
               <div key={index} className="flex flex-col items-center text-center">
                 <div className="w-24 h-24 rounded-full bg-[#e9e1d3] dark:bg-[#2a241e] flex items-center justify-center mb-4 border-2 border-[#e07c24]/20">
-                  <Image src={`/concept-${concept.name.toLowerCase()}.svg`} alt={concept.name} width={48} height={48} />
+                  <Image src={`/concept-${concept.name.toLowerCase()}.jpg`} alt={concept.name} width={48} height={48} />
                 </div>
                 <h3 className="font-serif font-semibold text-lg text-[#8b5d33] dark:text-[#e07c24] mb-1">
                   {concept.name}
