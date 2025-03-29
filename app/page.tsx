@@ -35,14 +35,14 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 overflow-hidden">
+      <section className="relative py-10 md:py-32 overflow-hidden">
         <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center">
           <div className="mb-8 relative">
             <Image
               src="/shankaracharya-meditation.png"
               alt="Adi Shankaracharya Meditating"
-              width={300}
-              height={300}
+              width={800}
+              height={500}
               className="mx-auto"
             />
             <div className="absolute inset-0 bg-gradient-radial from-[#e07c24]/30 to-transparent rounded-full blur-md"></div>

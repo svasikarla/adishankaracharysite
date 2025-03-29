@@ -4,11 +4,18 @@ export default function Header() {
   return (
     <header style={{ 
       display: 'flex', 
+      flexDirection: 'column', 
       alignItems: 'center', 
-      justifyContent: 'space-between', 
       padding: '10px 20px', 
       backgroundColor: '#f8f9fa' 
     }}>
+      <h1 style={{ 
+        fontSize: '24px', 
+        marginBottom: '2px', // Further reduce margin to minimize the gap
+        textAlign: 'center' 
+      }}>
+        Wisdom of Adi Shankaracharya
+      </h1>
       <Image 
         src="/images/om-logo.png" 
         alt="Om Logo" 
