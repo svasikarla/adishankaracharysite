@@ -1,47 +1,7 @@
 // Comprehensive Resources for Adi Shankaracharya and Advaita Vedanta Study
 // Based on thorough web research
 
-export interface DigitalArchive {
-  id: string
-  name: string
-  description: string
-  type: 'archive' | 'website' | 'library' | 'repository'
-  url: string
-  contents: string[]
-  accessType: 'free' | 'partial' | 'subscription'
-  languages: string[]
-  specialFeatures?: string[]
-}
-
-export interface AuthenticText {
-  id: string
-  title: string
-  author: string
-  category: 'commentary' | 'prakarana' | 'stotra' | 'upanishad'
-  authenticity: 'confirmed' | 'disputed' | 'attributed'
-  translations: {
-    translator: string
-    year?: number
-    publisher?: string
-    quality: 'highly-recommended' | 'recommended' | 'available'
-    url?: string
-    notes?: string
-  }[]
-  description: string
-}
-
-export interface Organization {
-  id: string
-  name: string
-  founded: number | string
-  founder: string
-  type: 'traditional-matha' | 'mission' | 'gurukulam' | 'society'
-  description: string
-  focus: string[]
-  website?: string
-  locations?: string[]
-  resources?: string[]
-}
+import type { DigitalArchive, AuthenticText, Organization } from '@/types'
 
 // Digital Archives and Online Resources
 export const digitalArchives: DigitalArchive[] = [

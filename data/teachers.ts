@@ -1,25 +1,7 @@
 // Modern Teachers and Scholars of Advaita Vedanta
 // Based on authenticated research
 
-export interface Teacher {
-  id: string
-  name: string
-  title?: string
-  lifespan?: string
-  tradition: string
-  description: string
-  specialization: string[]
-  teachingStyle: string
-  majorWorks?: string[]
-  onlineResources: {
-    type: 'website' | 'youtube' | 'podcast' | 'audio' | 'app'
-    name: string
-    url: string
-    description: string
-  }[]
-  legacy?: string
-  imageUrl?: string
-}
+import type { Teacher } from '@/types'
 
 export const modernTeachers: Teacher[] = [
   {

@@ -1,14 +1,7 @@
 // Bhaja Govindam - 33 verses with authentic translations
 // Source: Based on research from Shlokam.org, Swami Chinmayananda's commentary
 
-export interface BhajaGovindamVerse {
-  number: number
-  sanskrit: string
-  transliteration: string
-  translation: string
-  commentary: string
-  category: 'main' | 'dvadasha' | 'charpata'
-}
+import type { BhajaGovindamVerse } from '@/types'
 
 export const bhajaGovindamVerses: BhajaGovindamVerse[] = [
   {

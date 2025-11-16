@@ -1,32 +1,7 @@
 // The Four Mathas established by Adi Shankaracharya
 // Based on authentic research from various sources
 
-export interface Matha {
-  id: string
-  name: string
-  sanskrit: string
-  direction: 'North' | 'South' | 'East' | 'West'
-  location: {
-    city: string
-    state: string
-    region: string
-  }
-  coordinates?: {
-    lat: number
-    lng: number
-  }
-  established: string
-  veda: string
-  mahavakya: string
-  mahavahyaMeaning: string
-  firstAcharya: string
-  presiding Deity: string
-  description: string
-  significance: string[]
-  website?: string
-  historicalBackground: string
-  currentActivities: string[]
-}
+import type { Matha } from '@/types'
 
 export const fourMathas: Matha[] = [
   {
