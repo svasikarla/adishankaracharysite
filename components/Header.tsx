@@ -16,19 +16,19 @@ export default function Header() {
       }}>
         Wisdom of Adi Shankaracharya
       </h1>
-      <Image 
-        src="/images/om-logo.png" 
-        alt="Om Logo" 
+      <Image
+        src="/om-symbol.jpg"
+        alt="Om Logo"
         width={0} // Set to 0 for responsive sizing
         height={0} // Set to 0 for responsive sizing
         sizes="(max-width: 768px) 150px, (max-width: 1200px) 200px, 300px" // Define responsive sizes
-        style={{ 
-          width: 'auto', 
-          height: 'auto', 
-          maxWidth: '100%', 
-          borderRadius: '8px', 
-          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' 
-        }} 
+        style={{
+          width: 'auto',
+          height: 'auto',
+          maxWidth: '100%',
+          borderRadius: '8px',
+          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+        }}
       />
     </header>
   );
