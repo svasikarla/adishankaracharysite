@@ -63,7 +63,7 @@ export default function Home() {
                 <div className="w-24 h-24 rounded-full bg-[#e9e1d3] dark:bg-[#2a241e] flex items-center justify-center mb-4 border-2 border-[#e07c24]/20">
                   <Image src={`/concept-${concept.name.toLowerCase().split(' ')[0]}.jpg`} alt={concept.name} width={48} height={48} />
                 </div>
-                <div className="text-sm md:text-base text-[#5a4a3f] dark:text-[#d9c5a9]">{stat.label}</div>
+                <div className="text-sm md:text-base text-[#5a4a3f] dark:text-[#d9c5a9]">{concept.name}</div>
               </div>
             ))}
           </div>
