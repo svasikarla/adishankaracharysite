@@ -1,13 +1,7 @@
 // Atma Bodha - Self-Knowledge (68 verses)
 // Source: Based on Swami Nikhilananda translation and Shlokam.org
 
-export interface AtmaBodhaVerse {
-  number: number
-  sanskrit: string
-  transliteration: string
-  translation: string
-  commentary: string
-}
+import type { AtmaBodhaVerse } from '@/types'
 
 export const atmaBodhaVerses: AtmaBodhaVerse[] = [
   {

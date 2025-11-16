@@ -1,25 +1,7 @@
 // Advaita Vedanta Philosophical Concepts
 // Based on authentic sources: Stanford Encyclopedia, Internet Encyclopedia of Philosophy, academic papers
 
-export interface Concept {
-  id: string
-  name: string
-  sanskritName: string
-  shortDescription: string
-  fullDescription: string
-  keyPoints: string[]
-  scripturalReferences: {
-    source: string
-    reference: string
-    quote: string
-  }[]
-  relatedConcepts: string[]
-  academicSources: {
-    title: string
-    author: string
-    url?: string
-  }[]
-}
+import type { Concept } from '@/types'
 
 export const concepts: Concept[] = [
   {
