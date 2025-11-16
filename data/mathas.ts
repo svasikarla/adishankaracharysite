@@ -20,7 +20,7 @@ export interface Matha {
   mahavakya: string
   mahavahyaMeaning: string
   firstAcharya: string
-  presiding Deity: string
+  presidingDeity: string
   description: string
   significance: string[]
   website?: string
