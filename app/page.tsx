@@ -53,15 +53,15 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { number: "1200+", label: "Years of Tradition", icon: SparklesIcon },
-              { number: "10+", label: "Authentic Texts", icon: BookOpenIcon },
-              { number: "4", label: "Sacred Mathas", icon: Building2Icon },
-              { number: "100+", label: "Verses to Study", icon: GraduationCapIcon },
-            ].map((stat, index) => (
-              <div key={index} className="group">
-                <stat.icon className="w-10 h-10 mx-auto mb-3 text-[#e07c24] group-hover:scale-110 transition-transform" />
-                <div className="text-3xl md:text-4xl font-bold font-serif text-[#8b5d33] dark:text-[#e07c24] mb-2">
-                  {stat.number}
+              { name: "Atman", description: "Individual Soul" },
+              { name: "Brahman", description: "Universal Consciousness" },
+              { name: "Maya", description: "Cosmic Illusion" },
+              { name: "Moksha", description: "Liberation" },
+              { name: "Neti Neti", description: "Not This, Not This" },
+            ].map((concept, index) => (
+              <div key={index} className="flex flex-col items-center text-center">
+                <div className="w-24 h-24 rounded-full bg-[#e9e1d3] dark:bg-[#2a241e] flex items-center justify-center mb-4 border-2 border-[#e07c24]/20">
+                  <Image src={`/concept-${concept.name.toLowerCase().split(' ')[0]}.jpg`} alt={concept.name} width={48} height={48} />
                 </div>
                 <div className="text-sm md:text-base text-[#5a4a3f] dark:text-[#d9c5a9]">{stat.label}</div>
               </div>
@@ -155,29 +155,25 @@ export default function Home() {
       {/* Daily Wisdom */}
       <section className="py-16 bg-[#e9e1d3]/50 dark:bg-[#2a241e]/50">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-serif font-bold text-[#8b5d33] dark:text-[#e07c24] mb-8 text-center">
-              Daily Wisdom
-            </h2>
-            <Card className="bg-white/80 dark:bg-[#2a241e]/80 border-[#e07c24]/20">
-              <CardContent className="pt-6">
-                <div className="text-center">
-                  <p className="font-sanskrit text-2xl mb-3 text-[#8b5d33] dark:text-[#e07c24]">
-                    ब्रह्म सत्यं जगन्मिथ्या जीवो ब्रह्मैव नापरः
-                  </p>
-                  <p className="text-lg italic mb-4 text-[#5a4a3f] dark:text-[#d9c5a9]">
-                    brahma satyaṁ jagan mithyā jīvo brahmаiva nāparaḥ
-                  </p>
-                  <div className="h-px w-24 bg-[#e07c24]/30 mx-auto mb-4"></div>
-                  <p className="text-lg text-[#5a4a3f] dark:text-[#d9c5a9] mb-2">
-                    "Brahman is real, the world is unreal, and the individual self is non-different from Brahman."
-                  </p>
-                  <p className="text-sm text-[#5a4a3f]/70 dark:text-[#d9c5a9]/70">
-                    — Vivekachudamani
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+          <div className="flex flex-col md:flex-row justify-between items-center mb-8">
+            <div className="flex items-center gap-2 mb-4 md:mb-0">
+              <Image src="/om-symbol.jpg" alt="Om Symbol" width={32} height={32} className="text-[#e07c24]" />
+              <h3 className="text-lg font-serif font-semibold text-[#e07c24]">Wisdom of Adi Shankaracharya</h3>
+            </div>
+            <nav>
+              <ul className="flex flex-wrap gap-6 justify-center">
+                {["Home", "About", "Teachings", "Concepts", "Tools", "Contact"].map((item) => (
+                  <li key={item}>
+                    <a
+                      href={`#${item.toLowerCase()}`}
+                      className="text-[#e9e1d3] hover:text-[#e07c24] transition-colors"
+                    >
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
         </div>
       </section>
