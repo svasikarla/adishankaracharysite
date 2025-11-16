@@ -214,7 +214,7 @@ export default function Home() {
             ].map((concept, index) => (
               <div key={index} className="flex flex-col items-center text-center">
                 <div className="w-24 h-24 rounded-full bg-[#e9e1d3] dark:bg-[#2a241e] flex items-center justify-center mb-4 border-2 border-[#e07c24]/20">
-                  <Image src={`/concept-${concept.name.toLowerCase()}.jpg`} alt={concept.name} width={48} height={48} />
+                  <Image src={`/concept-${concept.name.toLowerCase().split(' ')[0]}.jpg`} alt={concept.name} width={48} height={48} />
                 </div>
                 <h3 className="font-serif font-semibold text-lg text-[#8b5d33] dark:text-[#e07c24] mb-1">
                   {concept.name}
@@ -273,7 +273,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
-              <Image src="/om-symbol.svg" alt="Om Symbol" width={32} height={32} className="text-[#e07c24]" />
+              <Image src="/om-symbol.jpg" alt="Om Symbol" width={32} height={32} className="text-[#e07c24]" />
               <h3 className="text-lg font-serif font-semibold text-[#e07c24]">Wisdom of Adi Shankaracharya</h3>
             </div>
             <nav>
