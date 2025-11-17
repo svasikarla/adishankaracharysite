@@ -34,6 +34,17 @@ export default function TeachingsPage() {
       category: "Prakarana Grantha (Topical Exposition)"
     },
     {
+      id: "nirvana-shatkam",
+      title: "Nirvana Shatkam",
+      sanskrit: "निर्वाण षट्कम्",
+      subtitle: "Six Verses on Liberation (Atma Shatkam)",
+      verses: "6 verses",
+      description: "Powerful hymn of self-realization using Neti Neti (Not this, Not this) to reveal true nature as pure Consciousness-Bliss",
+      authenticity: "attributed",
+      available: true,
+      category: "Stotra (Devotional Hymn)"
+    },
+    {
       id: "vivekachudamani",
       title: "Vivekachudamani",
       sanskrit: "विवेकचूडामणि",

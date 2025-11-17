@@ -17,6 +17,15 @@ export interface AtmaBodhaVerse {
   commentary: string
 }
 
+export interface NirvanaShatkamVerse {
+  number: number
+  sanskrit: string
+  transliteration: string
+  translation: string
+  commentary: string
+  meditationGuide?: string
+}
+
 export interface Concept {
   id: string
   name: string
