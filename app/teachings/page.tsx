@@ -49,10 +49,10 @@ export default function TeachingsPage() {
       title: "Vivekachudamani",
       sanskrit: "विवेकचूडामणि",
       subtitle: "Crest Jewel of Discrimination",
-      verses: "580 verses",
-      description: "Detailed exposition on discrimination between the real and unreal",
+      verses: "108 selected verses",
+      description: "Comprehensive guide to Advaita Vedanta covering the entire spiritual path from qualification to liberation, organized into 10 thematic sections",
       authenticity: "disputed",
-      available: false,
+      available: true,
       category: "Prakarana Grantha"
     },
     {
