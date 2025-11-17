@@ -17,6 +17,25 @@ export interface AtmaBodhaVerse {
   commentary: string
 }
 
+export interface NirvanaShatkamVerse {
+  number: number
+  sanskrit: string
+  transliteration: string
+  translation: string
+  commentary: string
+  meditationGuide?: string
+}
+
+export interface VivekachudamaniVerse {
+  number: number
+  sanskrit: string
+  transliteration: string
+  translation: string
+  commentary: string
+  theme: 'qualification' | 'bondage' | 'discrimination' | 'self' | 'brahman' | 'maya' | 'inquiry' | 'meditation' | 'liberation' | 'jnani'
+  practicalApplication?: string
+}
+
 export interface Concept {
   id: string
   name: string

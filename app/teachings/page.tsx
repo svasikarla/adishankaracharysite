@@ -34,14 +34,25 @@ export default function TeachingsPage() {
       category: "Prakarana Grantha (Topical Exposition)"
     },
     {
+      id: "nirvana-shatkam",
+      title: "Nirvana Shatkam",
+      sanskrit: "निर्वाण षट्कम्",
+      subtitle: "Six Verses on Liberation (Atma Shatkam)",
+      verses: "6 verses",
+      description: "Powerful hymn of self-realization using Neti Neti (Not this, Not this) to reveal true nature as pure Consciousness-Bliss",
+      authenticity: "attributed",
+      available: true,
+      category: "Stotra (Devotional Hymn)"
+    },
+    {
       id: "vivekachudamani",
       title: "Vivekachudamani",
       sanskrit: "विवेकचूडामणि",
       subtitle: "Crest Jewel of Discrimination",
-      verses: "580 verses",
-      description: "Detailed exposition on discrimination between the real and unreal",
+      verses: "108 selected verses",
+      description: "Comprehensive guide to Advaita Vedanta covering the entire spiritual path from qualification to liberation, organized into 10 thematic sections",
       authenticity: "disputed",
-      available: false,
+      available: true,
       category: "Prakarana Grantha"
     },
     {
