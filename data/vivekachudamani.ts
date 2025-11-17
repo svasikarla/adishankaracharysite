@@ -137,6 +137,33 @@ export const vivekachudamaniVerses: VivekachudamaniVerse[] = [
     theme: 'discrimination',
     practicalApplication: "During meditation or contemplative walks, practice seeing Brahman in everything. That tree—Brahman taking tree-form. That sound—Brahman vibrating. That thought—Brahman knowing itself. That person—Brahman in human disguise. Let the sense of separation dissolve into the recognition of one Consciousness appearing as many forms. Start with gross objects, then extend to subtle phenomena."
   },
+  {
+    number: 128,
+    sanskrit: "ज्ञानस्य साधनं न कर्म एव हि विरुद्धमुभयं। अज्ञानं हन्यते ज्ञानाद् अज्ञानं कर्म सम्भवति॥",
+    transliteration: "jñānasya sādhanaṁ na karma eva hi viruddhamubhayaṁ | ajñānaṁ hanyate jñānād ajñānaṁ karma sambhavati ||",
+    translation: "Action is not the means to knowledge; indeed, the two are opposed. Ignorance is destroyed by knowledge alone; action arises from ignorance.",
+    commentary: "This crucial verse establishes that karma (action) and jnana (knowledge) belong to different orders and cannot produce each other. Action is opposed to knowledge because: (1) Action requires doership ('I do'), while knowledge negates doership ('I am the actionless witness'). (2) Action is born from ajnana (ignorance of one's nature), while jnana destroys ajnana. (3) Action produces results in time, while jnana is immediate recognition of the timeless. However, this doesn't mean actions are useless—karma-yoga (selfless action) purifies the mind, making it fit for knowledge. But the actual dawn of Self-knowledge comes from inquiry (vichara), not from action.",
+    theme: 'discrimination',
+    practicalApplication: "Don't expect meditation or rituals to automatically produce Self-knowledge. They prepare the mind (chitta-shuddhi) but knowledge comes from inquiry. After your meditation or practice, engage in self-inquiry: 'Who am I?' Let action purify, but let inquiry liberate."
+  },
+  {
+    number: 210,
+    sanskrit: "विचार्य सम्यक् आत्मतत्त्वमत्यन्तं शुद्धम्। भवेत् सदा ब्रह्मणि एव नित्यं निविष्टचित्तः॥",
+    transliteration: "vicārya samyak ātmatattvamatyantaṁ śuddham | bhavet sadā brahmaṇi eva nityaṁ niviṣṭacittaḥ ||",
+    translation: "Having properly inquired into the nature of the Self as supremely pure, one should remain always with the mind absorbed in Brahman alone.",
+    commentary: "This verse presents the two-phase practice: (1) Vichara (inquiry): Properly investigate the Self—not casually but 'samyak' (thoroughly, correctly). Discover it as 'atyanta-shuddha' (supremely pure)—never tainted by experiences. (2) Nishtha (abidance): Having understood, remain 'sadā' (always) with mind 'nivishta' (absorbed) in Brahman. This is transitioning from investigation to establishment. After clarity dawns through inquiry, practice abiding in that clarity. Initially this requires effort (bringing attention back to truth), gradually it becomes effortless (your natural state). This is the path from mumukshu (seeker) to jnani (knower).",
+    theme: 'discrimination',
+    practicalApplication: "Practice this two-phase approach daily: (1) Inquiry phase (10-15 mins): Actively investigate 'Who am I?' Negate all false identifications. (2) Abidance phase (10-15 mins): Having recognized 'I am awareness,' simply rest there. Don't think about awareness, BE awareness. Gradually, the abidance phase extends into daily life."
+  },
+  {
+    number: 221,
+    sanskrit: "देहत्रयं व्यतिरिच्यात्मा नित्यबोधस्वरूपतः। एतद् विचार्य तत्त्वतः भवेत् आत्मनि संस्थितः॥",
+    transliteration: "dehatrayaṁ vyatiricyātmā nityabodhasvarūpataḥ | etad vicārya tattvataḥ bhavet ātmani saṁsthitaḥ ||",
+    translation: "The Self is distinct from the three bodies and is of the nature of eternal consciousness. Reflecting deeply on this truth, one becomes established in the Self.",
+    commentary: "This verse guides discrimination through negation of the three bodies (deha-traya): (1) Sthula-sharira (gross body)—physical form of flesh and bones. (2) Sukshma-sharira (subtle body)—mind, intellect, ego, prana. (3) Karana-sharira (causal body)—ignorance, the seed form from which the other two arise. The Self is 'vyatiricya' (distinct/separate from) all three. It is 'nitya-bodha-svarupa' (of the nature of eternal consciousness)—always aware, never an object. Through tattvatah vichara (inquiry into the truth), repeatedly distinguishing Self from not-Self, one becomes 'atmani samsthita' (established in the Self). This is neti-neti (not this, not this) practice leading to recognition of what remains when all negation is complete.",
+    theme: 'discrimination',
+    practicalApplication: "Systematically negate: 'I am not the physical body (it changes, I remain). I am not thoughts or emotions (I witness them come and go). I am not even the subtle sense of individuality (in deep sleep it vanishes, yet I exist). What am I? The eternal witnessing awareness.' Do this until the witness-nature becomes clear and unshakable."
+  },
 
   // THEME: SELF (Nature of Atman)
   {
@@ -149,6 +176,15 @@ export const vivekachudamaniVerses: VivekachudamaniVerse[] = [
     practicalApplication: "Sit in meditation and affirm each quality as your direct experience: 'I AM (sat). I am AWARE (chit). My nature is peace, not lacking anything (ananda). I am one, not divided (advaita). I know this directly, not through inference (sva-anubhuta). I am unchanged by passing experiences (niranjana, nirvikalpa). I have no form, I am the space of awareness (nirakaara). I was never bound, so I am eternally free (nitya-mukta).' Feel these not as beliefs but as recognition of present reality."
   },
   {
+    number: 232,
+    sanskrit: "एकाग्रेण आत्मानं विचारयेत् तत्त्वतः। विचार्य तत्त्वतः आत्मानं भवेत् ब्रह्मणि निश्चितः॥",
+    transliteration: "ekāgreṇa ātmānaṁ vicārayet tattvataḥ | vicārya tattvataḥ ātmānaṁ bhavet brahmaṇi niścitaḥ ||",
+    translation: "With one-pointedness, investigate the Self truly. Having investigated the truth of the Self, one becomes certain about Brahman.",
+    commentary: "This verse prescribes the method and result of investigation: Method: 'Ekagra' (one-pointed)—not distracted inquiry but focused investigation. 'Vich arayet atmanam' (investigate the Self). 'Tattvatah' (truly/really)—not superficially but deeply, until the truth is revealed. Result: 'Vicharya tattvatah atmanam' (having truly investigated the Self), one becomes 'Brahmani nishchita' (certain about Brahman)—not believing or hoping but KNOWING beyond doubt. This nishchaya (certainty) is aparoksha-jnana (direct knowledge), the fruit of sustained inquiry. When you KNOW 'I am Brahman' with the same certainty you know 'I exist,' liberation is accomplished.",
+    theme: 'self',
+    practicalApplication: "Practice one-pointed inquiry: Set aside 20-30 minutes daily for focused self-investigation. Don't let the mind wander to other topics. Ask 'Who am I?' with full attention. Investigate: not the body, not thoughts, not feelings—then what? The one-pointed search will reveal the ever-present Self. When certainty dawns, it's unshakable."
+  },
+  {
     number: 256,
     sanskrit: "आत्मा चैतन्यमात्रः स्वयं ज्योतिः परः पुमान्। साक्षी सर्वस्य निर्गुणः शुद्धः सदा निराश्रयः॥",
     transliteration: "ātmā caitanyamātraḥ svayaṁ jyotiḥ paraḥ pumān | sākṣī sarvasya nirguṇaḥ śuddhaḥ sadā nirāśrayaḥ ||",
@@ -156,6 +192,33 @@ export const vivekachudamaniVerses: VivekachudamaniVerse[] = [
     commentary: "This verse defines Atman with precision: (1) Chaitanya-matra: Pure Consciousness ONLY—not consciousness plus body, not consciousness plus mind, just consciousness. (2) Svayam-jyoti: Self-luminous—consciousness doesn't need another consciousness to know it. The flashlight needs external light to be seen, but the light itself needs nothing. You are that light of awareness. (3) Parah puman: Supreme Being, ultimate subject that can never become an object. (4) Sakshi sarvasya: Witness of everything—all experiences appear to you, but you remain as the unchanging observer. (5) Nirguna: Without qualities—all qualities (hard/soft, hot/cold, good/bad) are witnessed BY you, not qualities OF you. (6) Shuddha: Pure, unmixed with anything else. (7) Niraashraya: Not depending on any support—everything rests in consciousness, but consciousness rests on nothing else. This is radical independence. Most spiritual practices aim at purifying consciousness, but this verse declares consciousness is already ever-pure (sada-shuddha). The practice is recognition, not purification.",
     theme: 'self',
     practicalApplication: "During any experience, notice the experiencer. When thinking, notice the consciousness that lights up the thought. When feeling emotion, notice the awareness of the feeling. That witnessing awareness is always present, unchanged, pure, independent. Rest as that. You don't have to create it or improve it—just recognize what you already are."
+  },
+  {
+    number: 299,
+    sanskrit: "असङ्गोऽहमसङ्गोऽहमसङ्गोऽहं पुनः पुनः। सच्चिदानन्दरूपोऽहमहमेवाहमव्ययः॥",
+    transliteration: "asaṅgo'hamasaṅgo'hamasaṅgo'haṁ punaḥ punaḥ | saccidānandarūpo'hamahamevāhamavyayaḥ ||",
+    translation: "I am unattached, I am unattached, I am unattached—again and again. I am of the nature of existence-consciousness-bliss. I am I alone, imperishable.",
+    commentary: "This powerful verse uses repetition as a meditative practice. 'Asanga-aham' (I am unattached) is repeated three times, emphasizing the need for constant reminder. Unattached to what? To body, mind, possessions, relationships, experiences—all objects that come and go. Then comes positive affirmation: 'Sat-chit-ananda-rupa-aham' (I am of the nature of existence-consciousness-bliss). Not 'I have' these qualities but 'I AM' these qualities—they constitute my very being. Finally: 'Aham eva aham avyaya' (I am I alone, imperishable). The pure 'I AM' before all qualification, indestructible, eternal. This verse is meant for repetition (japa) and meditation—let it sink from intellectual understanding to felt reality.",
+    theme: 'self',
+    practicalApplication: "Use this as a daily mantra meditation. Repeat slowly with feeling: 'I am unattached (to body-mind), I am unattached (to possessions), I am unattached (to relationships). I am existence-consciousness-bliss. I am the eternal I AM.' Do this for 108 repetitions using a mala, or for 10-15 minutes. Let the words transform from thought to experience."
+  },
+  {
+    number: 315,
+    sanskrit: "सर्वं विस्मृत्य चैतन्यमात्मानं केवलं स्मरेत्। चैतन्यमात्र आत्मा हि नान्यत् किञ्चित् स्वरूपतः॥",
+    transliteration: "sarvaṁ vismṛtya caitanyamātmānaṁ kevalaṁ smaret | caitanyamātra ātmā hi nānyat kiñcit svarūpataḥ ||",
+    translation: "Forgetting everything, remember the Self as pure consciousness alone. The Self is indeed pure consciousness only; in essence, it is nothing else whatsoever.",
+    commentary: "This verse gives a meditation instruction in two parts: (1) Negative: 'Sarva vismritya' (forgetting everything)—deliberately withdraw attention from all objects, thoughts, concerns. Let the entire world of multiplicity recede. (2) Positive: 'Chaitanya-matram atmanam kevalam smaret' (remember the Self as pure consciousness alone). What remains when everything is forgotten? The simple fact of being aware—that is the Self. The verse clarifies: 'Chaitanya-matra atma' (the Self is consciousness ONLY)—not consciousness plus qualities, not consciousness in a body, just pure consciousness. 'Na anyat kimchit svarupata' (essentially nothing else whatsoever). This is the most direct pointing: you are awareness itself, period.",
+    theme: 'self',
+    practicalApplication: "Practice 'forgetting everything' meditation: Sit quietly and deliberately let go of all concerns—past, future, plans, problems. Let go of thoughts about your body, your identity. What's left? The simple presence of awareness. That's what you are. Rest there. When thoughts arise, gently return to pure awareness. This is direct recognition of your essential nature."
+  },
+  {
+    number: 383,
+    sanskrit: "आनन्दो ब्रह्म इत्याहुः श्रुतयः परमार्थतः। सुखदुःखादिरहितं निर्विशेषं परं पदम्॥",
+    transliteration: "ānando brahma ityāhuḥ śrutayaḥ paramārthataḥ | sukhaduḥkhādirahitaṁ nirviśeṣaṁ paraṁ padam ||",
+    translation: "The Upanishads declare that Brahman is bliss itself in the ultimate sense—free from pleasure and pain, without distinctions, the supreme state.",
+    commentary: "This verse clarifies what 'ananda' (bliss) means in Vedantic context. The shruti (Upanishads) declare 'Ananda Brahma' (Brahman is bliss). But this ananda is: (1) Param-arthata (in the ultimate/absolute sense)—not conventional happiness. (2) Sukha-duhkha-adi-rahita (free from pleasure and pain)—it's not the opposite of suffering but transcends the duality of pleasure-pain. (3) Nirvisesha (without distinctions/qualifications)—not 'happy about something' but intrinsic fullness. (4) Param-pada (supreme state)—the highest reality. This bliss is your nature—not something experienced by you but what you ARE. It's the absence of lack, the presence of completeness.",
+    theme: 'self',
+    practicalApplication: "When seeking happiness, recognize: you're not seeking to add something but to remove the sense of lack. Happiness isn't in objects but in the cessation of seeking. In moments of deep contentment (after desire is fulfilled or in meditation), notice: the bliss isn't coming from outside—it's your nature revealed when agitation ceases. That natural bliss is what you fundamentally are."
   },
   {
     number: 263,
@@ -277,6 +340,24 @@ export const vivekachudamaniVerses: VivekachudamaniVerse[] = [
     theme: 'jnani',
     practicalApplication: "Practice this 'lotus leaf' approach: engage fully with life—work, relationships, pleasures—but notice the awareness that remains unchanged throughout all engagement. You can enjoy food without being dependent on it for happiness. You can work hard without tying self-worth to outcomes. You can love deeply without possessive clinging. This is the jnani's way—full participation, zero entanglement."
   },
+  {
+    number: 543,
+    sanskrit: "सर्वदा सर्वभावेन भावयेत् परमात्मनः। विज्ञाय तत्त्वमात्मानं भवेत् निश्चलचेतनः॥",
+    transliteration: "sarvadā sarvabhāvena bhāvayet paramātmanaḥ | vijñāya tattvamātmānaṁ bhavet niścalacetanaḥ ||",
+    translation: "Always, with complete devotion, contemplate the Supreme Self. Knowing the truth of the Self, one becomes of unwavering consciousness.",
+    commentary: "This verse gives guidance for the jnani's continuous practice: 'Sarvada sarva-bhavena' (always, with complete devotion/feeling) one should 'bhavayet' (contemplate/meditate upon) the Paramatman (Supreme Self). This isn't dry intellectualism but heartfelt contemplation—letting the truth of 'I am Brahman' permeate all levels of being. The result: 'vijnaya tattvam atmanam' (having realized the truth of the Self), one becomes 'nischala-chetana' (of unwavering consciousness)—the mind no longer wavers between truth and illusion, between Self and not-Self. This is sthita-prajna (one of steady wisdom), established unshakeably in Self-knowledge.",
+    theme: 'jnani',
+    practicalApplication: "Make contemplation of the Self your constant background practice. Whether working, relating, or resting, maintain the awareness: 'I am the witnessing Consciousness, not the activities.' Initially this requires effort and reminders. Gradually it becomes natural—the activities happen, but you abide as the unchanging awareness. This is the jnani's continuous meditation."
+  },
+  {
+    number: 551,
+    sanskrit: "न च प्रमादी भवति यावत् अविद्या न निवर्तते। तावत् शास्त्रं श्रृणोति गुरुसेवां करोति च॥",
+    transliteration: "na ca pramādī bhavati yāvat avidyā na nivartate | tāvat śāstraṁ śṛṇoti gurusevāṁ karoti ca ||",
+    translation: "One should not become negligent. Until ignorance completely ceases, one should study scripture and serve the guru.",
+    commentary: "This verse gives practical advice for the spiritual path: don't become pramadi (negligent, careless). Even after initial understanding, continue practice 'yavat avidya na nivartate' (until ignorance completely ceases). How to practice? Two methods: (1) 'Shastram shrinoti' (study scripture)—repeated listening/reading to reinforce and deepen understanding. (2) 'Guru-sevam karoti' (serve the guru)—remain in the guru's presence, serving and learning. These practices continue until avidya is completely removed, not just intellectually understood but totally absent. This prevents the danger of premature conclusion—thinking 'I understand' when the understanding hasn't matured into unshakable realization.",
+    theme: 'jnani',
+    practicalApplication: "Don't stop practicing after initial breakthroughs. Continue study, contemplation, and if possible, association with the wise (satsanga) until Self-knowledge is completely stable—meaning you never forget your true nature even in the midst of intense activity or challenge. Until then, remain a student."
+  },
 
   // Additional QUALIFICATION verses
   {
@@ -287,6 +368,24 @@ export const vivekachudamaniVerses: VivekachudamaniVerse[] = [
     commentary: "This verse emphasizes that Vedantic teaching is not for everyone at every stage—it requires preparation. Qualification (adhikara) is essential. This is not elitism but practical wisdom: just as medical school requires pre-requisites, Self-knowledge requires certain inner capacities. Those qualifications (viveka, vairagya, shamadi-shatka-sampatti, mumukshutva) prepare the mind to receive and integrate the teaching. Without them, the words remain mere philosophy. With them, the words become transformative realization.",
     theme: 'qualification',
     practicalApplication: "If Vedantic teachings seem dry or intellectual, check your qualifications. Build discrimination through observing impermanence. Strengthen dispassion by seeing the pain hidden in pleasures. Develop mental discipline through daily meditation. When the foundation is solid, the superstructure of knowledge rises easily."
+  },
+  {
+    number: 6,
+    sanskrit: "वाग्वैखरी मनसी चिन्तिता बुद्ध्या विनिश्चिता। अहमिति स्फुटं येन सोऽयं आत्मा प्रकाशते॥",
+    transliteration: "vāgvaikharī manasī cintitā buddhyā viniścitā | ahamiti sphuṭaṁ yena so'yaṁ ātmā prakāśate ||",
+    translation: "By which the spoken word is expressed, thought is conceived in the mind, and certainty is established in the intellect—by which 'I am' shines clearly—that is the Self.",
+    commentary: "This verse points to the Self through its functions: The Self is that BY WHICH (yena) all faculties function—speech speaks, mind thinks, intellect knows. But the Self itself is not these functions; it's the enabling consciousness. Most directly: the Self is that by which 'aham' (I am) shines (prakashate) clearly (sphutam). This 'I am'—the basic sense of existence-awareness before any qualification—is the most direct pointer to the Self. Not 'I am this or that' but the pure 'I AM' itself. This is the Self shining by its own light.",
+    theme: 'qualification',
+    practicalApplication: "Notice how all experiences require your consciousness to be known. Speech, thought, knowledge—all appear in awareness. Most fundamentally, notice the sense 'I am' that's present always, even without objects. That 'I am'-ness before all qualifications is your direct access to the Self. Rest attention there."
+  },
+  {
+    number: 7,
+    sanskrit: "बुद्ध्यादीनां च सर्वेषां आत्मा ज्योतिः स्वयंप्रभः। स्वयम्भासमानः सन् न केनचित् प्रकाश्यते॥",
+    transliteration: "buddhyādīnāṁ ca sarveṣāṁ ātmā jyotiḥ svayaṁprabhaḥ | svayambhāsamānaḥ san na kenacit prakāśyate ||",
+    translation: "The Self is the light of the intellect and all else, self-luminous. Being self-revealing, it is not illuminated by anything else.",
+    commentary: "This verse establishes the Self's independence and primacy: The Atman is the 'jyoti' (light) by which buddhi (intellect) and all other faculties function—they shine in its light. But the Self is 'svayam-prabha' (self-luminous)—it doesn't need another light to be known. Everything else needs consciousness to be known, but consciousness knows itself directly. It is 'svayam-bhasamana' (self-revealing) and therefore 'na kenachit prakashyate' (not illuminated by anything else). This breaks infinite regress—there's no consciousness illuminating consciousness illuminating consciousness. The Self is the ultimate subject, never an object, self-evident.",
+    theme: 'qualification',
+    practicalApplication: "Recognize: you don't need proof that you're conscious—consciousness is self-evident. Similarly, you don't need to 'find' the Self through some external means. The Self is the finder, the seeker. Turn attention to the awareness that's already present, already knowing. That's the self-luminous Self."
   },
 
   // Additional BONDAGE verses
@@ -448,6 +547,463 @@ export const vivekachudamaniVerses: VivekachudamaniVerse[] = [
     transliteration: "na harṣaḥ na ca viṣādaḥ na ca kopaḥ na ca mohaḥ | śāntaḥ sarvatra sarvadā sthitaprajñaḥ sa kathyate ||",
     translation: "No elation, no depression, no anger, no delusion—peaceful everywhere and always, he is called sthitaprajna (established in wisdom).",
     commentary: "This verse describes the emotional landscape of a jnani—or rather, the absence of emotional turbulence: No harsha (elation) in success, no vishada (depression) in failure, no kopa (anger) when opposed, no moha (delusion/attachment). Instead: shanta (peaceful) everywhere (sarvatra) and always (sarvada). This is the sthitaprajna (one established in wisdom) described in Bhagavad Gita. Important: this doesn't mean the jnani is emotionless or robotic. Surface emotions may appear for practical functioning, but there's no deep identification with them. Like an actor who shows emotion on stage but isn't genuinely suffering—the jnani's responses are appropriate to situations but without inner bondage. The peace (shanti) is at the core, unshaken by surface fluctuations.",
+    theme: 'jnani'
+  },
+
+  // More QUALIFICATION verses
+  {
+    number: 13,
+    sanskrit: "मोक्षकारणसामग्र्यां भक्तिरेव गरीयसी। स्वस्वरूपानुसन्धानं भक्तिरित्यभिधीयते॥",
+    transliteration: "mokṣakāraṇasāmagryāṁ bhaktireva garīyasī | svasvarūpānusandhānaṁ bhaktirityabhidhīyate ||",
+    translation: "Among the means for liberation, devotion alone is supreme. Devotion is defined as the constant contemplation of one's own true nature.",
+    commentary: "This verse redefines bhakti (devotion) from the Advaitic perspective. While conventionally bhakti means devotion to a personal deity, here it's defined as sva-svarupa-anusandhana—constant inquiry into and contemplation of one's own true nature (the Self). This is the highest bhakti because the Self IS the supreme reality you seek. Devotion to anything external is preparatory; devotion to your own essential nature IS the direct path to moksha. This understanding unifies bhakti (devotion) and jnana (knowledge) paths—true devotion is self-knowledge.",
+    theme: 'qualification',
+    practicalApplication: "Shift your devotional practice inward. Instead of only worshipping external forms of the divine, practice 'devotion to the Self'—meaning constant remembrance of your true nature. Ask throughout the day: 'What is my essential being?' This inquiry-as-devotion is the highest spiritual practice."
+  },
+  {
+    number: 26,
+    sanskrit: "यस्त्वात्मानमजं विभुं प्रत्यगात्मानमद्वयम्। जानाति सोऽपि तन्मय: सर्वगः सच्चिदात्मकः॥",
+    transliteration: "yastvātmānamajaṁ vibhuṁ pratyagātmānamadvayam | jānāti so'pi tanmayaḥ sarvagaḥ saccidātmakaḥ ||",
+    translation: "One who knows the Self as unborn, all-pervading, innermost, and non-dual—he becomes identified with That, all-pervading, of the nature of Existence-Consciousness.",
+    commentary: "This verse promises the fruit of Self-knowledge: you become what you know. When you truly know (not intellectually but experientially) that the Self is: (1) Aja (unborn, eternal), (2) Vibhu (all-pervading), (3) Pratyagatma (the innermost Self), (4) Advaya (non-dual)—then you become 'tanmaya' (identified with That). This isn't transformation into something new but recognition of what you always were. The knowledge doesn't make you become Brahman; it reveals that you ARE Brahman. The knower disappears into the known because they were never truly separate.",
+    theme: 'qualification'
+  },
+  {
+    number: 30,
+    sanskrit: "उपदेशो हि मूर्खाणां प्रकोपाय न शान्तये। नादायाः पीयूषं क्वापि न मृगतृष्णिकोदकम्॥",
+    transliteration: "upadeśo hi mūrkhāṇāṁ prokopāya na śāntaye | nādāyāḥ pīyūṣaṁ kvāpi na mṛgatṛṣṇikodakam ||",
+    translation: "Teaching given to the unqualified leads to anger, not peace—like offering nectar to a serpent or giving mirage-water to the thirsty.",
+    commentary: "This stark verse explains why qualification matters. Vedantic teaching given to an unqualified person can cause harm: it may provoke anger (when it challenges cherished beliefs), confusion (when the mind can't grasp it), or misunderstanding (leading to wrong conclusions). It's like giving nectar to a serpent—it doesn't nourish but increases poison. Or like showing mirage-water to a truly thirsty person—it increases frustration. The teaching itself is pure, but without proper preparation, the receiver cannot benefit and may be harmed. Therefore, traditional teaching checks for qualifications before imparting knowledge.",
+    theme: 'qualification'
+  },
+  {
+    number: 17,
+    sanskrit: "निवृत्त अविद्याया आत्मज्ञानं प्रकाशते। आदित्यः अभ्रात् मुक्तः यथा स्वयमेव प्रकाशते॥",
+    transliteration: "nivṛtta avidyāyā ātmajñānaṁ prakāśate | ādityaḥ abhrāt muktaḥ yathā svayameva prakāśate ||",
+    translation: "When ignorance is removed, Self-knowledge shines forth of its own accord, just as the sun shines by itself when freed from clouds.",
+    commentary: "This verse uses a perfect analogy to explain liberation. The sun is always shining, but clouds can obscure it. When clouds move away, the sun doesn't 'become' bright—it simply reveals its ever-present brilliance. Similarly, your true nature as pure Consciousness is always present, always illuminating all experience. Ignorance (avidya) doesn't actually cover the Self (nothing can cover the infinite) but creates the illusion of limitation, like clouds creating the illusion of darkness. When ignorance is removed through knowledge, the Self doesn't 'become' enlightened—it reveals its ever-present enlightenment. This is why liberation is not a becoming but a recognition, not an achievement but a discovery of what always was.",
+    theme: 'qualification',
+    practicalApplication: "When you feel spiritually 'dark' or ignorant, remember: your essential nature is already the light of Consciousness. You don't need to create light, only remove the clouds of wrong understanding. Study, contemplate, meditate—these are cloud-dispersing practices. The sun of Self-knowledge is always there, waiting to be revealed."
+  },
+  {
+    number: 18,
+    sanskrit: "ब्रह्मसत्यं जगन्मिथ्या जीवो ब्रह्मैव नापरः। अनेन वेद्यं सच्छास्त्रमिति वेदान्तडिंडिमः॥",
+    transliteration: "brahmasatyaṁ jaganmithyā jīvo brahmaiva nāparaḥ | anena vedyaṁ saccāstramitime vedāntaḍiṁḍimaḥ ||",
+    translation: "Brahman is real, the world is illusory, the individual soul is non-different from Brahman. This is the essence to be known from all scriptures—this is the drum-beat of Vedanta.",
+    commentary: "This famous verse encapsulates the entire Advaita teaching in three statements: (1) 'Brahma satyam'—Brahman (pure Consciousness-Existence) is the only reality (satya). It exists in all three periods of time, unchanging, independent. (2) 'Jagan mithya'—The world is mithya (neither completely real nor completely unreal). Like a dream, it appears but has no independent reality apart from Brahman. Mithya doesn't mean non-existent but dependently real. (3) 'Jivo Brahmaiva na aparah'—The individual soul (jiva) is nothing but Brahman—not separate from it. The sense of being a limited individual is ignorance; in truth, you are the infinite. This is the 'Vedanta-dindima'—the drum-beat, the proclamation that Vedanta loudly announces. All Upanishads, all commentaries ultimately point to this triad. Understand this deeply, and you've understood everything essential.",
+    theme: 'qualification',
+    practicalApplication: "Memorize these three statements. Before meditation, recite them as reminders: 'Brahman alone is real. This changing world is appearance. I am that Brahman, not a separate limited being.' Let this orient your inquiry. Throughout the day, when caught in worldly concerns, recall: 'This is mithya—appearing but not ultimately real. I am Brahman—ever-free.'"
+  },
+  {
+    number: 22,
+    sanskrit: "विवेकनिर्णयदृढीकरणे प्रमाणम् आगमः तर्कः अनुभवः। यस्य एतत् त्रयं न विरोधं करोति सः श्रद्धधानः॥",
+    transliteration: "vivekanirṇayaddṛḍhīkaraṇe pramāṇam āgamaḥ tarkaḥ anubhavaḥ | yasya etat trayaṁ na virodhaṁ karoti saḥ śraddadhānaḥ ||",
+    translation: "For firm establishment in discrimination, the means of knowledge are: scripture, reasoning, and direct experience. One in whom these three do not contradict each other has true faith.",
+    commentary: "This verse presents the three-fold validation process for Vedantic knowledge: (1) Agama (scripture)—the Upanishads and related texts provide the initial teaching. Since Brahman is beyond sense-perception, scripture is the primary source. (2) Tarka (reasoning)—logical reflection to remove contradictions and clarify understanding. This isn't dry logic but yukti—reasoning aligned with scripture. (3) Anubhava (direct experience)—ultimately, truth must be realized, not just believed or understood intellectually. When all three align—what scripture says, what your reasoning confirms, and what you directly experience—then shraddha (faith/conviction) is unshakable. If they conflict (scripture says one thing but experience shows another), further inquiry is needed. True knowledge has this three-fold verification.",
+    theme: 'qualification',
+    practicalApplication: "Don't accept spiritual teachings blindly or reject them without investigation. Study scripture (shravana), reflect on it logically (manana), then verify in meditation (nididhyasana). If a teaching makes intellectual sense but hasn't become experiential, more meditation is needed. If experience contradicts understanding, revisit the teachings. True knowledge withstands all three tests."
+  },
+
+  // More BONDAGE verses
+  {
+    number: 169,
+    sanskrit: "अहंकारो महाव्याघ्रः संसारकाननं भ्रमन्। भक्ष यते प्राणिनो ध्यानभीरूनविचारिणः॥",
+    transliteration: "ahaṁkāro mahāvyāghraḥ saṁsārakānanaṁ bhraman | bhakṣayate prāṇino dhyānabhīrūnavicāriṇaḥ ||",
+    translation: "Ego is like a great tiger wandering in the forest of samsara, devouring those beings who are afraid of meditation and devoid of inquiry.",
+    commentary: "A powerful metaphor: ahamkara (ego/I-notion) is compared to a dangerous tiger in the jungle of worldly existence. It preys on those who avoid spiritual practice—those 'afraid of dhyana' (meditation) and lacking vichara (self-inquiry). Why afraid of meditation? Because meditation threatens the ego's dominance—in deep meditation, the ego temporarily dissolves. Those who won't face this dissolution through practice remain vulnerable to ego's destructive power. The verse implies the solution: practice meditation and inquiry to transcend the ego-tiger.",
+    theme: 'bondage'
+  },
+  {
+    number: 285,
+    sanskrit: "जन्मन: कारणं किं स्यात् संसारः कस्य हेतुकः। किं त्यक्त्वा न पुनर्बन्धः को विज्ञेयः स्वमोक्षणे॥",
+    transliteration: "janmanaḥ kāraṇaṁ kiṁ syāt saṁsāraḥ kasya hetuk aḥ | kiṁ tyaktvā na punarbandhaḥ ko vijñeyaḥ svamokṣaṇe ||",
+    translation: "What is the cause of birth? What causes samsara? By abandoning what does bondage not recur? What should be known for one's liberation?",
+    commentary: "This verse poses four critical questions about bondage and liberation: (1) What causes birth/rebirth? Ignorance of one's true nature. (2) What perpetuates samsara? Desire and aversion born from that ignorance. (3) What must be abandoned for permanent freedom? The ego-sense, the 'I am the body' notion. (4) What knowledge liberates? Knowledge of the Self as Brahman. These four questions and answers form a complete framework for understanding the problem (bondage) and solution (liberation).",
+    theme: 'bondage'
+  },
+  {
+    number: 295,
+    sanskrit: "अभानमपि सत्यत्वे भासते इन्द्रजालवत्। असत्यमपि सत्येन भ्रान्तिरेव न वस्तुतः॥",
+    transliteration: "abhānamapi satyatve bhāsate indrajālavat | asatyamapi satyena bhrāntireva na vastutaḥ ||",
+    translation: "What doesn't exist appears as if it exists, like a magic show. What is unreal appears as real due to delusion, not in truth.",
+    commentary: "This verse explains the mechanics of bondage through the concept of superimposition (adhyasa). The world and individual self, though ultimately unreal (mithya), appear real due to delusion, just like a magician's illusions. The illusion is not in the object itself (there is no rabbit in the hat) but in perception. Similarly, Brahman alone exists; the world of multiplicity and the separate self are perceptual errors, not facts. Understanding this is the beginning of freedom—you're not bound by reality but by wrong perception of reality.",
+    theme: 'bondage'
+  },
+  {
+    number: 68,
+    sanskrit: "आत्मबोधोऽपि सर्वेषां स्वतः एव प्रकाशते। बोद्धुं शक्यते मोक्षः शास्त्रैः गुरुपदेशनैः॥",
+    transliteration: "ātmabodho'pi sarveṣāṁ svataḥ eva prakāśate | boddhuṁ śakyate mokṣaḥ śāstraiḥ gurupadeśanaiḥ ||",
+    translation: "Self-knowledge shines of its own accord for all. Liberation can be understood through scriptures and the guru's teaching.",
+    commentary: "This verse emphasizes two truths: (1) The Self is self-evident (svataḥ prakāśate) for everyone—even an ignorant person IS conscious, exists. The problem isn't absence of Self but lack of recognition. (2) However, to understand moksha (liberation) from samsara (bondage), external aids are needed—śāstra (scripture) and guru-upadeśana (guru's instruction). This resolves a paradox: if the Self is self-evident, why need teaching? Because while existence-consciousness is obvious, the implications (you are infinite, ever-free, identical with Brahman) are not obvious without guidance. Scripture and guru point out what's always present but overlooked.",
+    theme: 'bondage',
+    practicalApplication: "Recognize that you already are the Self—you don't need to become conscious or existent; you already are. But to realize the full import (you are Brahman, not a limited being), seek guidance from authentic scriptures and realized teachers. They don't give you the Self; they help you recognize what you already are."
+  },
+  {
+    number: 112,
+    sanskrit: "न हि देहं विना जीवो न देहात्मा अपि स्वतः। तदात्मत्वं तु मोहात्तस्मिन् विवेकेन विमुच्यते॥",
+    transliteration: "na hi dehaṁ vinā jīvo na dehātmā api svataḥ | tadātmatvaṁ tu mohāttasmin vivekena vimucyate ||",
+    translation: "The soul is not non-existent without the body, nor is it inherently body-identified. That identification is due to delusion, and one is freed from it by discrimination.",
+    commentary: "This verse clarifies an important point: the jīva (individual soul/consciousness) is not created by or dependent on the body—consciousness existed before this body and will exist after. Nor is the soul inherently identified with body—in deep sleep, you exist without body-awareness. The identification (tad-ātmatva) of 'I am this body' is from moha (delusion), not reality. Through viveka (discrimination)—repeatedly recognizing 'I am the witness of the body, not the body itself'—one is freed (vimuchyate) from this bondage. Liberation is thus not gaining something new but removing a false notion.",
+    theme: 'bondage',
+    practicalApplication: "Whenever you think 'I am tired,' 'I am sick,' 'I am young/old,' recognize this is body-identification speaking. Consciously discriminate: 'The body is tired, but I, awareness, am not tired. The body ages, but I, the witness, am timeless.' This repeated discrimination breaks the spell of identification."
+  },
+  {
+    number: 117,
+    sanskrit: "अयं प्रत्ययः इति संस्कारवाही एव बन्धः। तदभावे तु कैवल्यं परमानन्दमक्षयम्॥",
+    transliteration: "ayaṁ pratyayaḥ iti saṁskāravāhī eva bandhaḥ | tadabhāve tu kaivalyaṁ paramānandamakṣayam ||",
+    translation: "Bondage is indeed this notion-bearing tendency that creates the sense of 'I am this.' In its absence, there is absolute freedom and imperishable supreme bliss.",
+    commentary: "This verse pinpoints bondage precisely: it's not external chains but 'pratyaya'—the notion, the conviction 'I am this (body/mind/person).' This notion is samskara-vāhī (carried by mental impressions from countless past lives), so it feels deeply ingrained and automatic. But recognize: it's just a notion, not a fact. When this notion is absent (tad-abhāve)—through knowledge that 'I am pure Consciousness, not this appearance'—then kaivalya (absolute independence) dawns, characterized by param-ānanda (supreme bliss) that is akshaya (imperishable—not dependent on circumstances). Freedom is always present, just obscured by this one fundamental mistake.",
+    theme: 'bondage',
+    practicalApplication: "Meditate on the thought 'I am the body' when it arises. See it as just that—a thought, a notion, not an ultimate truth. Ask: 'Who is aware of this notion?' The awareness observing the notion cannot be the notion itself. Rest as that awareness. In that restful observation, bondage loses its grip."
+  },
+
+  // More DISCRIMINATION verses
+  {
+    number: 91,
+    sanskrit: "स्वप्ने यथा विना देहं दुःखसुखादिसंयुतः। तथा विना देहं स्वप्नेऽपि सुखदुःखमनुभवति॥",
+    transliteration: "svapne yathā vinā dehaṁ duḥkhasukhādisaṁyutaḥ | tathā vinā dehaṁ svapne'pi sukhaduḥkhamanubhavati ||",
+    translation: "In a dream, one experiences pleasure and pain without a physical body. Thus, even without the body, one can experience joy and sorrow.",
+    commentary: "This verse uses dream analysis for discrimination. In dreams, you experience a full range of emotions—joy, sorrow, fear, pleasure—yet you have no physical body (the physical body is lying asleep). This proves that body is not necessary for experience. Similarly, the subtle body (mind) is sufficient for experience. Going further: in deep sleep, even the subtle body rests, yet YOU exist. This points to the Self as distinct from both gross and subtle bodies. Use this discrimination to realize: I am not the body, I am not even the mind—I am the awareness in which all experiences appear.",
+    theme: 'discrimination'
+  },
+  {
+    number: 102,
+    sanskrit: "प्रत्यक्त्वमात्मनो ब्रह्मणः कल्पितं अहंकरेण। अतः तदेकतां याति जले जलं यथा घटे॥",
+    transliteration: "pratyaktvamātmano brahmaṇaḥ kalpitaṁ ahaṁkareṇa | ataḥ tadekatāṁ yāti jale jalaṁ yathā ghaṭe ||",
+    translation: "The ego superimposes individuality on the Self/Brahman. Therefore, it merges into That like water in a pot merges with water in the ocean.",
+    commentary: "The ego creates the illusion of separation—'I am this particular individual, separate from Brahman.' But this separation is kalp ita (imagined/superimposed), not real. When this superimposition is removed through knowledge, the apparent individual 'merges' into Brahman—but actually, no real merging occurs, only the recognition that separation was always illusory. Like water in a pot seems separate from the ocean, but when the pot is removed, it's clear there's only water—no separate 'pot-water' and 'ocean-water,' just water. Similarly, remove the limiting adjunct of ego, and individual and Brahman are seen as one.",
+    theme: 'discrimination'
+  },
+  {
+    number: 152,
+    sanskrit: "शब्दादिभिः पञ्चभिरेव पञ्च पञ्चत्वमापुः स्वगुणेन बद्धाः। कुरङ्गमातङ्गपतङ्गमीनभृङ्गा नरः पञ्चभिरञ्चितः किम्॥",
+    transliteration: "śabdādibhiḥ pañcabhireva pañca pañcatvamāpuḥ svaguṇena baddhāḥ | kuraṅgamātaṅgapataṅgamīnabhṛṅgā naraḥ pañcabhirañcitaḥ kim ||",
+    translation: "Deer, elephant, moth, fish, and bee—each attached to one sense object meets destruction. What then of man, attached to all five?",
+    commentary: "This famous verse warns about sense-attachment through animal examples: (1) Deer: dies for sound (hunted via musical lures), (2) Elephant: trapped by touch (caught via female elephant decoy), (3) Moth: destroyed by sight (flies into flame), (4) Fish: hooked by taste, (5) Bee: trapped in lotus by smell (flower closes at night). Each animal, attached to just ONE sense pleasure, meets death. Human beings are attached to ALL FIVE simultaneously—how much more dangerous! The verse urges discrimination: recognize sense-pleasures as traps. This doesn't mean harsh renunciation but intelligent  detachment—enjoy senses without addiction.",
+    theme: 'discrimination'
+  },
+
+  // More SELF verses
+  {
+    number: 232,
+    sanskrit: "सर्वात्मना विलोकनीया तत्त्वं जिज्ञासुना आत्मा। न देहो न प्राणाः न मनो न बुद्धिः किन्तु सच्चिदानन्दरूपः॥",
+    transliteration: "sarvātmanā vilokanīyā tattvaṁ jijñāsunā ātmā | na deho na prāṇāḥ na mano na buddhiḥ kintu saccidānandarūpaḥ ||",
+    translation: "The seeker of truth should investigate the Self with one-pointed attention. It is not the body, not the vital airs, not the mind, not the intellect—but of the nature of Existence-Consciousness-Bliss.",
+    commentary: "This verse gives both method (one-pointed investigation) and result (what the Self is and isn't). Method: 'Sarvatmana vilokanya' (should be seen with complete attention/one-pointedness). Half-hearted inquiry doesn't work. Result: systematic negation of false identifications—not body, not prana, not mind, not intellect—followed by positive affirmation: Sat-Chit-Ananda-rupa (of the nature of Existence-Consciousness-Bliss). This tri-fold description points to your essential nature—you ARE, you are AWARE of being, and your nature is fullness/bliss (not lacking anything).",
+    theme: 'self'
+  },
+  {
+    number: 388,
+    sanskrit: "आत्मैवेदं जगत्सर्वं आत्मा हि परमार्थतः। तथा च दर्शितं सर्वं आत्मत्वेन हि शास्त्रतः॥",
+    transliteration: "ātmaiveda jagatsarvaṁ ātmā hi paramārthataḥ | tathā ca darśitaṁ sarvaṁ ātmatvena hi śāstrataḥ ||",
+    translation: "The Self alone is this entire universe; the Self alone is the ultimate reality. Thus, the scriptures reveal everything as being of the nature of the Self.",
+    commentary: "This verse affirms the non-dual truth: Atman IS everything. Not 'Atman is in everything' or 'Atman created everything,' but Atman ALONE is everything. Paramarthata (in the ultimate reality), there is only Atman. The universe is not separate from or other than Atman—it's Atman appearing in various forms. The scriptures (shastras) consistently teach this through statements like 'Sarvam khalvidam Brahma' (All this is indeed Brahman) and 'Ekam evadvitiyam' (One alone, without a second). This is the pinnacle of Vedantic teaching—the recognition of absolute non-duality.",
+    theme: 'self'
+  },
+  {
+    number: 401,
+    sanskrit: "अहं ब्रह्मास्मि इत्येतत् सर्वशास्त्रार्थनिर्णयः। आत्मा च ब्रह्म सच्चित्तमविक्रियं निरञ्जनम्॥",
+    transliteration: "ahaṁ brahmāsmi ityetat sarvaśāstrārthanirnayaḥ | ātmā ca brahma saccittamavikr iyaṁ nirañjanam ||",
+    translation: "The definitive conclusion of all scriptures is 'I am Brahman.' The Self and Brahman are Existence-Consciousness, changeless and untainted.",
+    commentary: "'Aham Brahmasmi' (I am Brahman) is one of the four Mahavakyas (great statements) of the Upanishads. This verse declares it the 'sarva-shastra-artha-nirnaya' (the final conclusion of all scriptures). Everything in Vedanta ultimately points to this one recognition. Then it clarifies what this 'I' and 'Brahman' are: Sat-Chitta (Existence-Consciousness—here Chitta means Consciousness, not mind), Avikriya (changeless), Niranjana (untainted). This is not a statement to merely believe but a truth to be directly realized through inquiry and meditation.",
+    theme: 'self'
+  },
+
+  // More BRAHMAN verses
+  {
+    number: 393,
+    sanskrit: "सर्वं ब्रह्ममयं जगत् ब्रह्मैव केवलं शुद्धम्। न किञ्चित् भासते इह ब्रह्मणः परं न किञ्चन॥",
+    transliteration: "sarvaṁ brahmamayaṁ jagat brahmaiva kevalaṁ śuddham | na kiñcit bhāsate iha brahmaṇaḥ paraṁ na kiñcana ||",
+    translation: "The entire universe is brahman alone, pure and absolute. Nothing else appears here; there is nothing beyond Brahman.",
+    commentary: "This verse emphatically declares total non-duality. 'Sarvam brahma-mayam' (everything is made of Brahman)—not 'everything is in Brahman' but everything IS Brahman, like ornaments are gold. 'Brahmaiva kevalam' (Brahman alone exists)—'kevalam' emphasizes exclusivity; there's no second thing. 'Shuddham' (pure/absolute)—unmixed with anything else. 'Na kimchit bhasate iha' (nothing else appears here)—what appears to be the world is only Brahman. 'Brahmanah param na kimchana' (nothing beyond Brahman)—Brahman is the ultimate, the terminal point beyond which there's nothing. This is the teaching of absolute monism.",
+    theme: 'brahman'
+  },
+  {
+    number: 411,
+    sanskrit: "यत्सत्यं परमं ब्रह्म नित्यानन्दं निरञ्जनम्। तदेवाहमिति ज्ञात्वा कृतकृत्यो भवेन्नरः॥",
+    transliteration: "yatsatyaṁ paramaṁ brahma nityānandaṁ nirañjanam | tadevāhamiti jñātvā kṛtakṛtyo bhavennara ḥ ||",
+    translation: "Knowing 'I am That—the real, supreme Brahman, eternal bliss, unstained'—one becomes fulfilled, having accomplished all that needs to be done.",
+    commentary: "This verse presents both the knowledge and its result. The knowledge: recognizing identity with Brahman characterized as: (1) Satya (real/true), (2) Parama (supreme), (3) Nitya-ananda (eternal bliss), (4) Niranjana (untainted). The recognition: 'Tad eva aham' (I am That alone). The result: 'Krita-kritya' (having done what was to be done)—complete fulfillment. One who knows this has nothing left to achieve, seek, or become. All seeking ends. All action born from incompleteness ceases. This is the state of jivanmukti—liberated while living.",
+    theme: 'brahman'
+  },
+  {
+    number: 466,
+    sanskrit: "अनन्तं परमं ब्रह्म सर्वव्यापि निरञ्जनम्। एकं सत्यं परं धाम तदेवाहं इति स्थितिः॥",
+    transliteration: "anantaṁ paramaṁ brahma sarvavyāpi nirañjanam | ekaṁ satyaṁ paraṁ dhāma tadevāhaṁ iti sthitiḥ ||",
+    translation: "Infinite, supreme Brahman, all-pervading, unstained, one, real, the supreme abode—abiding in the understanding 'I am That alone.'",
+    commentary: "This verse piles up descriptions of Brahman then declares identity with it. Brahman is: (1) Ananta (infinite, unlimited), (2) Parama (supreme), (3) Sarva-vyapi (all-pervading), (4) Niranjana (unstained), (5) Eka (one without second), (6) Satya (real), (7) Param-dhama (supreme abode/goal). The verse culminates in 'Tad eva aham iti sthiti' (abiding in the conviction 'I am That alone'). 'Sthiti' (abiding/establishment) indicates this isn't momentary intellectual understanding but stable realization. This is sahaja-samadhi—natural absorption in the Self.",
+    theme: 'brahman'
+  },
+  {
+    number: 393,
+    sanskrit: "यत्सत्यं यत्परं ब्रह्म यत्पूर्णं यदव्ययम्। तदेव आत्मा सर्वस्य सर्वमेतत् तदात्मकम्॥",
+    transliteration: "yatsatyaṁ yatparaṁ brahma yatpūrṇaṁ yadavyayam | tadeva ātmā sarvasya sarvametat tadātmakam ||",
+    translation: "That which is real, which is supreme Brahman, which is full, which is imperishable—that alone is the Self of all. All this is of the nature of That.",
+    commentary: "This verse provides a comprehensive description of Brahman and its relationship to everything: (1) Yat-satya (which is real)—the only unchanging reality. (2) Yat-param (which is supreme)—highest, unsurpassed. (3) Yat-purna (which is full/complete)—lacking nothing, infinite. (4) Yad-avyaya (which is imperishable)—never destroyed or diminished. Then comes the identity: 'Tad eva atma sarvasya' (That alone is the Self of all beings)—the one Consciousness in all. Finally: 'Sarvam etat tad-atmakam' (all this is of the nature of That)—everything is essentially Brahman appearing in various forms. This verse moves from transcendent description to immanent realization—Brahman is not apart from the world but is its very essence.",
+    theme: 'brahman',
+    practicalApplication: "Contemplate each descriptor: Brahman is the only real, the supreme, the complete, the indestructible. Then recognize: 'I am That. The Self of all beings is my Self. Everything I see is That appearing as this.' Let this shift from concept to recognition through repeated contemplation."
+  },
+  {
+    number: 388,
+    sanskrit: "सर्वमेतद् ब्रह्मैव च आत्मैव सर्वम्। नान्यदस्ति किञ्चित् यत् न ब्रह्मात्मकं भवेत्॥",
+    transliteration: "sarvametad brahmaiva ca ātmaiva sarvam | nānyadasti kiñcit yat na brahmātmakaṁ bhavet ||",
+    translation: "All this is Brahman alone, and the Self alone is all. There is nothing whatsoever that is not of the nature of Brahman.",
+    commentary: "This verse makes the most comprehensive non-dual statement: (1) 'Sarvam etat Brahmaiva' (all this is Brahman alone)—everything you see, hear, think, feel is Brahman appearing in various forms. (2) 'Atmaiva sarvam' (the Self alone is all)—your Self and the Self of all beings is one and the same, appearing as many. (3) 'Na anyat asti kimchit' (nothing whatsoever exists) that is 'na Brahmatmakam' (not of the nature of Brahman). This is the most absolute statement of non-duality—not 'Brahman and the world' but 'Brahman alone, appearing AS the world.' When this shifts from concept to lived reality, the sense of separation from anything dissolves completely.",
+    theme: 'brahman',
+    practicalApplication: "Practice this ultimate vision: wherever you look, whatever you experience, recognize 'This is Brahman. I am Brahman. All is Brahman alone.' Start with meditation, extend to daily life. When this becomes natural and constant, you've arrived at sahaja-samadhi—the natural state of the jnani."
+  },
+  {
+    number: 399,
+    sanskrit: "ब्रह्म सत्यम् ज्ञानम् अनन्तम्। विज्ञाय यत् सर्वं भवति ज्ञातम् एव अतः॥",
+    transliteration: "brahma satyam jñānam anantam | vijñāya yat sarvaṁ bhavati jñātam eva ataḥ ||",
+    translation: "Brahman is truth, knowledge, infinite. Knowing which, everything becomes known indeed.",
+    commentary: "This verse offers the famous Taittiriya Upanishad definition of Brahman: (1) Satyam (truth/reality)—not changing, not dependent. (2) Jnanam (knowledge/consciousness)—not inert like matter but aware. (3) Anantam (infinite)—unlimited in all dimensions. These three together point to Brahman's nature. The second line presents the promise: knowing Brahman, everything is known. How? Because Brahman is the substratum of all—just as knowing gold means knowing all gold ornaments, knowing Brahman means knowing the essence of all names and forms. This isn't omniscience of details but knowledge of the fundamental truth underlying all appearances.",
+    theme: 'brahman',
+    practicalApplication: "Meditate on Brahman as sat-jnana-ananta (existence-consciousness-infinity). Not as three separate things but one reality described three ways. You don't have to know every fact; know the one fact—'I am Brahman, existence-consciousness-infinity.' In that knowing, the essence of everything is known."
+  },
+  {
+    number: 401,
+    sanskrit: "अहं ब्रह्मास्मि इति एषा महावाक्यं निर्णयः। सर्वशास्त्रसिद्धान्तः सर्ववेदान्तनिर्णयः॥",
+    transliteration: "ahaṁ brahmāsmi iti eṣā mahāvākyaṁ nirṇayaḥ | sarvaśāstrasiddhāntaḥ sarvavedāntanirṇayaḥ ||",
+    translation: "'I am Brahman'—this is the great statement, the definitive conclusion. This is the essence of all scriptures, the definitive conclusion of all Vedanta.",
+    commentary: "This verse presents the mahavakya (great statement) 'Aham Brahmasmi' (I am Brahman) as the culmination of all spiritual teaching. It's described as: (1) Mahavakya—one of the four great Upanishadic statements of identity. (2) Nirnaya (definitive conclusion)—not speculation but settled truth. (3) Sarva-shastra-siddhanta (essence of all scriptures)—all spiritual texts ultimately point here. (4) Sarva-vedanta-nirnaya (definitive conclusion of all Vedanta)—this is where all inquiry ends. This isn't a statement to believe but to realize—to shift from 'understanding it' to 'being it.' When 'I am Brahman' becomes as self-evident as 'I exist,' realization is complete.",
+    theme: 'brahman',
+    practicalApplication: "Don't just repeat 'Aham Brahmasmi' mechanically. Sit with it contemplatively: 'I (the consciousness I am, not the body-mind) am (not will become, but already am) Brahman (the infinite, eternal, blissful reality).' Let this sink from head to heart. When it becomes your lived reality, all seeking ends."
+  },
+
+  // More MAYA verses
+  {
+    number: 121,
+    sanskrit: "अविद्यावश्यात् आत्मा बध्यते इति कल्पना। विद्यया तु विमुच्यते इति शास्त्रविनिश्चयः॥",
+    transliteration: "avidyāvaśyāt ātmā badhyate iti kalpanā | vidyayā tu vimucyate iti śāstraviniścayaḥ ||",
+    translation: "It is imagined that the Self is bound by ignorance; the definitive teaching of scripture is that it is freed by knowledge.",
+    commentary: "This verse clarifies the paradox of bondage and liberation. Bondage itself is kalpana (imagination)—the Self is never actually bound, but under avidya's influence, bondage is imagined/superimposed. This is like imagining a rope is a snake—the rope was never a snake, but fear arose from wrong perception. Liberation (vimukti) happens through vidya (knowledge), not through actual transformation. The rope doesn't become free from snake-hood; the misperception is corrected. Similarly, you don't BECOME free; you recognize you always WERE free. This is the definitive scriptural teaching (shastra-vinishchaya).",
+    theme: 'maya'
+  },
+  {
+    number: 143,
+    sanskrit: "माया न सत् न असत् इति स्यात् उभयात्मिका न वा। न च भेदाभेदरूपा च सा त्रिविधा न लक्ष्यते॥",
+    transliteration: "māyā na sat na asat iti syāt ubhayātmikā na vā | na ca bhedābhedarūpā ca sā trividhā na lakṣyate ||",
+    translation: "Maya is neither real nor unreal, nor both, nor different nor non-different. It cannot be characterized in any of these three ways.",
+    commentary: "This verse presents Maya's unique ontological status. Using the principle of excluded middle and included middle, it shows Maya is: (1) Not sat (real like Brahman), (2) Not asat (completely unreal like sky-flower), (3) Not both (contradictory), (4) Not bheda (different from Brahman), (5) Not abheda (non-different/identical to Brahman). This triple negation (tri-vidha na lakshyate) points to Maya's inexplicability (anirvachaniyata). It's a unique category—mithya (dependent reality)—that defies standard logical categories. This is not a failure of analysis but pointing to something beyond conceptual framework.",
+    theme: 'maya'
+  },
+  {
+    number: 154,
+    sanskrit: "यथा रज्जुसर्पः भ्रान्त्या स्यात् तथा जगत्प्रपञ्चः। रज्ज्वा ज्ञाते रज्जुः एव नासर्पः॥",
+    transliteration: "yathā rajjusarpaḥ bhrāntyā syāt tathā jagatprapañcaḥ | rajjvā jñāte rajjuḥ eva nāsarpaḥ ||",
+    translation: "Just as a snake appears through delusion where there's only a rope, so does the world-appearance. When the rope is known, only rope remains, no snake.",
+    commentary: "The famous rope-snake analogy (rajju-sarpa) explained: In dim light, a rope is mistaken for a snake, causing fear and reactions. But when light is brought (knowledge), the snake is seen to have never existed—only rope always was. Similarly, through avidya (ignorance), Brahman is misperceived as the world of multiplicity. When vidya (knowledge) dawns, the world is seen to have never existed as separate from Brahman—only Brahman always was. The world-appearance doesn't vanish (you still see rope), but its independent reality is negated. This is the key to understanding Maya.",
+    theme: 'maya'
+  },
+  {
+    number: 162,
+    sanskrit: "माययावृतं ज्ञानं तेन मुह्यति दुर्बुधिः। स्वप्ने यथा जागरिते वा दृष्टं तथा जगत्॥",
+    transliteration: "māyayāvṛtaṁ jñānaṁ tena muhyati durbudhiḥ | svapne yathā jāgarite vā dṛṣṭaṁ tathā jagat ||",
+    translation: "Knowledge is veiled by Maya; thereby the deluded one is confused. As seen in dream or waking, so is this world.",
+    commentary: "This verse explains the mechanism of delusion: jnana (Self-knowledge) is avrita (veiled) by Maya, causing muhy ati (confusion/delusion). This doesn't mean knowledge is destroyed but hidden, like the sun behind clouds. The result: we take the unreal world as real. The verse gives the analogy: just as dream experiences seem real during the dream but are recognized as unreal upon waking, the waking world seems real now but will be recognized as appearance upon Self-knowledge. The implication: neither dream nor waking has ultimate reality—both are Maya's play. Only the witness-consciousness (you) is real in all states.",
+    theme: 'maya',
+    practicalApplication: "When the world seems overwhelmingly real and solid, remember: dreams also seemed real while you were in them. This world, though more stable than dreams, is also an appearance in consciousness. This doesn't make it unimportant—navigate it skillfully—but don't mistake it for absolute reality."
+  },
+  {
+    number: 174,
+    sanskrit: "न च माया हेतुमती भवति कस्यचित्। मायैव सर्वं विश्वं विचित्रं प्रसाधितम्॥",
+    transliteration: "na ca māyā hetumatī bhavati kasyacit | māyaiva sarvaṁ viśvaṁ vicitraṁ prasādhitam ||",
+    translation: "Maya has no cause for anyone. By Maya alone has this entire variegated universe been manifested.",
+    commentary: "This verse addresses the question: what causes Maya? Answer: nothing—'na maya hetumati' (Maya has no cause). Maya itself is the causal power (shakti) of Brahman, itself uncaused. Trying to find Maya's cause leads to infinite regress. Instead, recognize: 'Mayaiva sarvam vishvam vichitram prasadhitam' (by Maya alone has this entire variegated universe been manifested). Maya is the unexplainable power (anirvachaniya-shakti) by which the partless Brahman appears as the universe of infinite parts and forms. Accept this as the ultimate mystery—not to be 'solved' but to be seen through.",
+    theme: 'maya',
+    practicalApplication: "When the mind asks 'Why does Maya exist? What caused it?', recognize these questions arise within Maya's domain. Like asking 'Why do dreams exist?' from within a dream. Instead of solving the mystery intellectually, transcend it experientially by waking up to your true nature as Brahman, beyond Maya."
+  },
+
+  // More INQUIRY verses
+  {
+    number: 181,
+    sanskrit: "स्वात्मानं प्रति बोधश्च सर्वदुःखक्षयः फलम्। अतः स्वात्मानुसन्धानं कार्यं प्रयत्नतः सदा॥",
+    transliteration: "svātmānaṁ prati bodhaśca sarvaduḥkhakṣayaḥ phalam | ataḥ svātmānusandhānaṁ kāryaṁ prayatnataḥ sadā ||",
+    translation: "Knowledge of the Self results in the destruction of all sorrow. Therefore, constant inquiry into the Self should be practiced with effort.",
+    commentary: "This verse presents both the promise and the prescription. The promise: sva-atman-bodha (Self-knowledge) leads to sarva-duhkha-kshaya (destruction of ALL sorrow). Not just some sorrows or temporary relief, but complete and permanent end to all suffering. The prescription: therefore (atah), practice sva-atma-anusandhana (inquiry into/contemplation of the Self) with prayatna (effort) and sada (constantly). Self-inquiry isn't passive intellectual wondering but active, sustained investigation. The effort is needed not because the Self is difficult to find but because the mind's outward tendencies are strong. Regular practice turns the mind inward until Self-recognition becomes natural.",
+    theme: 'inquiry'
+  },
+  {
+    number: 192,
+    sanskrit: "आत्मैव इदं सर्वं ब्रह्म तत्त्वमसि इत्यादयः। श्रुतयः प्रतिपादन्ति यस्मात् तस्मात् विचारयेत्॥",
+    transliteration: "ātmaiva idaṁ sarvaṁ brahma tattvamasi ityādayaḥ | śrutayaḥ pratipādanti yasmāt tasmāt vicārayet ||",
+    translation: "Since the Upanishads declare 'The Self alone is all this,' 'Thou art That,' and similar statements, therefore one should inquire into their meaning.",
+    commentary: "This verse bases inquiry on scriptural authority. The Upanishads make declarations like: (1) 'Atma eva idam sarvam' (The Self alone is all this), (2) 'Tattvamasi' (Thou art That), (3) 'Aham Brahmasmi' (I am Brahman), (4) 'Prajnanam Brahma' (Consciousness is Brahman). These are not commands or suggestions but statements of fact. Since the Upanishads (shrutis) declare these truths, one should 'vicharayet' (inquire) into their meaning. Inquiry means: How is this true? What is the Self? What is 'That'? What is Brahman? This inquiry transforms scriptural statements from external authority to internal realization.",
+    theme: 'inquiry'
+  },
+  {
+    number: 371,
+    sanskrit: "न निष्ठा तर्कशास्त्रेण नापि सङ्ख्यादिदर्शने। वेदान्तेऽपि न केनापि केवलं आत्मदर्शनात्॥",
+    transliteration: "na niṣṭhā tarkaśāstreṇa nāpi saṅkhyādidarśane | vedānte'pi na kenāpi kevalaṁ ātmadarśanāt ||",
+    translation: "Firm establishment does not come from logic, nor from Sankhya philosophy, nor even from Vedanta study alone—only from direct perception of the Self.",
+    commentary: "This important verse distinguishes intellectual study from direct realization. Nishtha (firm establishment in truth) doesn't come from: (1) Tarka-shastra (logic/reasoning)—helpful but insufficient, (2) Sankhya and other philosophies—conceptual frameworks that don't liberate, (3) Even Vedanta study alone—without practice, it remains intellectual. What brings nishtha? 'Kevalam atma-darshanat' (ONLY from direct perception of the Self). Atma-darshana is aparoksha-anubhava (immediate experience), not paroksha-jnana (indirect knowledge). Study prepares, logic clarifies, but only direct seeing establishes. This verse urges moving from theory to practice to realization.",
+    theme: 'inquiry'
+  },
+  {
+    number: 210,
+    sanskrit: "अविद्यां परमां मृत्युम् विद्यां च अमृतत्वं विदुः। इत्येतद् ज्ञात्वा विचारः कर्तव्यः आत्मनः सदा॥",
+    transliteration: "avidyāṁ paramāṁ mṛtyum vidyāṁ ca amṛtatvaṁ viduḥ | ityetad jñātvā vicāraḥ kartavyaḥ ātmanaḥ sadā ||",
+    translation: "Ignorance is supreme death; knowledge is immortality. Knowing this, inquiry into the Self should be practiced always.",
+    commentary: "This verse uses the starkest possible terms to emphasize the importance of inquiry: avidya (ignorance) is param mrityu (supreme death)—not physical death but spiritual death, the continued cycle of suffering. Vidya (knowledge) is amritatva (immortality)—not endless time but timelessness, freedom from the cycle. Understanding these stakes, vichara (inquiry) into atman (Self) should be practiced 'sada' (always/constantly). Not occasionally when convenient, but as the primary life focus. This isn't obsessive thinking but maintaining the orientation 'Who am I?' as background awareness even during activities. The verse creates urgency—every moment in ignorance is wasted; every moment of inquiry moves toward liberation.",
+    theme: 'inquiry',
+    practicalApplication: "Recognize the high stakes: ignorance perpetuates suffering indefinitely; knowledge ends it completely. Let this urgency motivate daily practice. Dedicate specific time to formal inquiry, but also carry the question 'Who am I?' into daily activities. Make Self-knowledge your life's priority, not a hobby."
+  },
+  {
+    number: 243,
+    sanskrit: "आत्मानुसन्धानं कुर्यात् विवेकेन मुमुक्षुः। अयं अहमिति ज्ञात्वा मुच्यते सर्वबन्धनात्॥",
+    transliteration: "ātmānusandhānaṁ kuryāt vivekena mumukṣuḥ | ayaṁ ahamiti jñātvā mucyate sarvabandhana त् ||",
+    translation: "The seeker of liberation should practice inquiry into the Self with discrimination. Knowing 'This I am,' one is freed from all bondage.",
+    commentary: "This verse presents both method and result. Method: The mumukshu (seeker) should practice atma-anusandhana (inquiry into/contemplation of Self) with viveka (discrimination). This discrimination involves separating Self from not-Self, real from unreal, eternal from temporary. It's not vague wondering but precise investigation. Result: Knowing 'ayam aham' (This I am)—direct recognition, not intellectual concept—one is 'muchyate sarva-bandhanat' (freed from ALL bondage). Not some bondage but all—because all bondage is rooted in the one misunderstanding 'I am limited/bound,' which this knowledge destroys. Liberation is immediate upon knowledge, not gradual.",
+    theme: 'inquiry',
+    practicalApplication: "Practice inquiry with discrimination: 'Am I the body? No, because I'm aware of the body. Am I thoughts? No, I'm aware of thoughts. Am I the sense of being a person? No, that's also witnessed. What am I? The witnessing awareness itself.' When recognition dawns—'I am THIS (pure awareness)'—freedom is instant."
+  },
+
+  // More MEDITATION verses
+  {
+    number: 344,
+    sanskrit: "मनोनिग्रहमाश्रित्य ध्यायेत् ब्रह्मैव केवलम्। एवं ध्यानपरो नित्यं तत्त्वमात्मनि पश्यति॥",
+    transliteration: "manonigrahamāśritya dhyāyet brahmaiva kevalam | evaṁ dhyānaparo nityaṁ tattvamātmani paśyati ||",
+    translation: "Restraining the mind, meditate on Brahman alone. One who is constantly devoted to such meditation perceives the truth in oneself.",
+    commentary: "This verse gives the meditation instruction: (1) Mano-nigraha (mental restraint)—the mind must be controlled, turned away from objects. (2) Dhyayet Brahma eva kevalam (meditate on Brahman alone)—not on forms, concepts, or even positive attributes, but on the formless Absolute. (3) Evam dhyana-para nityam (constantly devoted to such meditation)—not sporadic but regular practice. The result: 'Tattvam atmani pashyati' (sees/perceives the truth in the Self). Through sustained meditation on Brahman, one directly perceives 'I am That.' Meditation transitions from effort to effortless being, from practice to realization.",
+    theme: 'meditation'
+  },
+  {
+    number: 352,
+    sanskrit: "ओं इत्येकाक्षरं ब्रह्म व्याहरन् मामनुस्मरन्। यः प्रयाति त्यजन्देहं स याति परमां गतिम्॥",
+    transliteration: "oṁ ityekākṣaraṁ brahma vyāharan māmanusmaraṁ | yaḥ prayāti tyajandeh aṁ sa yāti paramāṁ gatim ||",
+    translation: "Uttering OM, the one-syllable Brahman, remembering Me, one who departs leaving the body attains the supreme goal.",
+    commentary: "This verse prescribes OM-meditation (pranava-upasana). OM is called 'ekakshara-brahma' (the one-syllable Brahman)—the sonic representation of the Absolute. 'Vyaharan' (uttering) can be gross (aloud), subtle (mental), or transcendent (just being the meaning). 'Mam anusmaran' (remembering Me) means keeping attention on Brahman. One who practices this throughout life and maintains it even at death 'paramam gatim yati' (attains the supreme goal). This echoes Bhagavad Gita 8.13. However, the highest teaching says: one who KNOWS Brahman doesn't go anywhere—he/she IS Brahman. Going to supreme goal is for the worshipper; the knower has no goal to reach.",
+    theme: 'meditation'
+  },
+  {
+    number: 359,
+    sanskrit: "योगी समाहितः सम्यक् आत्मानमवलोकयेत्। स्वस्थानमनुसन्धत्ते इति भवति निर्वृतः॥",
+    transliteration: "yogī samāhitaḥ samyak ātmānamāvalōkayet | svasthānamanusan dhatte iti bhavati nirvṛtaḥ ||",
+    translation: "The yogi, with a concentrated mind, should properly contemplate the Self. Thus established in one's true nature, one becomes peaceful.",
+    commentary: "This verse describes the yogic method for Self-realization: The yogi (practitioner), samahita (with concentrated mind—through practice of dharana/dhyana), samyak (properly/correctly) avalokyet (should observe/contemplate) atmanam (the Self). Through this practice, one 'svasthanam anusandhatte' (becomes established in one's true nature—svastha literally means 'abiding in one's own nature'). The result: nirvrita (peaceful, satisfied, complete). This peace isn't produced by meditation; it's your nature recognized through meditation. The formula: concentration leads to contemplation leads to realization leads to natural peace.",
+    theme: 'meditation'
+  },
+  {
+    number: 372,
+    sanskrit: "ध्यानं हि निर्विषयं यत्र मनः सदा स्थितम्। तत्र ब्रह्मणि सन्लीनं भवति सुखमश्नुते॥",
+    transliteration: "dhyānaṁ hi nirviṣayaṁ yatra manaḥ sadā sthitam | tatra brahmaṇi sanlīnaṁ bhavati sukhamaśnute ||",
+    translation: "Meditation is that where the mind, free from objects, is constantly established. There, absorbed in Brahman, one experiences bliss.",
+    commentary: "This defines true dhyana (meditation): it's the state where the mind is (1) Nirvisaya (free from objects—not thinking about things), (2) Sada sthita (constantly established—not wavering). In this state, the mind becomes 'sanlina' (absorbed/dissolved) in Brahman. The usual subject-object duality collapses—there's no meditator meditating on Brahman, but just Brahman aware of itself. The result: sukham ashnute (experiences bliss). Not the pleasure-bliss of objects but ananda—the innate fullness of being. This bliss is not achieved; it's revealed when mental agitation ceases.",
+    theme: 'meditation'
+  },
+  {
+    number: 383,
+    sanskrit: "समाधिना आत्मतत्त्वं यथावत् अवगम्यते। समाधानं हि चित्तस्य सत्येऽव्यभिचारि यत्॥",
+    transliteration: "samādhinā ātmatattvaṁ yathāvat avagamyate | samādhānaṁ hi cittasya satye'vyabhicāri yat ||",
+    translation: "Through samadhi, the truth of the Self is understood as it truly is. Samadhi is the unwavering absorption of the mind in the Real.",
+    commentary: "This verse defines samadhi and its result. Samadhi is described as 'samadhanam' (steadiness/absorption) of chitta (mind) in satya (the Real/Truth) that is 'avyabhichari' (unwavering, not wandering). This is not forced concentration but natural absorption when the mind recognizes its source. Through this samadhi, atma-tattva (the truth of Self) is known 'yathavat' (as it truly is)—not conceptually but directly, immediately. In lower samadhi (savikalpa), there's still meditator-meditation-meditated duality. In highest samadhi (nirvikalpa), even this duality dissolves—only pure consciousness remains, aware of itself. This culminates in sahaja-samadhi (natural abidance) where the jnani lives in the world but remains established in the Self.",
+    theme: 'meditation',
+    practicalApplication: "Progress from concentration (dharana) to meditation (dhyana) to absorption (samadhi): Start by focusing attention (on breath, mantra, or the question 'Who am I?'). As focus deepens, let it become absorption—not 'you' meditating but simply being. When completely absorbed, the sense of separate meditator dissolves. That dissolution reveals the Self. Practice daily, moving from effortful focus to effortless being."
+  },
+  {
+    number: 399,
+    sanskrit: "ध्यानं निर्विषयं यत्र चित्तं ब्रह्मणि लीयते। तत्र आनन्दो महान् भवति अखण्डः परमः शिवः॥",
+    transliteration: "dhyānaṁ nirviṣayaṁ yatra cittaṁ brahmaṇi līyate | tatra ānando mahān bhavati akhaṇḍaḥ paramaḥ śivaḥ ||",
+    translation: "Meditation where the mind, free from objects, dissolves in Brahman—there arises great bliss, unbroken, supreme, auspicious.",
+    commentary: "This verse describes the culmination of meditation. When the mind becomes 'nirvisaya' (free from objects—not thinking about anything) and 'liyate' (dissolves/merges) in Brahman, then 'ananda mahan' (great bliss) arises, characterized as: (1) Akhanda (unbroken, continuous)—not coming and going like pleasure, (2) Parama (supreme)—unsurpassed, (3) Shiva (auspicious, beneficial, the ultimate good). This bliss is not produced by meditation; it's revealed when mental agitation ceases. It's your nature recognized. The mind's dissolution doesn't mean unconsciousness but the cessation of mind as a separate entity—only consciousness remains, blissfully aware of itself.",
+    theme: 'meditation',
+    practicalApplication: "In deep meditation when thoughts naturally subside, don't immediately seek more thoughts. Rest in that thoughtless awareness. Notice the natural peace, the subtle bliss of simply being. That's a glimpse of your nature. Practice extending this: from moments to minutes to the background of daily life. This is meditation maturing into realization."
+  },
+
+  // More LIBERATION verses
+  {
+    number: 435,
+    sanskrit: "सर्वात्मभावः परमो मोक्षः सर्वेषां भूतानां संसारः। यः पश्यति सर्वं ब्रह्मैव स मुक्तः॥",
+    transliteration: "sarvātmabhāvaḥ paramo mokṣaḥ sarveṣāṁ bhūtānāṁ saṁsāraḥ | yaḥ paśyati sarvaṁ brahmaiva sa muktaḥ ||",
+    translation: "The supreme liberation is the vision of all beings as the Self. One who sees everything as Brahman alone is liberated.",
+    commentary: "Liberation is defined here as sarvatma-bhava (the vision/experience of all as the Self). This is not imagination or positive thinking but actual perception—the jnani doesn't try to see Brahman in everything; he/she CAN'T see anything else. Just as one who knows gold sees only gold in all ornaments (not ring-ness or necklace-ness but gold-ness), the jnani sees only Brahman in all forms. 'Yah pashyati sarvam Brahmaiva' (one who sees all this as Brahman alone) is 'muktah' (liberated). This is jivanmukti—freedom while living, characterized by universal vision.",
+    theme: 'liberation'
+  },
+  {
+    number: 463,
+    sanskrit: "प्राप्तस्य मोक्षः नास्ति नाप्राप्तस्य बन्धनम्। तथापि अविद्यया बद्धः मुक्तः ज्ञानेन केवलम्॥",
+    transliteration: "prāptasya mokṣaḥ nāsti nāprāptasya bandhanam | tathāpi avidyayā baddhaḥ muktaḥ jñānena kevalam ||",
+    translation: "For the Self, there is no liberation to be attained nor bondage already present. Yet, bound by ignorance, one is freed by knowledge alone.",
+    commentary: "This paradoxical verse addresses the highest teaching: from the absolute perspective (paramarthika), the Self is ever-free—there's no bondage to remove, no liberation to attain. It's like asking 'When did space become free from pots?' Space was never bound by pots; pots appeared in space but didn't limit it. Similarly, Self was never bound. However, from the practical perspective (vyavaharika), under the spell of avidya (ignorance), bondage appears real and liberation is necessary. How is one freed? 'Jnanena kevalam' (by knowledge ALONE). Not action, not devotion in themselves, but knowledge—the direct recognition 'I am the ever-free Self' removes the illusion of bondage.",
+    theme: 'liberation'
+  },
+  {
+    number: 472,
+    sanskrit: "न कर्मणा न प्रजया धनेन त्यागेनैके अमृतत्वमानशुः। यः सर्वगः स भगवान् स मोक्षः॥",
+    transliteration: "na karmaṇā na prajayā dhanena tyāgenaike amṛtatvamānaśuḥ | yaḥ sarvagaḥ sa bhagavān sa mokṣaḥ ||",
+    translation: "Not by action, nor progeny, nor wealth, but by renunciation alone do some attain immortality. That all-pervading one is God, and that is liberation.",
+    commentary: "This famous Upanishadic verse (from Kaivalya Upanishad) clarifies what brings liberation. It's not: (1) Karma (ritual/action), (2) Praja (progeny/family), (3) Dhana (wealth/possessions). These belong to worldly dharma. What brings amritatva (immortality/liberation)? 'Tyagenaike' (by renunciation/abandonment alone). But what is renounced? Not external possessions primarily but internal attachment—tyaga of the ego-notion, tyaga of doership, tyaga of identification with body-mind. The verse then identifies what is attained: that sarvaga (all-pervading reality) is bhagavan (God) and that IS moksha (liberation itself). Liberation isn't going somewhere; it's being what you already are—the infinite.",
+    theme: 'liberation'
+  },
+  {
+    number: 456,
+    sanskrit: "ज्ञानात् मुक्तिः न कर्मणः कर्म विरुद्धम् अविद्यया। तस्मात् आत्मविचारेण भवेत् मोक्षाय यत्नवान्॥",
+    transliteration: "jñānāt muktiḥ na karmaṇaḥ karma viruddham avidyayā | tasmāt ātmavicāreṇa bhavet mokṣāya yatnavān ||",
+    translation: "Liberation comes from knowledge, not from action. Action is contrary to ignorance. Therefore, one should strive for liberation through self-inquiry.",
+    commentary: "This verse clarifies the path to liberation with surgical precision: (1) 'Jnanat muktih' (liberation from knowledge)—only Self-knowledge liberates. (2) 'Na karmanah' (not from action)—rituals, charities, austerities don't directly liberate because they operate in duality (doer-doing-done). (3) 'Karma viruddham avidyaya' (action is incompatible with ignorance)—action can purify mind and reduce ego, preparing for knowledge, but can't itself destroy ignorance. Only knowledge destroys ignorance, like light destroys darkness. (4) Therefore ('tasmat'), one should be 'yatnavaan' (effortful/diligent) for moksha through 'atma-vichara' (Self-inquiry). This is the direct path. Actions support the path but aren't the path itself.",
+    theme: 'liberation',
+    practicalApplication: "Engage in karma yoga (selfless action) to purify the mind and reduce ego—this prepares the ground. But for actual liberation, turn to inquiry: 'Who am I?' Don't expect good deeds alone to liberate; they create merit but not freedom. Freedom comes from knowing your true nature through investigation."
+  },
+  {
+    number: 469,
+    sanskrit: "मोक्षस्य न हि वासो न देशः न कालोऽस्ति। स्वात्मनि एव संस्थितिः मोक्षः उच्यते बुधैः॥",
+    transliteration: "mokṣasya na hi vāso na deśaḥ na kālo'sti | svātmani eva saṁsthitiḥ mokṣaḥ ucyate budhaiḥ ||",
+    translation: "Liberation has no location, no place, no time. The wise declare that abiding in one's own Self alone is liberation.",
+    commentary: "This verse demolishes the notion that moksha is somewhere else or sometime later: (1) 'Na vasa' (no dwelling/location)—moksha isn't in a heavenly realm. (2) 'Na desha' (no place)—it's not geographical. (3) 'Na kala' (no time)—it's not in the future; it's not after death. Then what is it? 'Sva-atmani eva samsthiti' (abiding in one's own Self alone). Moksha is neither attained nor gone to—it's recognized as your ever-present nature. You ARE free; you just don't know it. Liberation is the shift from believing 'I am bound and will be free someday/somewhere' to recognizing 'I am always-already free here-now.' This makes moksha available immediately, not postponed.",
+    theme: 'liberation',
+    practicalApplication: "Stop seeking liberation in future or elsewhere. It's not after death, not in another realm. Right now, in this moment, recognize: 'I am the free awareness, not the bound body-mind.' This recognition IS liberation. It doesn't require going anywhere or waiting for anything. Practice shifting identity from the character (bound) to awareness (free), until it becomes natural."
+  },
+  {
+    number: 475,
+    sanskrit: "यदा न ज्ञायते किञ्चित् तदा ज्ञानं परं भवेत्। ज्ञेयाभावे हि ज्ञानस्य ज्ञातृत्वं न विद्यते॥",
+    transliteration: "yadā na jñāyate kiñcit tadā jñānaṁ paraṁ bhavet | jñeyābhāve hi jñānasya jñātṛtvaṁ na vidyate ||",
+    translation: "When nothing is known as object, then there is supreme knowledge. In the absence of the knowable, there is no knower-hood of knowledge.",
+    commentary: "This profound verse points to the highest knowledge: When there is no object known (kimchit na jnayate), then there is param jnana (supreme knowledge). This isn't ignorance but the knowledge in which knower-knowing-known collapse into one. In relative knowledge, there's a subject (knower), process (knowing), and object (known). But Brahman cannot be 'known' as an object because it's the very subject, the knower itself. When this is recognized, the triad dissolves: in the absence of knowable (jneya-abhave), there's no separate knower-hood (jnatritva). Only pure knowing remains—not 'someone knowing something' but just knowing, just consciousness. This is the knowledge that liberates because it ends the fundamental subject-object split.",
+    theme: 'liberation',
+    practicalApplication: "In deep meditation or moments of profound stillness, notice: when there's no object of awareness (no thought, no sensation), awareness doesn't disappear—it remains as pure presence. That objectless awareness is your nature. It's not 'you' being aware 'of' something but just awareness itself. Rest there. That's the glimpse of supreme knowledge."
+  },
+  {
+    number: 480,
+    sanskrit: "स्वानुभूतिः एव ज्ञानम् अपरोक्षं परं पदम्। नान्यत् ब्रह्म विजानीयात् स्वात्मानं सर्ववस्तुनि॥",
+    transliteration: "svānubhūtiḥ eva jñānam aparokṣaṁ paraṁ padam | nānyat brahma vijānīyāt svātmānaṁ sarvavas tuni ||",
+    translation: "Direct self-experience alone is knowledge, the immediate supreme state. One should know Brahman as one's own Self in all things, not as something other.",
+    commentary: "This verse emphasizes aparoksha-jnana (immediate/direct knowledge) versus paroksha-jnana (indirect/mediate knowledge). True knowledge is sva-anubhuti (direct self-experience), not belief, inference, or understanding of concepts. It's param-pada (the supreme state) because it's unmediated—not 'I believe I am Brahman' or 'I understand the concept' but 'I AM Brahman' as immediate as 'I exist.' The verse instructs: know Brahman 'na anyat' (not as other) but as 'sva-atman' (one's own Self) in 'sarva-vastuni' (in all things). Everything is your own Self appearing in various forms. This shifts from studying Brahman as an object to being Brahman as subject.",
+    theme: 'liberation',
+    practicalApplication: "Move from indirect knowledge to direct experience. After study and reflection, close the books and turn inward: 'What am I, right now, before any thought about it?' Feel into your existence, your awareness. That immediate sense of being-awareness, before labeling it, is direct self-knowledge. Rest there repeatedly until it becomes more real than concepts."
+  },
+
+  // More JNANI verses
+  {
+    number: 507,
+    sanskrit: "जीवन्मुक्तः च यः सोऽपि विदेहमुक्तिं प्राप्नोति। देहपाते तु विदेहकैवल्यमेति सः॥",
+    transliteration: "jīvanmuktaḥ ca yaḥ so'pi videhamuktim prāpnoti | dehapāte tu videhakaivalyameti saḥ ||",
+    translation: "One who is liberated while living (jivanmukta) attains videha-mukti. Upon the fall of the body, he attains videha-kaivalya (absolute freedom).",
+    commentary: "This verse describes the journey of the jivanmukta (one liberated while still in body). During life, though liberated internally, a subtle connection to body remains due to prarabdha karma (fructifying past actions that gave this birth). This is jivanmukti. Upon death (deha-pata), even that connection ends, and the jnani attains 'videha-kaivalya' (bodiless absolute aloneness/freedom). However, from the jnani's perspective, nothing changes in death—he/she was already free. The body drops like a worn-out garment, but the Self continues unchanged. For the jnani, there's no rebirth, no going anywhere—just the dropping of the last vestige of apparent limitation.",
+    theme: 'jnani'
+  },
+  {
+    number: 517,
+    sanskrit: "न तस्य कार्यं करणं च विद्यते न तत्समश्चाभ्यधिकश्च दृश्यते। यः सर्वगः स भवति स्वतन्त्रः॥",
+    transliteration: "na tasya kāryaṁ karaṇaṁ ca vidyate na tatsamaścābhyadhikaśca dṛśyate | yaḥ sarvagaḥ sa bhavati svatantraḥ ||",
+    translation: "For him, there is nothing to be done, no instrument of action. Nothing equal to or greater than him is seen. He who is all-pervading is absolutely free.",
+    commentary: "This verse describes the jnani's state: (1) 'Na tasya karyam' (no action to be done)—the jnani may engage in action for loka-sangraha (welfare of the world), but has no personal agenda, no must-do. All sense of obligation arising from incompleteness is gone. (2) 'Karanam cha vidyate na' (no instrument needed)—the jnani doesn't depend on means for happiness; fullness is inherent. (3) 'Na tat-samah' (nothing equal)—Brahman is incomparable. (4) 'Abhyadhikah cha drishyate na' (nothing superior is seen)—Brahman is supreme. (5) 'Yah sarvagah sa bhavati svatantrah' (who is all-pervading is absolutely free)—the jnani, identified with the all-pervading Brahman, is absolutely independent, needing nothing, bound by nothing.",
+    theme: 'jnani'
+  },
+  {
+    number: 530,
+    sanskrit: "न द्वेष्टि न कुप्यति न क्रोधं कुरुते न शोचति। समदृष्टिः सर्वभूतेषु मुक्तः एव स उच्यते॥",
+    transliteration: "na dveṣṭi na kupyati na krodhaṁ kurute na śocati | samadṛṣṭiḥ sarvabhūteṣu muktaḥ eva sa ucyate ||",
+    translation: "He neither hates, nor gets agitated, nor becomes angry, nor grieves. Having equal vision toward all beings, he alone is called liberated.",
+    commentary: "This verse catalogues the jnani's emotional freedom: (1) Na dvesti (doesn't hate)—no aversion toward anyone or anything, (2) Na kupyati (doesn't get agitated)—inner calm regardless of circumstances, (3) Na krodham kurute (doesn't become angry)—anger may appear as appropriate response but without inner burning, (4) Na shochati (doesn't grieve)—understanding the eternal nature, grief over temporal changes doesn't arise. The key quality: 'samadrishti sarvabhuteshu' (equal vision toward all beings)—seeing the same Self in all, how can there be hatred, preference, or discrimination? This is not forced equanimity but natural vision. One who has this is 'muktah eva sa' (he alone is truly liberated).",
+    theme: 'jnani'
+  },
+  {
+    number: 540,
+    sanskrit: "क्व गतं केन वा नीतं कुत्र लीनमिदं जगत्। अधुनैव मया दृष्टं नास्ति किं महदद्भुतम्॥",
+    transliteration: "kva gataṁ kena vā nītaṁ kutra līnamidam jagat | adhun aiva mayā dṛṣṭaṁ nāsti kiṁ mahadadbhutam ||",
+    translation: "Where has this world gone? By whom was it taken? Where has it dissolved? Just now I saw it! Is this not a great wonder?",
+    commentary: "This beautiful verse expresses the jnani's astonishment upon realization. The world that seemed so solid and real a moment ago has 'vanished'—not that it's invisible, but its independent reality is negated. Where did it go? Who took it? Where did it dissolve? The questions have no answers because the world never truly existed as separate from Brahman. It's like asking 'Where did the snake go when the rope was seen?' The snake never was; only rope always was. Similarly, the world never was as separate entity; only Brahman always was. The verse captures the wonder (adbhuta) of this recognition—how could I have believed in it so firmly? This wonder is not confusion but marveling at Maya's power and knowledge's revelatory capacity. The jnani sees the same scenes but knows their true nature.",
     theme: 'jnani'
   }
 ]
