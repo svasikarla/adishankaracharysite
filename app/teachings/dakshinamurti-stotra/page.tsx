@@ -1,37 +1,32 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { bhajaGovindamVerses } from "@/data/bhaja-govindam"
+import { dakshinamurtiStotraVerses } from "@/data/dakshinamurti-stotra"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Slider } from "@/components/ui/slider"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, DropdownMenuSeparator } from "@/components/ui/dropdown-menu"
-import { ChevronLeftIcon, ChevronRightIcon, BookOpenIcon, LayoutListIcon, BookTextIcon, SettingsIcon, BookmarkIcon } from "lucide-react"
+import { ChevronLeftIcon, ChevronRightIcon, BookOpenIcon, LayoutListIcon, BookTextIcon, SettingsIcon, BookmarkIcon, ArrowLeftIcon } from "lucide-react"
+import Link from "next/link"
 
 type ViewMode = 'single' | 'scroll' | 'study'
 
-export default function BhajaGovindamPage() {
+export default function DakshinamurtiStotraPage() {
   const [selectedVerse, setSelectedVerse] = useState(0)
   const [viewMode, setViewMode] = useState<ViewMode>('single')
   const [fontSize, setFontSize] = useState(16)
   const [bookmarkedVerses, setBookmarkedVerses] = useState<number[]>([])
   const [isTransitioning, setIsTransitioning] = useState(false)
 
-  const currentVerse = bhajaGovindamVerses[selectedVerse]
-  const progress = ((selectedVerse + 1) / bhajaGovindamVerses.length) * 100
-
-  const categoryLabels = {
-    main: "Main Verse",
-    dvadasha: "Dvādashamanjarikā",
-    charpata: "Charpat Panjarikā"
-  }
+  const currentVerse = dakshinamurtiStotraVerses[selectedVerse]
+  const progress = ((selectedVerse + 1) / dakshinamurtiStotraVerses.length) * 100
 
   // Load preferences from localStorage
   useEffect(() => {
-    const savedFontSize = localStorage.getItem('bhaja-font-size')
-    const savedViewMode = localStorage.getItem('bhaja-view-mode')
-    const savedBookmarks = localStorage.getItem('bhaja-bookmarks')
+    const savedFontSize = localStorage.getItem('dakshinamurti-font-size')
+    const savedViewMode = localStorage.getItem('dakshinamurti-view-mode')
+    const savedBookmarks = localStorage.getItem('dakshinamurti-bookmarks')
 
     if (savedFontSize) setFontSize(parseInt(savedFontSize))
     if (savedViewMode) setViewMode(savedViewMode as ViewMode)
@@ -40,13 +35,13 @@ export default function BhajaGovindamPage() {
 
   // Save preferences to localStorage
   useEffect(() => {
-    localStorage.setItem('bhaja-font-size', fontSize.toString())
-    localStorage.setItem('bhaja-view-mode', viewMode)
-    localStorage.setItem('bhaja-bookmarks', JSON.stringify(bookmarkedVerses))
+    localStorage.setItem('dakshinamurti-font-size', fontSize.toString())
+    localStorage.setItem('dakshinamurti-view-mode', viewMode)
+    localStorage.setItem('dakshinamurti-bookmarks', JSON.stringify(bookmarkedVerses))
   }, [fontSize, viewMode, bookmarkedVerses])
 
   const nextVerse = () => {
-    if (selectedVerse < bhajaGovindamVerses.length - 1) {
+    if (selectedVerse < dakshinamurtiStotraVerses.length - 1) {
       setIsTransitioning(true)
       setTimeout(() => {
         setSelectedVerse(selectedVerse + 1)
@@ -114,18 +109,28 @@ export default function BhajaGovindamPage() {
 
   return (
     <div className="container mx-auto px-4 py-12">
+      {/* Back to Teachings Button */}
+      <div className="max-w-4xl mx-auto mb-6">
+        <Link href="/#teachings">
+          <Button variant="ghost" className="text-[#8b5d33] dark:text-[#e07c24] hover:bg-[#f7f3e9] dark:hover:bg-[#2a241e]">
+            <ArrowLeftIcon className="w-4 h-4 mr-2" />
+            Back to Teachings
+          </Button>
+        </Link>
+      </div>
+
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <Badge className="mb-4 bg-[#e07c24] text-white">Sacred Text</Badge>
+        <Badge className="mb-4 bg-[#e07c24] text-white">Sacred Hymn</Badge>
         <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#8b5d33] dark:text-[#e07c24] mb-4">
-          Bhaja Govindam
+          Dakshinamurti Stotra
         </h1>
-        <p className="font-sanskrit text-2xl text-[#e07c24] mb-4">भज गोविन्दम्</p>
+        <p className="font-sanskrit text-2xl text-[#e07c24] mb-4">दक्षिणामूर्ति स्तोत्रम्</p>
         <p className="text-lg text-[#5a4a3f] dark:text-[#d9c5a9] mb-6">
-          Also known as <span className="font-semibold">Moha Mudgara</span> (The Destroyer of Illusion)
+          Hymn to <span className="font-semibold">Lord Dakshinamurti</span> - The Silent Teacher
         </p>
         <p className="text-md text-[#5a4a3f] dark:text-[#d9c5a9] leading-relaxed max-w-3xl mx-auto">
-          A devotional hymn composed by Adi Shankaracharya that emphasizes the importance of devotion to God (bhakti) alongside knowledge (jñāna). The work consists of {bhajaGovindamVerses.length} verses that urge the seeker to focus on spiritual pursuits rather than getting lost in mere intellectual or worldly activities.
+          A profound hymn composed by Adi Shankaracharya addressed to Lord Shiva as Dakshinamurti—the ultimate guru who teaches in silence, facing south, seated under a banyan tree. These {dakshinamurtiStotraVerses.length} verses beautifully encapsulate the entire Advaita Vedanta philosophy through poetic descriptions of the nature of the Self and reality.
         </p>
       </div>
 
@@ -139,19 +144,22 @@ export default function BhajaGovindamPage() {
           </CardHeader>
           <CardContent className="space-y-4 text-[#5a4a3f] dark:text-[#d9c5a9]">
             <p>
-              <strong className="text-[#8b5d33] dark:text-[#e07c24]">Historical Context:</strong> According to tradition, Shankaracharya composed this hymn when he saw an elderly scholar still engrossed in studying grammatical rules. The opening verse "Bhaja Govindam, Bhaja Govindam, Govindam Bhaja Moodhamate" arose spontaneously, urging the scholar to worship God rather than remain absorbed in mere intellectual pursuits.
+              <strong className="text-[#8b5d33] dark:text-[#e07c24]">The Deity:</strong> Dakshinamurti is Lord Shiva seated facing south (Dakshina) under a banyan tree, teaching through silence to four aged sages (Sanaka, Sanandana, Sanatana, Sanatkumara). South represents the direction of death and time; facing south symbolizes confronting and transcending death through knowledge.
             </p>
             <p>
-              <strong className="text-[#8b5d33] dark:text-[#e07c24]">Structure:</strong> The {bhajaGovindamVerses.length} verses are divided into groups: the main verses by Shankaracharya himself (Dvādashamanjarikā) and additional verses composed by his disciples (Charpat Panjarikā). Together they form a complete teaching on the temporary nature of worldly life and the urgency of spiritual practice.
+              <strong className="text-[#8b5d33] dark:text-[#e07c24]">The Symbolism:</strong> The banyan tree represents the universe with deep roots (Brahman). Silence represents the ultimate teaching beyond words—truth cannot be captured in language but must be realized directly. The Chin Mudra (thumb and index finger touching) shows the non-difference between Brahman and Jiva.
             </p>
             <p>
-              <strong className="text-[#8b5d33] dark:text-[#e07c24]">Key Themes:</strong> Impermanence of life, illusion of worldly attachments, importance of devotion, urgency of spiritual seeking, discrimination between eternal and temporary, and the supremacy of God-realization over mere intellectual knowledge.
+              <strong className="text-[#8b5d33] dark:text-[#e07c24]">Key Teaching:</strong> The entire universe is an appearance in Consciousness like dreams or reflections. The Self is the only reality—eternal, unchanging, all-pervading, and identical with Brahman. Through systematic examples and analogies, each verse reveals different aspects of non-dual truth.
+            </p>
+            <p>
+              <strong className="text-[#8b5d33] dark:text-[#e07c24]">Practice Method:</strong> Listening (shravana), reflecting (manana), meditating (nididhyasana), and chanting (sankirtana) on the nature of Consciousness and its relationship to the apparent universe. Ideal for daily meditation practice.
             </p>
             <div className="flex flex-wrap gap-2 pt-4">
-              <Badge variant="outline" className="border-[#e07c24]/30">Devotional</Badge>
-              <Badge variant="outline" className="border-[#e07c24]/30">Philosophical</Badge>
-              <Badge variant="outline" className="border-[#e07c24]/30">Practical Wisdom</Badge>
-              <Badge variant="outline" className="border-[#e07c24]/30">Renunciation</Badge>
+              <Badge variant="outline" className="border-[#e07c24]/30">Advaita Philosophy</Badge>
+              <Badge variant="outline" className="border-[#e07c24]/30">Silent Teaching</Badge>
+              <Badge variant="outline" className="border-[#e07c24]/30">Consciousness</Badge>
+              <Badge variant="outline" className="border-[#e07c24]/30">Meditation</Badge>
             </div>
           </CardContent>
         </Card>
@@ -258,7 +266,7 @@ export default function BhajaGovindamPage() {
           <div className="mb-6">
             <div className="flex justify-between items-center mb-2">
               <span className="text-sm font-medium text-[#8b5d33] dark:text-[#e07c24]">
-                Progress: Verse {selectedVerse + 1} of {bhajaGovindamVerses.length}
+                Progress: Verse {selectedVerse + 1} of {dakshinamurtiStotraVerses.length}
               </span>
               <span className="text-sm text-[#5a4a3f] dark:text-[#d9c5a9]">
                 {Math.round(progress)}% Complete
@@ -276,7 +284,7 @@ export default function BhajaGovindamPage() {
         {/* Quick Verse Selector */}
         {viewMode === 'single' && (
           <div className="flex flex-wrap gap-2 mb-8 p-4 bg-[#f7f3e9]/50 dark:bg-[#1a1814]/50 rounded-lg">
-            {bhajaGovindamVerses.map((verse, idx) => (
+            {dakshinamurtiStotraVerses.map((verse, idx) => (
               <button
                 key={idx}
                 onClick={() => {
@@ -311,9 +319,6 @@ export default function BhajaGovindamPage() {
                     <CardTitle className="text-3xl font-serif text-[#8b5d33] dark:text-[#e07c24] mb-2">
                       Verse {currentVerse.number}
                     </CardTitle>
-                    <Badge className="bg-[#e9e1d3] text-[#8b5d33] dark:bg-[#2a241e] dark:text-[#e07c24]">
-                      {categoryLabels[currentVerse.category]}
-                    </Badge>
                   </div>
                   <Button
                     variant="ghost"
@@ -345,15 +350,15 @@ export default function BhajaGovindamPage() {
                 <div className="text-sm text-[#5a4a3f] dark:text-[#d9c5a9]">
                   {selectedVerse > 0 && (
                     <div className="mb-1 text-xs opacity-70">
-                      ← {bhajaGovindamVerses[selectedVerse - 1].number}
+                      ← Verse {dakshinamurtiStotraVerses[selectedVerse - 1].number}
                     </div>
                   )}
                   <div className="font-semibold text-[#8b5d33] dark:text-[#e07c24]">
-                    {selectedVerse + 1} / {bhajaGovindamVerses.length}
+                    {selectedVerse + 1} / {dakshinamurtiStotraVerses.length}
                   </div>
-                  {selectedVerse < bhajaGovindamVerses.length - 1 && (
+                  {selectedVerse < dakshinamurtiStotraVerses.length - 1 && (
                     <div className="mt-1 text-xs opacity-70">
-                      {bhajaGovindamVerses[selectedVerse + 1].number} →
+                      Verse {dakshinamurtiStotraVerses[selectedVerse + 1].number} →
                     </div>
                   )}
                 </div>
@@ -361,7 +366,7 @@ export default function BhajaGovindamPage() {
 
               <Button
                 onClick={nextVerse}
-                disabled={selectedVerse === bhajaGovindamVerses.length - 1}
+                disabled={selectedVerse === dakshinamurtiStotraVerses.length - 1}
                 className="bg-[#e07c24] hover:bg-[#c06a1f] text-white disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Next
@@ -374,7 +379,7 @@ export default function BhajaGovindamPage() {
         {/* Continuous Scroll Mode */}
         {viewMode === 'scroll' && (
           <div className="space-y-8">
-            {bhajaGovindamVerses.map((verse, idx) => (
+            {dakshinamurtiStotraVerses.map((verse, idx) => (
               <Card key={idx} className="bg-white/80 dark:bg-[#2a241e]/80 border-[#e07c24]/20">
                 <CardHeader>
                   <div className="flex justify-between items-start">
@@ -382,9 +387,6 @@ export default function BhajaGovindamPage() {
                       <CardTitle className="text-2xl font-serif text-[#8b5d33] dark:text-[#e07c24] mb-2">
                         Verse {verse.number}
                       </CardTitle>
-                      <Badge className="bg-[#e9e1d3] text-[#8b5d33] dark:bg-[#2a241e] dark:text-[#e07c24]">
-                        {categoryLabels[verse.category]}
-                      </Badge>
                     </div>
                     <Button
                       variant="ghost"
@@ -415,9 +417,6 @@ export default function BhajaGovindamPage() {
                     <CardTitle className="text-2xl font-serif text-[#8b5d33] dark:text-[#e07c24] mb-2">
                       Verse {currentVerse.number}
                     </CardTitle>
-                    <Badge className="bg-[#e9e1d3] text-[#8b5d33] dark:bg-[#2a241e] dark:text-[#e07c24]">
-                      {categoryLabels[currentVerse.category]}
-                    </Badge>
                   </div>
                   <Button
                     variant="ghost"
@@ -465,11 +464,11 @@ export default function BhajaGovindamPage() {
                     <ChevronLeftIcon className="w-4 h-4" />
                   </Button>
                   <span className="text-sm font-semibold text-[#8b5d33] dark:text-[#e07c24]">
-                    {selectedVerse + 1} / {bhajaGovindamVerses.length}
+                    {selectedVerse + 1} / {dakshinamurtiStotraVerses.length}
                   </span>
                   <Button
                     onClick={nextVerse}
-                    disabled={selectedVerse === bhajaGovindamVerses.length - 1}
+                    disabled={selectedVerse === dakshinamurtiStotraVerses.length - 1}
                     size="sm"
                     className="bg-[#e07c24] hover:bg-[#c06a1f] text-white disabled:opacity-50"
                   >
@@ -510,16 +509,16 @@ export default function BhajaGovindamPage() {
           </CardHeader>
           <CardContent className="space-y-3 text-[#5a4a3f] dark:text-[#d9c5a9]">
             <div>
-              <strong>• Shlokam.org:</strong> All {bhajaGovindamVerses.length} verses with Sanskrit, transliteration, word-by-word meaning, and translation
+              <strong>• Swami Paramarthananda's Lectures:</strong> Comprehensive verse-by-verse analysis of Dakshinamurti Stotra with Advaita philosophy
             </div>
             <div>
-              <strong>• Swami Chinmayananda's Commentary:</strong> Systematic and precise with word-to-word analysis (highly recommended)
+              <strong>• Chinmaya Mission:</strong> Swami Chinmayananda's detailed commentary on the silent teaching
             </div>
             <div>
-              <strong>• T.M.P. Mahadevan Translation (1962):</strong> Scholarly English translation and commentary
+              <strong>• Sringeri Sharada Peetham:</strong> Traditional commentary and chanting guides
             </div>
             <div>
-              <strong>• SanskritDocuments.org:</strong> PDF version with complete text in Devanagari
+              <strong>• SanskritDocuments.org:</strong> PDF version with complete text in Devanagari and transliteration
             </div>
           </CardContent>
         </Card>

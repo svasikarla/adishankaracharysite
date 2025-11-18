@@ -1,8 +1,9 @@
 import { fourMathas, mathaSystemInfo } from "@/data/mathas"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ExternalLinkIcon, MapPinIcon, BookOpenIcon, SparklesIcon } from "lucide-react"
+import { ExternalLinkIcon, MapPinIcon, BookOpenIcon, SparklesIcon, UserIcon, StarIcon } from "lucide-react"
 import Link from "next/link"
+import IndiaMathasMap from "@/components/IndiaMathasMap"
 
 export const metadata = {
   title: "The Four Mathas",
@@ -57,6 +58,11 @@ export default function MathasPage() {
             </div>
           </CardContent>
         </Card>
+      </div>
+
+      {/* Interactive Map */}
+      <div className="max-w-5xl mx-auto mb-16">
+        <IndiaMathasMap />
       </div>
 
       {/* Individual Mathas */}
@@ -161,6 +167,51 @@ export default function MathasPage() {
                     ))}
                   </ul>
                 </div>
+
+                {/* Current Shankaracharya */}
+                {matha.currentShankaracharya && (
+                  <div className="mb-6">
+                    <h3 className="text-lg font-semibold text-[#8b5d33] dark:text-[#e07c24] mb-3 flex items-center gap-2">
+                      <UserIcon className="w-5 h-5" />
+                      Current Shankaracharya
+                    </h3>
+                    <div className="p-4 rounded-lg bg-[#f7f3e9] dark:bg-[#1a1814] border border-[#e07c24]/10">
+                      <div className="font-semibold text-[#8b5d33] dark:text-[#e07c24] mb-1">
+                        {matha.currentShankaracharya.name}
+                      </div>
+                      <div className="text-sm text-[#5a4a3f] dark:text-[#d9c5a9] mb-1">
+                        {matha.currentShankaracharya.title}
+                      </div>
+                      <div className="text-xs text-[#5a4a3f]/70 dark:text-[#d9c5a9]/70 mb-2">
+                        Period: {matha.currentShankaracharya.period}
+                      </div>
+                      <div className="text-sm text-[#5a4a3f] dark:text-[#d9c5a9] italic">
+                        {matha.currentShankaracharya.note}
+                      </div>
+                      <div className="text-xs text-[#e07c24] mt-2">
+                        {matha.lineageCount}th in the lineage from Adi Shankaracharya
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Unique Features */}
+                {matha.uniqueFeatures && (
+                  <div className="mb-6">
+                    <h3 className="text-lg font-semibold text-[#8b5d33] dark:text-[#e07c24] mb-3 flex items-center gap-2">
+                      <StarIcon className="w-5 h-5" />
+                      Unique Features
+                    </h3>
+                    <ul className="space-y-2">
+                      {matha.uniqueFeatures.map((feature, idx) => (
+                        <li key={idx} className="flex items-start gap-2">
+                          <span className="text-[#e07c24] mt-1">✦</span>
+                          <span className="text-[#5a4a3f] dark:text-[#d9c5a9] text-sm">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
 
                 {/* Current Activities */}
                 <div>

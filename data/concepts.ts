@@ -273,5 +273,287 @@ export const concepts: Concept[] = [
         url: 'http://indianphilosophy.50webs.com/advaita.htm'
       }
     ]
+  },
+  {
+    id: 'vairagya',
+    name: 'Vairagya',
+    sanskritName: 'वैराग्य',
+    shortDescription: 'Dispassion and Detachment from the Unreal',
+    fullDescription: 'Vairagya is dispassion or detachment from all worldly objects and pleasures, both seen and unseen (this world and the next). It naturally arises from viveka (discrimination) when one clearly sees that all temporary objects cannot provide lasting happiness. Vairagya is not about forceful renunciation or suppression of desires, but the natural falling away of attachment when one recognizes that true fulfillment lies only in the eternal Self. It is the second of the four qualifications (sadhana chatushtaya) for a spiritual seeker.',
+    keyPoints: [
+      'Vairagya means dispassion or non-attachment to worldly pleasures',
+      'Second qualification in the fourfold path (sadhana chatushtaya)',
+      'Arises naturally from viveka (discrimination between real and unreal)',
+      'Applies to both visible objects (drishta) and invisible rewards (adrishta/heaven)',
+      'Not forceful renunciation but natural falling away of desires',
+      'Essential for turning the mind inward toward Self-inquiry',
+      'Ranges from mild disinterest to complete detachment (para vairagya)'
+    ],
+    scripturalReferences: [
+      {
+        source: 'Vivekachudamani',
+        reference: 'Verse 21',
+        quote: 'Dispassion (vairagya) is the turning away from things which are seen and heard, such as this world and the next, by constantly seeing their defects'
+      },
+      {
+        source: 'Bhagavad Gita',
+        reference: '6.35',
+        quote: 'Through practice (abhyasa) and dispassion (vairagya), the mind can be controlled'
+      },
+      {
+        source: 'Atma Bodha',
+        reference: 'Verse 2',
+        quote: 'For those who desire liberation and practice discrimination and dispassion, knowledge of Atman is like fire to burn away ignorance'
+      }
+    ],
+    relatedConcepts: ['viveka', 'moksha', 'maya'],
+    academicSources: [
+      {
+        title: 'The Four Qualifications in Advaita Vedanta',
+        author: 'Vedanta Society',
+        url: 'https://www.vedanta.org/what-is-vedanta/the-four-qualifications/'
+      },
+      {
+        title: 'Vairagya in Shankaras Philosophy',
+        author: 'Indian Philosophy Research',
+        url: 'http://indianphilosophy.50webs.com/advaita.htm'
+      }
+    ]
+  },
+  {
+    id: 'jnana-yoga',
+    name: 'Jnana Yoga',
+    sanskritName: 'ज्ञानयोग',
+    shortDescription: 'The Path of Knowledge and Self-Inquiry',
+    fullDescription: 'Jnana Yoga is the path of knowledge or wisdom leading to Self-realization. It is the direct path taught by Adi Shankaracharya, emphasizing discriminative knowledge (viveka), dispassion (vairagya), and systematic inquiry into the nature of the Self. The practice involves three stages: shravana (hearing the teachings), manana (reflection and reasoning), and nididhyasana (deep meditation). Jnana Yoga is not mere intellectual knowledge but direct, experiential realization of one\'s identity with Brahman. While considered the most direct path, it requires tremendous mental discipline and purity.',
+    keyPoints: [
+      'Jnana Yoga is the path of knowledge and Self-inquiry',
+      'Emphasized as the direct path by Adi Shankaracharya',
+      'Three stages: shravana (hearing), manana (reflection), nididhyasana (meditation)',
+      'Requires the four qualifications (sadhana chatushtaya)',
+      'Not intellectual learning but direct experiential realization',
+      'Uses methods like neti-neti (not this, not this) to discriminate Self from non-Self',
+      'Culminates in the realization "Aham Brahmasmi" (I am Brahman)'
+    ],
+    scripturalReferences: [
+      {
+        source: 'Bhagavad Gita',
+        reference: '4.38',
+        quote: 'There is nothing in this world as purifying as knowledge. One who is perfected in yoga finds this knowledge within oneself in due course of time'
+      },
+      {
+        source: 'Mundaka Upanishad',
+        reference: '1.2.12',
+        quote: 'Having examined the worlds won by action, let the seeker of Brahman arrive at detachment. The uncreated cannot be attained by what is created. To know That, approach a guru with humility'
+      },
+      {
+        source: 'Vivekachudamani',
+        reference: 'Verse 3',
+        quote: 'Of all means of liberation, devotion is supreme. To seek earnestly to know ones real nature is said to be devotion'
+      }
+    ],
+    relatedConcepts: ['viveka', 'vairagya', 'moksha', 'atman', 'brahman'],
+    academicSources: [
+      {
+        title: 'Jnana Yoga - The Path of Knowledge',
+        author: 'Swami Vivekananda',
+        url: 'https://en.wikisource.org/wiki/Jnana-Yoga'
+      },
+      {
+        title: 'The Three Paths in Hindu Philosophy',
+        author: 'Stanford Encyclopedia',
+        url: 'https://plato.stanford.edu/entries/shankara/'
+      }
+    ]
+  },
+  {
+    id: 'karma-yoga',
+    name: 'Karma Yoga',
+    sanskritName: 'कर्मयोग',
+    shortDescription: 'The Path of Selfless Action',
+    fullDescription: 'Karma Yoga is the path of selfless action performed without attachment to results. Taught extensively in the Bhagavad Gita and incorporated into Advaita Vedanta by Shankaracharya, it purifies the mind and prepares one for Self-knowledge. The key principle is nishkama karma - action without desire for personal gain. By offering all actions and their results to the Divine (Ishvara), the practitioner transcends ego and develops chitta shuddhi (purity of mind). While Shankaracharya emphasized jnana (knowledge) as the direct means to liberation, he acknowledged karma yoga as essential preparation, especially for those still identified with being a doer.',
+    keyPoints: [
+      'Karma Yoga is the path of selfless, desireless action',
+      'Taught in Bhagavad Gita and incorporated into Advaita by Shankaracharya',
+      'Key principle: perform duty without attachment to results',
+      'All actions offered to Ishvara (the Divine)',
+      'Purifies the mind (chitta shuddhi) and prepares for Self-knowledge',
+      'Transcends the ego-sense of being the doer (kartritva)',
+      'In Advaita, seen as preparatory to jnana yoga'
+    ],
+    scripturalReferences: [
+      {
+        source: 'Bhagavad Gita',
+        reference: '2.47',
+        quote: 'You have a right to perform your prescribed duty, but you are not entitled to the fruits of action'
+      },
+      {
+        source: 'Bhagavad Gita',
+        reference: '3.19',
+        quote: 'Therefore, always perform your duty perfectly, without attachment. By doing work without attachment, one attains the Supreme'
+      },
+      {
+        source: 'Bhagavad Gita',
+        reference: '18.46',
+        quote: 'By performing ones duties, worshiping the Lord from whom all beings originate, one attains perfection'
+      }
+    ],
+    relatedConcepts: ['jnana-yoga', 'bhakti-yoga', 'maya'],
+    academicSources: [
+      {
+        title: 'Karma Yoga - Swami Vivekananda',
+        author: 'Ramakrishna Mission',
+        url: 'https://en.wikisource.org/wiki/Karma-Yoga'
+      },
+      {
+        title: 'Shankaras Commentary on Karma Yoga',
+        author: 'Advaita Academy',
+        url: 'https://www.advaita.org.uk/discourses/bhagavad_gita/gita_intro.htm'
+      }
+    ]
+  },
+  {
+    id: 'bhakti-yoga',
+    name: 'Bhakti Yoga',
+    sanskritName: 'भक्तियोग',
+    shortDescription: 'The Path of Devotion and Love',
+    fullDescription: 'Bhakti Yoga is the path of devotion, love, and surrender to the Divine. While Adi Shankaracharya primarily emphasized jnana (knowledge), he also composed numerous devotional hymns and recognized bhakti as a powerful means of purifying the heart and mind. In the Advaita context, bhakti begins with devotion to Saguna Brahman (God with attributes - Ishvara) and gradually leads to the realization of Nirguna Brahman (attributeless reality). Shankaracharya defined supreme devotion as the intense desire to know one\'s true Self. His hymns to Shiva, Vishnu, and Devi demonstrate the integration of devotion with non-dual wisdom.',
+    keyPoints: [
+      'Bhakti is the path of devotion, love, and surrender to the Divine',
+      'Shankaracharya composed numerous devotional hymns despite emphasis on jnana',
+      'In Advaita, bhakti to Saguna Brahman (Ishvara) purifies the mind',
+      'Supreme bhakti defined as intense desire to know the Self',
+      'Nine forms of bhakti: hearing, singing, remembering, serving, etc.',
+      'Devotion removes ego and cultivates humility',
+      'Ultimately transcends duality and merges with non-dual realization'
+    ],
+    scripturalReferences: [
+      {
+        source: 'Bhagavad Gita',
+        reference: '9.34',
+        quote: 'Fix your mind on Me, be devoted to Me, worship Me, bow down to Me. Having thus disciplined yourself, with Me as your supreme goal, you will come to Me'
+      },
+      {
+        source: 'Vivekachudamani',
+        reference: 'Verse 31',
+        quote: 'The supreme devotion (para bhakti) is the seeking of ones own real nature'
+      },
+      {
+        source: 'Svetasvatara Upanishad',
+        reference: '6.23',
+        quote: 'To one who has supreme devotion to God and devotion to the guru as to God, these truths become revealed'
+      }
+    ],
+    relatedConcepts: ['jnana-yoga', 'karma-yoga', 'brahman', 'moksha'],
+    academicSources: [
+      {
+        title: 'Bhakti in Shankaras Philosophy',
+        author: 'Journal of Indian Philosophy',
+        url: 'https://www.jstor.org/stable/23447147'
+      },
+      {
+        title: 'Devotional Compositions of Adi Shankaracharya',
+        author: 'Sanskrit Studies',
+        url: 'https://www.advaita-vedanta.org/articles/shankara-stotras.html'
+      }
+    ]
+  },
+  {
+    id: 'vedanta',
+    name: 'Vedanta',
+    sanskritName: 'वेदान्त',
+    shortDescription: 'The End and Culmination of the Vedas',
+    fullDescription: 'Vedanta literally means "the end of the Vedas" and refers to the Upanishads and the philosophical system based on them. The three foundational texts of Vedanta are called Prasthana Trayi: the Upanishads (Shruti Prasthana), Brahma Sutras (Nyaya Prasthana), and Bhagavad Gita (Smriti Prasthana). Adi Shankaracharya wrote commentaries on all three, establishing Advaita Vedanta - non-dualistic interpretation - as the preeminent school. Other interpretations include Vishishtadvaita (qualified non-dualism) and Dvaita (dualism), but Shankaracharya\'s Advaita remains the most influential, teaching the absolute identity of Atman and Brahman.',
+    keyPoints: [
+      'Vedanta means "end of the Vedas" - refers to Upanishads and their philosophy',
+      'Based on Prasthana Trayi: Upanishads, Brahma Sutras, Bhagavad Gita',
+      'Shankaracharya established Advaita (non-dual) interpretation',
+      'Three main schools: Advaita, Vishishtadvaita, Dvaita',
+      'Advaita teaches absolute non-duality of Atman and Brahman',
+      'Liberation through knowledge (jnana), not merely rituals (karma)',
+      'Influenced Indian philosophy, spirituality, and culture for over 1200 years'
+    ],
+    scripturalReferences: [
+      {
+        source: 'Brihadaranyaka Upanishad',
+        reference: '1.4.10',
+        quote: 'Brahman alone was in the beginning. It knew itself only as "I am Brahman." Therefore it became all'
+      },
+      {
+        source: 'Brahma Sutras',
+        reference: '1.1.1',
+        quote: 'Athato Brahma Jijnasa - Now, therefore, the inquiry into Brahman'
+      },
+      {
+        source: 'Bhagavad Gita',
+        reference: '15.15',
+        quote: 'I am seated in the hearts of all. From Me come memory, knowledge, and understanding. I am verily that which is to be known through the Vedas'
+      }
+    ],
+    relatedConcepts: ['brahman', 'atman', 'moksha', 'jnana-yoga'],
+    academicSources: [
+      {
+        title: 'Advaita Vedanta - Stanford Encyclopedia',
+        author: 'Stanford Encyclopedia of Philosophy',
+        url: 'https://plato.stanford.edu/entries/shankara/'
+      },
+      {
+        title: 'Introduction to Vedanta',
+        author: 'Internet Encyclopedia of Philosophy',
+        url: 'https://iep.utm.edu/advaita-vedanta/'
+      },
+      {
+        title: 'The Three Schools of Vedanta',
+        author: 'Oxford Bibliographies',
+        url: 'https://www.oxfordbibliographies.com/display/document/obo-9780195399318/obo-9780195399318-0171.xml'
+      }
+    ]
+  },
+  {
+    id: 'avidya',
+    name: 'Avidya',
+    sanskritName: 'अविद्या',
+    shortDescription: 'Ignorance - The Root Cause of Suffering',
+    fullDescription: 'Avidya (ignorance or nescience) is the fundamental cause of all suffering and bondage in Advaita Vedanta. It is not mere lack of information but a positive force that veils (avarana) our true nature and projects (vikshepa) the illusory world of duality. Avidya makes us mistake the rope for a snake, the Self for the body-mind. It has two powers: concealing Brahman and projecting the phenomenal world. Avidya is beginningless (anadi) but can be destroyed by Self-knowledge (atma-jnana). All practices - discrimination, dispassion, meditation - aim at removing this fundamental ignorance and revealing the Self that was never actually hidden.',
+    keyPoints: [
+      'Avidya is fundamental ignorance - the root cause of bondage',
+      'Not mere absence of knowledge but a positive veiling force',
+      'Has two powers: avarana (veiling) and vikshepa (projecting)',
+      'Makes us identify the Self with body, mind, and ego',
+      'Beginningless (anadi) but can be ended through knowledge',
+      'Creates the illusion of duality, separation, and multiplicity',
+      'Destroyed only by direct Self-knowledge (atma-jnana), not by actions',
+      'Often equated with maya at the cosmic level'
+    ],
+    scripturalReferences: [
+      {
+        source: 'Vivekachudamani',
+        reference: 'Verse 111',
+        quote: 'This veiling power (avarana shakti) covers the real nature of things, making them appear as something else, like the blue appearance of the sky'
+      },
+      {
+        source: 'Brihadaranyaka Upanishad',
+        reference: '4.4.19',
+        quote: 'In that state he does not see, for although seeing, he does not see; for there is no cessation of the seeing of the seer, because he is imperishable. But there is no second thing separate from him that he could see'
+      },
+      {
+        source: 'Mandukya Karika',
+        reference: '1.16',
+        quote: 'When the individual self, deluded by ignorance, imagines it is a limited being, then it appears bound; when it knows itself to be Brahman, it is free'
+      }
+    ],
+    relatedConcepts: ['maya', 'brahman', 'atman', 'moksha', 'jnana-yoga'],
+    academicSources: [
+      {
+        title: 'The Concept of Avidya in Advaita Vedanta',
+        author: 'Journal of Indian Philosophy',
+        url: 'https://www.jstor.org/stable/23449822'
+      },
+      {
+        title: 'Maya and Avidya in Shankaras Philosophy',
+        author: 'Philosophy Institute',
+        url: 'http://indianphilosophy.50webs.com/advaita.htm'
+      }
+    ]
   }
 ]

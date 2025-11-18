@@ -56,6 +56,50 @@ export default function TeachingsPage() {
       category: "Prakarana Grantha"
     },
     {
+      id: "manisha-panchakam",
+      title: "Manisha Panchakam",
+      sanskrit: "मनीषापञ्चकम्",
+      subtitle: "Five Verses on Wisdom",
+      verses: "5 verses",
+      description: "Revolutionary teaching on spiritual equality transcending caste and social distinctions, born from Shankaracharya's encounter with a chandala",
+      authenticity: "attributed",
+      available: true,
+      category: "Stotra (Hymn)"
+    },
+    {
+      id: "dakshinamurti-stotra",
+      title: "Dakshinamurti Stotra",
+      sanskrit: "दक्षिणामूर्तिस्तोत्रम्",
+      subtitle: "Hymn to the Silent Teacher",
+      verses: "10 verses",
+      description: "Profound hymn to Lord Dakshinamurti encapsulating the entire Advaita philosophy through poetic descriptions of the Self and reality",
+      authenticity: "attributed",
+      available: true,
+      category: "Stotra (Hymn)"
+    },
+    {
+      id: "guru-paduka-stotra",
+      title: "Guru Paduka Stotra",
+      sanskrit: "गुरुपादुकास्तोत्रम्",
+      subtitle: "Hymn to the Guru's Sandals",
+      verses: "8 verses",
+      description: "Beautiful devotional hymn using the guru's sandals as a symbol of supreme devotion, surrender, and the transformative power of the guru's grace",
+      authenticity: "attributed",
+      available: true,
+      category: "Stotra (Hymn)"
+    },
+    {
+      id: "hastamalaka-stotra",
+      title: "Hastamalaka Stotra",
+      sanskrit: "हस्तामलकस्तोत्रम्",
+      subtitle: "The Song of Hastamalaka",
+      verses: "14 verses",
+      description: "Spontaneous expression of complete Self-knowledge by a young disciple, demonstrating that enlightenment is direct recognition, not intellectual acquisition",
+      authenticity: "attributed",
+      available: true,
+      category: "Stotra (Hymn)"
+    },
+    {
       id: "brahma-sutra-bhashya",
       title: "Brahma Sutra Bhashya",
       sanskrit: "ब्रह्मसूत्रभाष्य",

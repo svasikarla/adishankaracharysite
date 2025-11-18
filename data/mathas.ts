@@ -44,6 +44,19 @@ export const fourMathas: Matha[] = [
       'Publication of Sanskrit and philosophical texts',
       'Spiritual camps and discourses',
       'Preservation and digitization of ancient manuscripts'
+    ],
+    currentShankaracharya: {
+      name: 'Sri Bharati Tirtha Mahaswamiji',
+      title: '36th Jagadguru Shankaracharya',
+      period: '1989 - Present',
+      note: 'Known for extensive travels, accessible teachings, and modernization while preserving tradition'
+    },
+    lineageCount: 36,
+    uniqueFeatures: [
+      'Only matha with completely unbroken lineage since 8th century',
+      'Annual Vidyarambha ceremony initiating children into learning',
+      'Extensive library with rare manuscripts',
+      'Active presence in South Indian spiritual life'
     ]
   },
   {
@@ -86,6 +99,20 @@ export const fourMathas: Matha[] = [
       'Preservation of Vedic chanting traditions',
       'Charitable activities for pilgrims',
       'Interfaith dialogues and cultural programs'
+    ],
+    currentShankaracharya: {
+      name: 'Sri Nischalananda Saraswati Mahaswamiji',
+      title: '31st Jagadguru Shankaracharya',
+      period: '1993 - Present',
+      note: 'Known for integrating Krishna bhakti with Vedantic knowledge and strengthening the matha\'s role in western India'
+    },
+    lineageCount: 31,
+    uniqueFeatures: [
+      'Unique integration of devotion (Bhakti) to Krishna with non-dual knowledge',
+      'Located in sacred Dwarka Dhama, one of the four cardinal pilgrimage centers',
+      'Preserves Samaveda tradition with distinct chanting practices',
+      'Active guidance to millions of Krishna devotees globally',
+      'Strong community engagement in Gujarati spiritual circles'
     ]
   },
   {
@@ -128,6 +155,20 @@ export const fourMathas: Matha[] = [
       'Sanskrit education and Vedic schooling',
       'Social welfare and charitable work',
       'Preservation of Odia cultural heritage'
+    ],
+    currentShankaracharya: {
+      name: 'Sri Nischalananda Saraswati Mahaswamiji',
+      title: '33rd Jagadguru Shankaracharya',
+      period: '1997 - Present',
+      note: 'Renowned for scholarly exposition, preservation of Rigveda traditions, and close coordination with Jagannath Temple'
+    },
+    lineageCount: 33,
+    uniqueFeatures: [
+      'Closest coordination with the Jagannath Temple among all four mathas',
+      'Preserves the oldest Veda - Rigveda, with specialized chanting methods',
+      'Gateway to eastern pilgrimage traditions and Bengal-Odisha spiritual culture',
+      'Actively involved in Rath Yatra and major Jagannath festivals',
+      'Strong influence in maintaining Vedantic philosophy in eastern India'
     ]
   },
   {
@@ -170,6 +211,20 @@ export const fourMathas: Matha[] = [
       'Preservation of Himalayan spiritual traditions',
       'Charitable work for local communities',
       'Environmental conservation programs'
+    ],
+    currentShankaracharya: {
+      name: 'Sri Chandra Shekhar Bharati Mahaswamiji',
+      title: '14th Jagadguru Shankaracharya (in re-established lineage)',
+      period: '2004 - Present',
+      note: 'Known for revitalizing the matha after its restoration in 1989, maintaining intense spiritual practice in the Himalayas'
+    },
+    lineageCount: 40,
+    uniqueFeatures: [
+      'Re-established matha after long period of vacant seat, symbolizing resilience of Vedantic tradition',
+      'Only matha in the Himalayan region, serving as a spiritual center for northern Indian seekers',
+      'Preserves Atharvaveda tradition with specialized tantric and ritual knowledge',
+      'Gateway to multiple sacred Himalayan pilgrimage sites including Badrinath',
+      'Practices rigorous seasonal ashrama life following ancient monastic traditions'
     ]
   }
 ]
