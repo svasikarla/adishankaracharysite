@@ -248,7 +248,7 @@ export default function Home() {
                 description: "Deep dive into core Advaita Vedanta concepts",
                 icon: SparklesIcon,
                 href: "/philosophy",
-                badge: "6 Concepts",
+                badge: "12 Concepts",
                 color: "from-amber-500 to-amber-600"
               },
               {
