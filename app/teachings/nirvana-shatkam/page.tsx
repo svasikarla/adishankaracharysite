@@ -1,28 +1,144 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { nirvanaShatkamVerses, nirvanaShatkamMetadata } from "@/data/nirvana-shatkam"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ChevronLeftIcon, ChevronRightIcon, BookOpenIcon, SparklesIcon, HeartIcon } from "lucide-react"
+import { Slider } from "@/components/ui/slider"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger, DropdownMenuSeparator } from "@/components/ui/dropdown-menu"
+import { ChevronLeftIcon, ChevronRightIcon, BookOpenIcon, SparklesIcon, HeartIcon, LayoutListIcon, BookTextIcon, SettingsIcon, BookmarkIcon } from "lucide-react"
 import Link from "next/link"
+
+type ViewMode = 'single' | 'scroll' | 'study'
 
 export default function NirvanaShatkamPage() {
   const [selectedVerse, setSelectedVerse] = useState(0)
+  const [viewMode, setViewMode] = useState<ViewMode>('single')
+  const [fontSize, setFontSize] = useState(16)
+  const [bookmarkedVerses, setBookmarkedVerses] = useState<number[]>([])
+  const [isTransitioning, setIsTransitioning] = useState(false)
+
   const currentVerse = nirvanaShatkamVerses[selectedVerse]
+  const progress = ((selectedVerse + 1) / nirvanaShatkamVerses.length) * 100
+
+  // Load preferences from localStorage
+  useEffect(() => {
+    const savedFontSize = localStorage.getItem('nirvana-font-size')
+    const savedViewMode = localStorage.getItem('nirvana-view-mode')
+    const savedBookmarks = localStorage.getItem('nirvana-bookmarks')
+
+    if (savedFontSize) setFontSize(parseInt(savedFontSize))
+    if (savedViewMode) setViewMode(savedViewMode as ViewMode)
+    if (savedBookmarks) setBookmarkedVerses(JSON.parse(savedBookmarks))
+  }, [])
+
+  // Save preferences to localStorage
+  useEffect(() => {
+    localStorage.setItem('nirvana-font-size', fontSize.toString())
+    localStorage.setItem('nirvana-view-mode', viewMode)
+    localStorage.setItem('nirvana-bookmarks', JSON.stringify(bookmarkedVerses))
+  }, [fontSize, viewMode, bookmarkedVerses])
 
   const nextVerse = () => {
     if (selectedVerse < nirvanaShatkamVerses.length - 1) {
-      setSelectedVerse(selectedVerse + 1)
+      setIsTransitioning(true)
+      setTimeout(() => {
+        setSelectedVerse(selectedVerse + 1)
+        setIsTransitioning(false)
+      }, 150)
     }
   }
 
   const prevVerse = () => {
     if (selectedVerse > 0) {
-      setSelectedVerse(selectedVerse - 1)
+      setIsTransitioning(true)
+      setTimeout(() => {
+        setSelectedVerse(selectedVerse - 1)
+        setIsTransitioning(false)
+      }, 150)
     }
   }
+
+  const toggleBookmark = (verseIndex: number) => {
+    setBookmarkedVerses(prev =>
+      prev.includes(verseIndex)
+        ? prev.filter(i => i !== verseIndex)
+        : [...prev, verseIndex]
+    )
+  }
+
+  const VerseContent = ({ verse }: { verse: typeof currentVerse }) => (
+    <div className="space-y-8" style={{ fontSize: `${fontSize}px` }}>
+      {/* Sanskrit Text */}
+      <div className="p-6 rounded-2xl bg-gradient-to-br from-[#f7f3e9] to-[#e9e1d3] dark:from-[#1a1814] dark:to-[#2a241e] border-2 border-[#e07c24]/20">
+        <h3 className="text-sm font-semibold text-[#e07c24] mb-3 uppercase tracking-wide">
+          Sanskrit
+        </h3>
+        <p className="font-sanskrit text-2xl md:text-3xl leading-relaxed text-[#8b5d33] dark:text-[#e07c24]">
+          {verse.sanskrit}
+        </p>
+      </div>
+
+      {/* Transliteration */}
+      <div className="p-6 rounded-2xl bg-gradient-to-br from-[#e9e1d3] to-[#f7f3e9] dark:from-[#2a241e] dark:to-[#1a1814] border border-[#e07c24]/20">
+        <h3 className="text-sm font-semibold text-[#e07c24] mb-3 uppercase tracking-wide">
+          Transliteration
+        </h3>
+        <p className="text-lg md:text-xl italic text-[#5a4a3f] dark:text-[#d9c5a9] leading-relaxed">
+          {verse.transliteration}
+        </p>
+      </div>
+
+      {/* Translation */}
+      <div className="p-6 rounded-2xl bg-gradient-to-br from-[#f7f3e9] to-[#e9e1d3] dark:from-[#1a1814] dark:to-[#2a241e] border-2 border-[#e07c24]/30">
+        <h3 className="text-sm font-semibold text-[#e07c24] mb-3 uppercase tracking-wide flex items-center gap-2">
+          <SparklesIcon className="w-4 h-4" />
+          English Translation
+        </h3>
+        <p className="text-lg md:text-xl leading-relaxed text-[#8b5d33] dark:text-[#e07c24] font-medium">
+          {verse.translation}
+        </p>
+      </div>
+
+      {/* Commentary */}
+      <div className="p-6 md:p-8 rounded-2xl bg-gradient-to-br from-[#e07c24]/5 to-[#c06a1f]/5 dark:from-[#e07c24]/10 dark:to-[#c06a1f]/10 border-l-4 border-[#e07c24]">
+        <h3 className="text-base font-bold text-[#e07c24] mb-4 uppercase tracking-wide flex items-center gap-2">
+          <BookOpenIcon className="w-5 h-5" />
+          Commentary & Explanation
+        </h3>
+        <p className="text-base md:text-lg leading-relaxed text-[#5a4a3f] dark:text-[#d9c5a9]">
+          {verse.commentary}
+        </p>
+      </div>
+
+      {/* Meditation Guide (if available) */}
+      {verse.meditationGuide && (
+        <div className="p-6 md:p-8 rounded-2xl bg-gradient-to-br from-[#c06a1f]/10 to-[#e07c24]/5 dark:from-[#c06a1f]/20 dark:to-[#e07c24]/10 border-l-4 border-[#c06a1f]">
+          <h3 className="text-base font-bold text-[#c06a1f] mb-4 uppercase tracking-wide flex items-center gap-2">
+            <HeartIcon className="w-5 h-5" />
+            Meditation Practice Guide
+          </h3>
+          <p className="text-base md:text-lg leading-relaxed text-[#5a4a3f] dark:text-[#d9c5a9]">
+            {verse.meditationGuide}
+          </p>
+        </div>
+      )}
+
+      {/* Refrain Reminder */}
+      <div className="p-6 rounded-2xl bg-gradient-to-r from-[#e07c24] to-[#c06a1f] text-white">
+        <p className="text-center font-sanskrit text-2xl md:text-3xl mb-3">
+          चिदानन्दरूपः शिवोऽहम् शिवोऽहम्
+        </p>
+        <p className="text-center text-sm md:text-base italic opacity-90">
+          Cidānandarūpaḥ Śivo'ham Śivo'ham
+        </p>
+        <p className="text-center text-xs md:text-sm mt-2 opacity-75">
+          I am Consciousness-Bliss, I am Shiva, I am Shiva
+        </p>
+      </div>
+    </div>
+  )
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#f7f3e9] via-white to-[#e9e1d3] dark:from-[#1a1814] dark:via-[#1a1814] dark:to-[#2a241e]">
@@ -138,155 +254,387 @@ export default function NirvanaShatkamPage() {
           </Card>
         </div>
 
-        {/* Verse Navigation */}
+        {/* Reading Controls */}
         <div className="max-w-5xl mx-auto mb-8">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#8b5d33] dark:text-[#e07c24]">
-              Verse by Verse Study
-            </h2>
-            <Badge className="bg-[#e07c24] text-white text-base px-4 py-2">
-              Verse {selectedVerse + 1} of {nirvanaShatkamVerses.length}
-            </Badge>
-          </div>
-
-          {/* Quick Verse Selector */}
-          <div className="flex flex-wrap gap-2 mb-8 p-6 bg-white/80 dark:bg-[#2a241e]/80 rounded-2xl border border-[#e07c24]/20 shadow-lg">
-            <p className="w-full text-sm text-[#5a4a3f] dark:text-[#d9c5a9] mb-3 font-medium">
-              Select a verse to study:
-            </p>
-            {nirvanaShatkamVerses.map((verse, idx) => (
-              <button
-                key={idx}
-                onClick={() => setSelectedVerse(idx)}
-                className={`w-16 h-16 rounded-xl flex items-center justify-center text-base font-semibold transition-all duration-200 ${
-                  selectedVerse === idx
-                    ? 'bg-gradient-to-br from-[#e07c24] to-[#c06a1f] text-white scale-110 shadow-lg'
-                    : 'bg-gradient-to-br from-[#f7f3e9] to-[#e9e1d3] dark:from-[#1a1814] dark:to-[#2a241e] text-[#8b5d33] dark:text-[#e07c24] hover:scale-105 border border-[#e07c24]/20 hover:border-[#e07c24]'
-                }`}
-              >
-                {idx + 1}
-              </button>
-            ))}
-          </div>
-
-          {/* Current Verse Display */}
-          <Card className="bg-white/90 dark:bg-[#2a241e]/90 border-2 border-[#e07c24]/20 shadow-xl overflow-hidden">
-            <CardHeader className="bg-gradient-to-r from-[#e9e1d3] to-[#f7f3e9] dark:from-[#1a1814] dark:to-[#2a241e] border-b-2 border-[#e07c24]/20">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#e07c24] to-[#c06a1f] text-white flex items-center justify-center font-bold text-lg">
-                    {currentVerse.number}
-                  </div>
-                  <div>
-                    <CardTitle className="text-xl font-serif text-[#8b5d33] dark:text-[#e07c24]">
-                      Verse {currentVerse.number}
-                    </CardTitle>
-                    <CardDescription>
-                      Nirvana Shatkam - Liberation Through Negation
-                    </CardDescription>
-                  </div>
-                </div>
-                <BookOpenIcon className="w-6 h-6 text-[#e07c24]" />
-              </div>
-            </CardHeader>
-
-            <CardContent className="p-6 md:p-8 space-y-8">
-              {/* Sanskrit Text */}
-              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#f7f3e9] to-[#e9e1d3] dark:from-[#1a1814] dark:to-[#2a241e] border-2 border-[#e07c24]/20">
-                <h3 className="text-sm font-semibold text-[#e07c24] mb-3 uppercase tracking-wide">
-                  Sanskrit
-                </h3>
-                <p className="font-sanskrit text-2xl md:text-3xl leading-relaxed text-[#8b5d33] dark:text-[#e07c24]">
-                  {currentVerse.sanskrit}
-                </p>
-              </div>
-
-              {/* Transliteration */}
-              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#e9e1d3] to-[#f7f3e9] dark:from-[#2a241e] dark:to-[#1a1814] border border-[#e07c24]/20">
-                <h3 className="text-sm font-semibold text-[#e07c24] mb-3 uppercase tracking-wide">
-                  Transliteration
-                </h3>
-                <p className="text-lg md:text-xl italic text-[#5a4a3f] dark:text-[#d9c5a9] leading-relaxed">
-                  {currentVerse.transliteration}
-                </p>
-              </div>
-
-              {/* Translation */}
-              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#f7f3e9] to-[#e9e1d3] dark:from-[#1a1814] dark:to-[#2a241e] border-2 border-[#e07c24]/30">
-                <h3 className="text-sm font-semibold text-[#e07c24] mb-3 uppercase tracking-wide flex items-center gap-2">
-                  <SparklesIcon className="w-4 h-4" />
-                  English Translation
-                </h3>
-                <p className="text-lg md:text-xl leading-relaxed text-[#8b5d33] dark:text-[#e07c24] font-medium">
-                  {currentVerse.translation}
-                </p>
-              </div>
-
-              {/* Commentary */}
-              <div className="p-6 md:p-8 rounded-2xl bg-gradient-to-br from-[#e07c24]/5 to-[#c06a1f]/5 dark:from-[#e07c24]/10 dark:to-[#c06a1f]/10 border-l-4 border-[#e07c24]">
-                <h3 className="text-base font-bold text-[#e07c24] mb-4 uppercase tracking-wide flex items-center gap-2">
-                  <BookOpenIcon className="w-5 h-5" />
-                  Commentary & Explanation
-                </h3>
-                <p className="text-base md:text-lg leading-relaxed text-[#5a4a3f] dark:text-[#d9c5a9]">
-                  {currentVerse.commentary}
-                </p>
-              </div>
-
-              {/* Meditation Guide (if available) */}
-              {currentVerse.meditationGuide && (
-                <div className="p-6 md:p-8 rounded-2xl bg-gradient-to-br from-[#c06a1f]/10 to-[#e07c24]/5 dark:from-[#c06a1f]/20 dark:to-[#e07c24]/10 border-l-4 border-[#c06a1f]">
-                  <h3 className="text-base font-bold text-[#c06a1f] mb-4 uppercase tracking-wide flex items-center gap-2">
-                    <HeartIcon className="w-5 h-5" />
-                    Meditation Practice Guide
-                  </h3>
-                  <p className="text-base md:text-lg leading-relaxed text-[#5a4a3f] dark:text-[#d9c5a9]">
-                    {currentVerse.meditationGuide}
-                  </p>
-                </div>
-              )}
-
-              {/* Refrain Reminder */}
-              <div className="p-6 rounded-2xl bg-gradient-to-r from-[#e07c24] to-[#c06a1f] text-white">
-                <p className="text-center font-sanskrit text-2xl md:text-3xl mb-3">
-                  चिदानन्दरूपः शिवोऽहम् शिवोऽहम्
-                </p>
-                <p className="text-center text-sm md:text-base italic opacity-90">
-                  Cidānandarūpaḥ Śivo'ham Śivo'ham
-                </p>
-                <p className="text-center text-xs md:text-sm mt-2 opacity-75">
-                  I am Consciousness-Bliss, I am Shiva, I am Shiva
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Navigation Buttons */}
-          <div className="flex justify-between items-center mt-8 gap-4">
-            <Button
-              onClick={prevVerse}
-              disabled={selectedVerse === 0}
-              className="flex-1 md:flex-none bg-white dark:bg-[#2a241e] text-[#8b5d33] dark:text-[#e07c24] border-2 border-[#e07c24]/20 hover:bg-[#e9e1d3] dark:hover:bg-[#1a1814] hover:border-[#e07c24] disabled:opacity-50 disabled:cursor-not-allowed py-6"
-            >
-              <ChevronLeftIcon className="w-5 h-5 mr-2" />
-              Previous Verse
-            </Button>
-
-            <div className="hidden md:block text-center px-6">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#8b5d33] dark:text-[#e07c24] mb-2">
+                Verse by Verse Study
+              </h2>
               <p className="text-sm text-[#5a4a3f] dark:text-[#d9c5a9]">
-                {selectedVerse + 1} / {nirvanaShatkamVerses.length}
+                Choose your preferred reading experience
               </p>
             </div>
 
-            <Button
-              onClick={nextVerse}
-              disabled={selectedVerse === nirvanaShatkamVerses.length - 1}
-              className="flex-1 md:flex-none bg-gradient-to-r from-[#e07c24] to-[#c06a1f] hover:from-[#c06a1f] hover:to-[#e07c24] text-white disabled:opacity-50 disabled:cursor-not-allowed py-6 shadow-lg"
-            >
-              Next Verse
-              <ChevronRightIcon className="w-5 h-5 ml-2" />
-            </Button>
+            <div className="flex items-center gap-3">
+              {/* View Mode Selector */}
+              <div className="flex gap-2 bg-white/80 dark:bg-[#2a241e]/80 p-1 rounded-lg border border-[#e07c24]/20">
+                <Button
+                  variant={viewMode === 'single' ? 'default' : 'ghost'}
+                  size="sm"
+                  onClick={() => setViewMode('single')}
+                  className={viewMode === 'single' ? 'bg-[#e07c24] hover:bg-[#c06a1f]' : ''}
+                >
+                  <BookOpenIcon className="w-4 h-4 mr-2" />
+                  Single
+                </Button>
+                <Button
+                  variant={viewMode === 'scroll' ? 'default' : 'ghost'}
+                  size="sm"
+                  onClick={() => setViewMode('scroll')}
+                  className={viewMode === 'scroll' ? 'bg-[#e07c24] hover:bg-[#c06a1f]' : ''}
+                >
+                  <LayoutListIcon className="w-4 h-4 mr-2" />
+                  Scroll
+                </Button>
+                <Button
+                  variant={viewMode === 'study' ? 'default' : 'ghost'}
+                  size="sm"
+                  onClick={() => setViewMode('study')}
+                  className={viewMode === 'study' ? 'bg-[#e07c24] hover:bg-[#c06a1f]' : ''}
+                >
+                  <BookTextIcon className="w-4 h-4 mr-2" />
+                  Study
+                </Button>
+              </div>
+
+              {/* Settings Dropdown */}
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="outline" size="icon" className="border-[#e07c24]/20">
+                    <SettingsIcon className="w-4 h-4" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-56">
+                  <div className="px-2 py-3">
+                    <div className="text-sm font-semibold mb-2 text-[#8b5d33] dark:text-[#e07c24]">
+                      Font Size: {fontSize}px
+                    </div>
+                    <Slider
+                      value={[fontSize]}
+                      onValueChange={(value) => setFontSize(value[0])}
+                      min={14}
+                      max={24}
+                      step={1}
+                      className="w-full"
+                    />
+                  </div>
+                  <DropdownMenuSeparator />
+                  {bookmarkedVerses.length > 0 && (
+                    <>
+                      <div className="px-2 py-2">
+                        <div className="text-sm font-semibold mb-2 text-[#8b5d33] dark:text-[#e07c24] flex items-center gap-2">
+                          <BookmarkIcon className="w-4 h-4" />
+                          Bookmarks ({bookmarkedVerses.length})
+                        </div>
+                        <div className="flex flex-wrap gap-1">
+                          {bookmarkedVerses.sort((a, b) => a - b).map(idx => (
+                            <button
+                              key={idx}
+                              onClick={() => {
+                                setSelectedVerse(idx)
+                                setViewMode('single')
+                              }}
+                              className="px-2 py-1 text-xs bg-[#e07c24] text-white rounded hover:bg-[#c06a1f]"
+                            >
+                              {idx + 1}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                      <DropdownMenuSeparator />
+                    </>
+                  )}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
           </div>
+
+          {/* Progress Bar */}
+          {viewMode === 'single' && (
+            <div className="mb-6">
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-sm font-medium text-[#8b5d33] dark:text-[#e07c24]">
+                  Progress: Verse {selectedVerse + 1} of {nirvanaShatkamVerses.length}
+                </span>
+                <span className="text-sm text-[#5a4a3f] dark:text-[#d9c5a9]">
+                  {Math.round(progress)}% Complete
+                </span>
+              </div>
+              <div className="relative h-2 bg-[#e9e1d3] dark:bg-[#2a241e] rounded-full overflow-hidden">
+                <div
+                  className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#e07c24] to-[#c06a1f] transition-all duration-300 ease-out"
+                  style={{ width: `${progress}%` }}
+                />
+              </div>
+            </div>
+          )}
+
+          {/* Quick Verse Selector */}
+          {viewMode === 'single' && (
+            <div className="flex flex-wrap gap-2 mb-8 p-6 bg-white/80 dark:bg-[#2a241e]/80 rounded-2xl border border-[#e07c24]/20 shadow-lg">
+              <p className="w-full text-sm text-[#5a4a3f] dark:text-[#d9c5a9] mb-3 font-medium">
+                Select a verse to study:
+              </p>
+              {nirvanaShatkamVerses.map((verse, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    setIsTransitioning(true)
+                    setTimeout(() => {
+                      setSelectedVerse(idx)
+                      setIsTransitioning(false)
+                    }, 150)
+                  }}
+                  className={`relative w-16 h-16 rounded-xl flex items-center justify-center text-base font-semibold transition-all duration-200 ${
+                    selectedVerse === idx
+                      ? 'bg-gradient-to-br from-[#e07c24] to-[#c06a1f] text-white scale-110 shadow-lg'
+                      : 'bg-gradient-to-br from-[#f7f3e9] to-[#e9e1d3] dark:from-[#1a1814] dark:to-[#2a241e] text-[#8b5d33] dark:text-[#e07c24] hover:scale-105 border border-[#e07c24]/20 hover:border-[#e07c24]'
+                  }`}
+                >
+                  {idx + 1}
+                  {bookmarkedVerses.includes(idx) && (
+                    <BookmarkIcon className="absolute -top-1 -right-1 w-3 h-3 fill-[#e07c24] text-[#e07c24]" />
+                  )}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* Single Verse Mode */}
+          {viewMode === 'single' && (
+            <>
+              <Card className={`bg-white/90 dark:bg-[#2a241e]/90 border-2 border-[#e07c24]/20 shadow-xl overflow-hidden transition-opacity duration-150 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
+                <CardHeader className="bg-gradient-to-r from-[#e9e1d3] to-[#f7f3e9] dark:from-[#1a1814] dark:to-[#2a241e] border-b-2 border-[#e07c24]/20">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#e07c24] to-[#c06a1f] text-white flex items-center justify-center font-bold text-lg">
+                        {currentVerse.number}
+                      </div>
+                      <div>
+                        <CardTitle className="text-xl font-serif text-[#8b5d33] dark:text-[#e07c24]">
+                          Verse {currentVerse.number}
+                        </CardTitle>
+                        <CardDescription>
+                          Nirvana Shatkam - Liberation Through Negation
+                        </CardDescription>
+                      </div>
+                    </div>
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      onClick={() => toggleBookmark(selectedVerse)}
+                      className={bookmarkedVerses.includes(selectedVerse) ? 'text-[#e07c24]' : 'text-gray-400'}
+                    >
+                      <BookmarkIcon className={`w-5 h-5 ${bookmarkedVerses.includes(selectedVerse) ? 'fill-[#e07c24]' : ''}`} />
+                    </Button>
+                  </div>
+                </CardHeader>
+
+                <CardContent className="p-6 md:p-8">
+                  <VerseContent verse={currentVerse} />
+                </CardContent>
+              </Card>
+
+              {/* Navigation Buttons */}
+              <div className="flex justify-between items-center mt-8 gap-4">
+                <Button
+                  onClick={prevVerse}
+                  disabled={selectedVerse === 0}
+                  className="flex-1 md:flex-none bg-white dark:bg-[#2a241e] text-[#8b5d33] dark:text-[#e07c24] border-2 border-[#e07c24]/20 hover:bg-[#e9e1d3] dark:hover:bg-[#1a1814] hover:border-[#e07c24] disabled:opacity-50 disabled:cursor-not-allowed py-6"
+                >
+                  <ChevronLeftIcon className="w-5 h-5 mr-2" />
+                  Previous Verse
+                </Button>
+
+                <div className="hidden md:block text-center px-6">
+                  <p className="text-sm text-[#5a4a3f] dark:text-[#d9c5a9]">
+                    {selectedVerse + 1} / {nirvanaShatkamVerses.length}
+                  </p>
+                </div>
+
+                <Button
+                  onClick={nextVerse}
+                  disabled={selectedVerse === nirvanaShatkamVerses.length - 1}
+                  className="flex-1 md:flex-none bg-gradient-to-r from-[#e07c24] to-[#c06a1f] hover:from-[#c06a1f] hover:to-[#e07c24] text-white disabled:opacity-50 disabled:cursor-not-allowed py-6 shadow-lg"
+                >
+                  Next Verse
+                  <ChevronRightIcon className="w-5 h-5 ml-2" />
+                </Button>
+              </div>
+            </>
+          )}
+
+          {/* Continuous Scroll Mode */}
+          {viewMode === 'scroll' && (
+            <div className="space-y-8">
+              {nirvanaShatkamVerses.map((verse, idx) => (
+                <Card key={idx} className="bg-white/90 dark:bg-[#2a241e]/90 border-2 border-[#e07c24]/20 shadow-xl overflow-hidden">
+                  <CardHeader className="bg-gradient-to-r from-[#e9e1d3] to-[#f7f3e9] dark:from-[#1a1814] dark:to-[#2a241e] border-b-2 border-[#e07c24]/20">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#e07c24] to-[#c06a1f] text-white flex items-center justify-center font-bold text-lg">
+                          {verse.number}
+                        </div>
+                        <div>
+                          <CardTitle className="text-xl font-serif text-[#8b5d33] dark:text-[#e07c24]">
+                            Verse {verse.number}
+                          </CardTitle>
+                          <CardDescription>
+                            Nirvana Shatkam - Liberation Through Negation
+                          </CardDescription>
+                        </div>
+                      </div>
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        onClick={() => toggleBookmark(idx)}
+                        className={bookmarkedVerses.includes(idx) ? 'text-[#e07c24]' : 'text-gray-400'}
+                      >
+                        <BookmarkIcon className={`w-5 h-5 ${bookmarkedVerses.includes(idx) ? 'fill-[#e07c24]' : ''}`} />
+                      </Button>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="p-6 md:p-8">
+                    <VerseContent verse={verse} />
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          )}
+
+          {/* Study Mode (Split Screen) */}
+          {viewMode === 'study' && (
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Left: Verse Text */}
+              <Card className="bg-white/90 dark:bg-[#2a241e]/90 border-2 border-[#e07c24]/20 shadow-xl sticky top-4 h-fit">
+                <CardHeader className="bg-gradient-to-r from-[#e9e1d3] to-[#f7f3e9] dark:from-[#1a1814] dark:to-[#2a241e] border-b-2 border-[#e07c24]/20">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#e07c24] to-[#c06a1f] text-white flex items-center justify-center font-bold text-lg">
+                        {currentVerse.number}
+                      </div>
+                      <div>
+                        <CardTitle className="text-xl font-serif text-[#8b5d33] dark:text-[#e07c24]">
+                          Verse {currentVerse.number}
+                        </CardTitle>
+                        <CardDescription>
+                          Nirvana Shatkam
+                        </CardDescription>
+                      </div>
+                    </div>
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      onClick={() => toggleBookmark(selectedVerse)}
+                      className={bookmarkedVerses.includes(selectedVerse) ? 'text-[#e07c24]' : 'text-gray-400'}
+                    >
+                      <BookmarkIcon className={`w-5 h-5 ${bookmarkedVerses.includes(selectedVerse) ? 'fill-[#e07c24]' : ''}`} />
+                    </Button>
+                  </div>
+                </CardHeader>
+                <CardContent className="p-6 space-y-6" style={{ fontSize: `${fontSize}px` }}>
+                  {/* Sanskrit */}
+                  <div className="p-6 rounded-2xl bg-gradient-to-br from-[#f7f3e9] to-[#e9e1d3] dark:from-[#1a1814] dark:to-[#2a241e] border-2 border-[#e07c24]/20">
+                    <h3 className="text-sm font-semibold text-[#e07c24] mb-3 uppercase tracking-wide">
+                      Sanskrit
+                    </h3>
+                    <p className="font-sanskrit text-2xl md:text-3xl leading-relaxed text-[#8b5d33] dark:text-[#e07c24]">
+                      {currentVerse.sanskrit}
+                    </p>
+                  </div>
+
+                  {/* Transliteration */}
+                  <div className="p-6 rounded-2xl bg-gradient-to-br from-[#e9e1d3] to-[#f7f3e9] dark:from-[#2a241e] dark:to-[#1a1814] border border-[#e07c24]/20">
+                    <h3 className="text-sm font-semibold text-[#e07c24] mb-3 uppercase tracking-wide">
+                      Transliteration
+                    </h3>
+                    <p className="text-lg md:text-xl italic text-[#5a4a3f] dark:text-[#d9c5a9] leading-relaxed">
+                      {currentVerse.transliteration}
+                    </p>
+                  </div>
+
+                  {/* Translation */}
+                  <div className="p-6 rounded-2xl bg-gradient-to-br from-[#f7f3e9] to-[#e9e1d3] dark:from-[#1a1814] dark:to-[#2a241e] border-2 border-[#e07c24]/30">
+                    <h3 className="text-sm font-semibold text-[#e07c24] mb-3 uppercase tracking-wide flex items-center gap-2">
+                      <SparklesIcon className="w-4 h-4" />
+                      English Translation
+                    </h3>
+                    <p className="text-lg md:text-xl leading-relaxed text-[#8b5d33] dark:text-[#e07c24] font-medium">
+                      {currentVerse.translation}
+                    </p>
+                  </div>
+
+                  {/* Navigation */}
+                  <div className="flex justify-between items-center pt-4">
+                    <Button
+                      onClick={prevVerse}
+                      disabled={selectedVerse === 0}
+                      size="sm"
+                      className="bg-[#e07c24] hover:bg-[#c06a1f] text-white disabled:opacity-50"
+                    >
+                      <ChevronLeftIcon className="w-4 h-4" />
+                    </Button>
+                    <span className="text-sm font-semibold text-[#8b5d33] dark:text-[#e07c24]">
+                      {selectedVerse + 1} / {nirvanaShatkamVerses.length}
+                    </span>
+                    <Button
+                      onClick={nextVerse}
+                      disabled={selectedVerse === nirvanaShatkamVerses.length - 1}
+                      size="sm"
+                      className="bg-[#e07c24] hover:bg-[#c06a1f] text-white disabled:opacity-50"
+                    >
+                      <ChevronRightIcon className="w-4 h-4" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Right: Commentary & Meditation */}
+              <div className="space-y-6">
+                <Card className="bg-white/90 dark:bg-[#2a241e]/90 border-2 border-[#e07c24]/20 shadow-xl">
+                  <CardHeader>
+                    <CardTitle className="text-xl font-serif text-[#8b5d33] dark:text-[#e07c24] flex items-center gap-2">
+                      <BookOpenIcon className="w-5 h-5" />
+                      Commentary & Analysis
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-6" style={{ fontSize: `${fontSize}px` }}>
+                    <div className="p-6 md:p-8 rounded-2xl bg-gradient-to-br from-[#e07c24]/5 to-[#c06a1f]/5 dark:from-[#e07c24]/10 dark:to-[#c06a1f]/10 border-l-4 border-[#e07c24]">
+                      <p className="text-base md:text-lg leading-relaxed text-[#5a4a3f] dark:text-[#d9c5a9]">
+                        {currentVerse.commentary}
+                      </p>
+                    </div>
+
+                    {currentVerse.meditationGuide && (
+                      <div className="p-6 md:p-8 rounded-2xl bg-gradient-to-br from-[#c06a1f]/10 to-[#e07c24]/5 dark:from-[#c06a1f]/20 dark:to-[#e07c24]/10 border-l-4 border-[#c06a1f]">
+                        <h3 className="text-base font-bold text-[#c06a1f] mb-4 uppercase tracking-wide flex items-center gap-2">
+                          <HeartIcon className="w-5 h-5" />
+                          Meditation Practice
+                        </h3>
+                        <p className="text-base md:text-lg leading-relaxed text-[#5a4a3f] dark:text-[#d9c5a9]">
+                          {currentVerse.meditationGuide}
+                        </p>
+                      </div>
+                    )}
+
+                    {/* Refrain */}
+                    <div className="p-6 rounded-2xl bg-gradient-to-r from-[#e07c24] to-[#c06a1f] text-white">
+                      <p className="text-center font-sanskrit text-2xl md:text-3xl mb-3">
+                        चिदानन्दरूपः शिवोऽहम् शिवोऽहम्
+                      </p>
+                      <p className="text-center text-sm md:text-base italic opacity-90">
+                        Cidānandarūpaḥ Śivo'ham Śivo'ham
+                      </p>
+                      <p className="text-center text-xs md:text-sm mt-2 opacity-75">
+                        I am Consciousness-Bliss, I am Shiva, I am Shiva
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Study Tips */}
