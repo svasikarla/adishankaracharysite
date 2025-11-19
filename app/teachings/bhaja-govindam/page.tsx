@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Slider } from "@/components/ui/slider"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, DropdownMenuSeparator } from "@/components/ui/dropdown-menu"
 import { ChevronLeftIcon, ChevronRightIcon, BookOpenIcon, LayoutListIcon, BookTextIcon, SettingsIcon, BookmarkIcon } from "lucide-react"
+import SanskritAudio from "@/components/SanskritAudio"
 
 type ViewMode = 'single' | 'scroll' | 'study'
 
@@ -90,6 +91,13 @@ export default function BhajaGovindamPage() {
           {verse.transliteration}
         </p>
       </div>
+
+      {/* Sanskrit Audio Player */}
+      <SanskritAudio
+        text={verse.sanskrit}
+        transliteration={verse.transliteration}
+        compact={viewMode === 'scroll'}
+      />
 
       {/* Translation */}
       <div>
@@ -445,6 +453,12 @@ export default function BhajaGovindamPage() {
                     {currentVerse.transliteration}
                   </p>
                 </div>
+
+                {/* Sanskrit Audio Player */}
+                <SanskritAudio
+                  text={currentVerse.sanskrit}
+                  transliteration={currentVerse.transliteration}
+                />
 
                 {/* Translation */}
                 <div>
