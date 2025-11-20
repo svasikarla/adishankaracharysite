@@ -30,6 +30,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import SanskritAudio from "@/components/SanskritAudio"
 
 const themeLabels: Record<string, string> = {
   'qualification': 'Qualification',
@@ -343,6 +344,12 @@ export default function VivekachudamaniPage() {
                     </p>
                   </div>
 
+                  {/* Sanskrit Audio Player */}
+                  <SanskritAudio
+                    text={currentVerse.sanskrit}
+                    transliteration={currentVerse.transliteration}
+                  />
+
                   {/* Translation */}
                   <div className="p-6 md:p-8 rounded-2xl bg-gradient-to-br from-[#f7f3e9] to-[#e9e1d3] dark:from-[#1a1814] dark:to-[#2a241e] border-2 border-[#e07c24]/30 shadow-lg">
                     <h3 className="text-xs font-semibold text-[#e07c24] mb-4 uppercase tracking-wide flex items-center gap-2">
@@ -486,6 +493,19 @@ export default function VivekachudamaniPage() {
                       <p className="italic text-[#5a4a3f] dark:text-[#d9c5a9] leading-relaxed" style={{ fontSize: `${fontSize * 1.1}px` }}>
                         {verse.transliteration}
                       </p>
+
+                      {/* Compact Audio Player */}
+                      <div className="flex items-center gap-2">
+                        <SanskritAudio
+                          text={verse.sanskrit}
+                          transliteration={verse.transliteration}
+                          compact
+                        />
+                        <span className="text-xs text-[#5a4a3f] dark:text-[#d9c5a9]">
+                          Listen to pronunciation
+                        </span>
+                      </div>
+
                       <p className="font-medium text-[#8b5d33] dark:text-[#e07c24] leading-relaxed border-l-4 border-[#e07c24] pl-4" style={{ fontSize: `${fontSize * 1.1}px` }}>
                         {verse.translation}
                       </p>
@@ -529,6 +549,13 @@ export default function VivekachudamaniPage() {
                           {currentVerse.transliteration}
                         </p>
                       </div>
+
+                      {/* Sanskrit Audio Player */}
+                      <SanskritAudio
+                        text={currentVerse.sanskrit}
+                        transliteration={currentVerse.transliteration}
+                      />
+
                       <div className="p-4 rounded-xl bg-[#f7f3e9] dark:bg-[#1a1814] border-l-4 border-[#e07c24]">
                         <p className="font-medium text-[#8b5d33] dark:text-[#e07c24] leading-relaxed" style={{ fontSize: `${fontSize * 1.15}px` }}>
                           {currentVerse.translation}
