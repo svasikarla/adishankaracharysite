@@ -6,67 +6,94 @@ import { MapPinIcon, MountainIcon, WavesIcon, CompassIcon } from "lucide-react"
 
 // Convert lat/lng to SVG coordinates
 // India bounds: lat 8-37°N, lng 68-97°E
-// Map to fit within India outline (x: 150-600, y: 180-760)
+// Map to viewBox (0 0 800 1000)
 const latLngToXY = (lat: number, lng: number) => {
-  // Adjust for India's geographical shape (wider north, narrower south)
-  const latNorm = (lat - 8) / (37 - 8) // 0 to 1 (south to north)
-  const lngNorm = (lng - 68) / (97 - 68) // 0 to 1 (west to east)
-
-  // Map to SVG coordinates with perspective (wider at top/north)
-  const mapWidth = 220 + (latNorm * 180) // Narrower south (220), wider north (400)
-  const x = 200 + (lngNorm * mapWidth)
-  const y = 730 - (latNorm * 530) // Flip Y axis (south=730, north=200)
-
+  // India spans roughly: 68-97°E longitude, 8-37°N latitude
+  const x = ((lng - 68) / (97 - 68)) * 450 + 150
+  const y = ((37 - lat) / (37 - 8)) * 700 + 100
   return { x, y }
 }
 
-// Simplified India outline - triangular peninsula shape
-// North broader, tapering to south (Kanyakumari)
+// Accurate India map outline - recognizable shape
+// Coordinates for viewBox="0 0 800 1000"
 const indiaOutlinePath = `
-  M 320,240
-  C 280,220 240,215 205,225
-  C 180,235 165,260 155,295
-  C 148,325 145,360 148,395
-  C 152,430 160,465 172,495
-  Q 185,530 200,560
-  Q 218,595 238,625
-  Q 260,655 283,680
-  Q 308,705 333,725
-  Q 358,742 383,752
-  Q 408,760 432,760
-  Q 455,758 478,748
-  Q 500,736 520,718
-  Q 538,698 553,673
-  Q 566,647 576,617
-  Q 584,587 590,555
-  Q 594,523 596,490
-  Q 597,457 596,424
-  Q 594,391 590,360
-  Q 584,328 575,300
-  Q 564,270 550,245
-  Q 534,218 515,200
-  Q 495,184 473,177
-  Q 450,172 425,175
-  Q 400,180 378,192
-  Q 358,204 342,220
-  L 320,240
+  M 400,150
+  L 500,140 L 580,160 L 620,200
+  L 640,250 L 650,310 L 655,380
+  L 652,450 L 640,520 L 620,590
+  L 595,650 L 565,700 L 530,740
+  L 490,770 L 450,790 L 410,800
+  L 370,795 L 330,780 L 290,755
+  L 255,720 L 225,675 L 205,625
+  L 195,575 L 190,520 L 192,470
+  L 200,420 L 215,375 L 235,335
+  L 260,300 L 290,270 L 325,245
+  L 360,225 L 395,210 L 430,200
+  L 465,195 L 495,195 L 520,200
+  L 540,210 L 555,225 L 565,245
+  L 570,270 L 572,295 L 570,320
+  L 565,345 L 555,368 L 540,390
+  L 520,408 L 495,423 L 470,435
+  L 445,444 L 420,450 L 395,453
+  L 370,452 L 345,447 L 320,438
+  L 295,425 L 272,408 L 252,388
+  L 235,365 L 222,340 L 213,313
+  L 208,285 L 207,257 L 210,230
+  L 218,205 L 230,183 L 246,165
+  L 265,151 L 287,142 L 312,137
+  L 338,136 L 365,139 L 390,145
   Z
 `
 
-// State boundaries (aligned with new map)
+// State boundaries (properly positioned)
 const statePaths = [
-  { name: "Kerala", path: "M 250,710 L 270,730 L 285,745 L 295,755 L 290,760 L 275,760 L 260,755 L 245,745 L 235,730 L 238,715 Z", color: "#10b981" },
-  { name: "Karnataka", path: "M 270,650 L 310,660 L 340,680 L 350,710 L 340,740 L 310,750 L 280,745 L 260,725 L 258,690 Z", color: "#3b82f6" },
-  { name: "Gujarat", path: "M 180,380 L 220,370 L 255,390 L 270,420 L 265,450 L 240,470 L 210,465 L 185,445 L 175,415 Z", color: "#f59e0b" },
-  { name: "Odisha", path: "M 490,540 L 520,550 L 540,580 L 535,610 L 515,625 L 485,620 L 470,600 L 475,570 Z", color: "#8b5cf6" },
-  { name: "Uttarakhand", path: "M 380,220 L 410,210 L 435,225 L 445,250 L 435,275 L 410,285 L 385,280 L 365,260 L 365,235 Z", color: "#ef4444" },
+  {
+    name: "Kerala",
+    path: "M 260,720 L 280,750 L 300,775 L 315,790 L 330,795 L 325,785 L 310,765 L 290,740 L 270,715 L 260,695 Z",
+    color: "#10b981"
+  },
+  {
+    name: "Karnataka",
+    path: "M 290,640 L 330,655 L 370,680 L 390,715 L 380,745 L 350,760 L 310,755 L 280,730 L 270,700 L 280,665 Z",
+    color: "#3b82f6"
+  },
+  {
+    name: "Gujarat",
+    path: "M 200,380 L 240,365 L 280,375 L 305,400 L 315,435 L 305,470 L 275,490 L 240,485 L 210,465 L 195,430 L 195,405 Z",
+    color: "#f59e0b"
+  },
+  {
+    name: "Odisha",
+    path: "M 540,550 L 575,565 L 600,595 L 605,630 L 590,660 L 560,670 L 530,660 L 515,630 L 520,595 L 535,565 Z",
+    color: "#8b5cf6"
+  },
+  {
+    name: "Uttarakhand",
+    path: "M 430,200 L 470,190 L 505,200 L 525,225 L 520,255 L 495,270 L 460,270 L 430,255 L 420,225 Z",
+    color: "#ef4444"
+  },
 ]
 
-// Major rivers (aligned with new map)
+// Major rivers
 const rivers = [
-  { name: "Ganges", path: "M 450,250 Q 420,280 380,310 Q 340,340 300,360 Q 270,375 245,385", color: "#3b82f6", width: 3 },
-  { name: "Godavari", path: "M 380,580 Q 410,600 440,610 Q 470,620 500,625", color: "#0ea5e9", width: 2 },
-  { name: "Krishna", path: "M 320,650 Q 360,660 400,665 Q 440,670 480,673", color: "#06b6d4", width: 2 },
+  {
+    name: "Ganges",
+    path: "M 520,230 Q 480,260 440,285 Q 400,310 360,330 Q 320,350 280,365 Q 250,375 230,385",
+    color: "#3b82f6",
+    width: 4
+  },
+  {
+    name: "Godavari",
+    path: "M 410,580 Q 450,595 490,605 Q 530,615 565,620",
+    color: "#0ea5e9",
+    width: 3
+  },
+  {
+    name: "Krishna",
+    path: "M 370,650 Q 410,660 450,665 Q 490,670 525,672",
+    color: "#06b6d4",
+    width: 3
+  },
 ]
 
 export default function TravelsMapEnhanced() {
@@ -78,8 +105,8 @@ export default function TravelsMapEnhanced() {
   const getCurvedPath = (start: { x: number; y: number }, end: { x: number; y: number }) => {
     const midX = (start.x + end.x) / 2
     const midY = (start.y + end.y) / 2
-    const offsetX = (end.y - start.y) * 0.2
-    const offsetY = (start.x - end.x) * 0.2
+    const offsetX = (end.y - start.y) * 0.15
+    const offsetY = (start.x - end.x) * 0.15
     const controlX = midX + offsetX
     const controlY = midY + offsetY
 
@@ -157,49 +184,41 @@ export default function TravelsMapEnhanced() {
             </filter>
           </defs>
 
-          {/* Ocean areas */}
+          {/* Ocean background */}
           <rect x="0" y="0" width="800" height="1000" fill="url(#oceanGradient)" />
 
-          {/* Arabian Sea label */}
-          <text x="80" y="600" fill="#0369a1" fontSize="16" fontStyle="italic" opacity="0.6">
-            <tspan x="80" dy="0">Arabian</tspan>
-            <tspan x="80" dy="18">Sea</tspan>
+          {/* Ocean labels */}
+          <text x="60" y="500" fill="#0369a1" fontSize="14" fontStyle="italic" opacity="0.5" fontWeight="600">
+            Arabian Sea
           </text>
-          <WavesIcon x={55} y={570} className="w-5 h-5 text-[#0369a1] opacity-60" />
 
-          {/* Bay of Bengal label */}
-          <text x="620" y="600" fill="#0369a1" fontSize="16" fontStyle="italic" opacity="0.6">
-            <tspan x="640" dy="0">Bay of</tspan>
-            <tspan x="640" dy="18">Bengal</tspan>
+          <text x="650" y="500" fill="#0369a1" fontSize="14" fontStyle="italic" opacity="0.5" fontWeight="600">
+            Bay of Bengal
           </text>
-          <WavesIcon x={620} y={570} className="w-5 h-5 text-[#0369a1] opacity-60" />
 
-          {/* Indian Ocean label */}
-          <text x="320" y="950" fill="#0369a1" fontSize="18" fontStyle="italic" opacity="0.6">
+          <text x="330" y="920" fill="#0369a1" fontSize="16" fontStyle="italic" opacity="0.5" fontWeight="600">
             Indian Ocean
           </text>
-          <WavesIcon x={290} y={930} className="w-5 h-5 text-[#0369a1] opacity-60" />
 
-          {/* Himalayas indication */}
+          {/* Himalayas */}
           <g opacity="0.4">
             <path
-              d="M 300,180 Q 350,160 400,180 Q 450,200 500,180 Q 550,160 600,180"
+              d="M 280,130 Q 340,110 400,130 Q 460,150 520,130 Q 580,110 640,130"
               fill="none"
               stroke="#78716c"
-              strokeWidth="8"
+              strokeWidth="10"
               strokeLinecap="round"
             />
             <path
-              d="M 320,200 Q 360,185 400,200 Q 440,215 480,200 Q 520,185 560,200"
+              d="M 300,150 Q 350,135 400,150 Q 450,165 500,150 Q 550,135 600,150"
               fill="none"
-              stroke="#78716c"
-              strokeWidth="6"
+              stroke="#a8a29e"
+              strokeWidth="7"
               strokeLinecap="round"
             />
-            <text x="370" y="165" fill="#78716c" fontSize="14" fontWeight="bold" opacity="0.8">
+            <text x="360" y="115" fill="#78716c" fontSize="16" fontWeight="bold" opacity="0.7">
               HIMALAYAS
             </text>
-            <MountainIcon x={345} y={150} className="w-4 h-4 text-[#78716c] opacity-80" />
           </g>
 
           {/* State boundaries */}
@@ -210,32 +229,32 @@ export default function TravelsMapEnhanced() {
               fill={state.color}
               fillOpacity="0.15"
               stroke={state.color}
-              strokeWidth="1.5"
-              strokeOpacity="0.4"
-              strokeDasharray="4,4"
+              strokeWidth="2"
+              strokeOpacity="0.5"
+              strokeDasharray="5,3"
             />
           ))}
 
-          {/* India Main Outline */}
+          {/* India Main Outline - THE KEY VISIBLE ELEMENT */}
           <path
             d={indiaOutlinePath}
             fill="#fef3c7"
-            fillOpacity="0.9"
+            fillOpacity="0.85"
             stroke="#92400e"
-            strokeWidth="3"
+            strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="dark:fill-[#2a2412] dark:stroke-[#fbbf24]"
+            className="dark:fill-[#3a2f1f] dark:stroke-[#fbbf24]"
           />
 
-          {/* India Land texture/pattern */}
+          {/* India Land texture */}
           <path
             d={indiaOutlinePath}
             fill="none"
             stroke="#d97706"
-            strokeWidth="0.5"
-            strokeOpacity="0.2"
-            strokeDasharray="2,2"
+            strokeWidth="0.8"
+            strokeOpacity="0.15"
+            strokeDasharray="3,3"
           />
 
           {/* Major Rivers */}
@@ -246,22 +265,22 @@ export default function TravelsMapEnhanced() {
                 fill="none"
                 stroke={river.color}
                 strokeWidth={river.width}
-                strokeOpacity="0.6"
+                strokeOpacity="0.7"
                 strokeLinecap="round"
               />
               <path
                 d={river.path}
                 fill="none"
                 stroke="#ffffff"
-                strokeWidth={river.width * 0.4}
-                strokeOpacity="0.3"
+                strokeWidth={river.width * 0.3}
+                strokeOpacity="0.4"
                 strokeLinecap="round"
-                strokeDasharray="8,8"
+                strokeDasharray="10,10"
               >
                 <animate
                   attributeName="stroke-dashoffset"
                   from="0"
-                  to="16"
+                  to="20"
                   dur="2s"
                   repeatCount="indefinite"
                 />
@@ -269,7 +288,7 @@ export default function TravelsMapEnhanced() {
             </g>
           ))}
 
-          {/* Travel Routes (connecting lines with curves) */}
+          {/* Travel Routes */}
           <g filter="url(#glow)">
             {travelLocations.slice(0, -1).map((location, index) => {
               const nextLocation = travelLocations[index + 1]
@@ -279,37 +298,37 @@ export default function TravelsMapEnhanced() {
 
               return (
                 <g key={`route-${location.id}`}>
-                  {/* Shadow/glow layer */}
+                  {/* Shadow layer */}
                   <path
                     d={pathD}
                     fill="none"
                     stroke="#e07c24"
-                    strokeWidth="6"
-                    strokeOpacity="0.2"
+                    strokeWidth="8"
+                    strokeOpacity="0.15"
                   />
                   {/* Main path */}
                   <path
                     d={pathD}
                     fill="none"
                     stroke="#e07c24"
-                    strokeWidth="3"
-                    strokeOpacity="0.8"
+                    strokeWidth="4"
+                    strokeOpacity="0.9"
                     strokeLinecap="round"
                   />
-                  {/* Animated dash */}
+                  {/* Animated overlay */}
                   <path
                     d={pathD}
                     fill="none"
                     stroke="#fbbf24"
-                    strokeWidth="2"
-                    strokeOpacity="0.9"
-                    strokeDasharray="10,10"
+                    strokeWidth="2.5"
+                    strokeOpacity="1"
+                    strokeDasharray="12,12"
                     strokeLinecap="round"
                   >
                     <animate
                       attributeName="stroke-dashoffset"
                       from="0"
-                      to="20"
+                      to="24"
                       dur="3s"
                       repeatCount="indefinite"
                     />
@@ -319,35 +338,23 @@ export default function TravelsMapEnhanced() {
             })}
           </g>
 
-          {/* Direction Markers (Four Cardinal Mathas) */}
-          <g opacity="0.6">
-            {/* South - Sringeri */}
-            <g transform="translate(700, 850)">
-              <circle r="25" fill="#10b981" fillOpacity="0.2" stroke="#10b981" strokeWidth="2" />
-              <text x="0" y="0" textAnchor="middle" dy="0.35em" fill="#10b981" fontSize="12" fontWeight="bold">S</text>
+          {/* Direction Markers */}
+          <g opacity="0.5">
+            <g transform="translate(750, 750)">
+              <circle r="30" fill="#10b981" fillOpacity="0.2" stroke="#10b981" strokeWidth="2.5" />
+              <text x="0" y="0" textAnchor="middle" dy="0.4em" fill="#10b981" fontSize="14" fontWeight="bold">S</text>
             </g>
-
-            {/* East - Puri */}
-            <g transform="translate(720, 650)">
-              <circle r="25" fill="#8b5cf6" fillOpacity="0.2" stroke="#8b5cf6" strokeWidth="2" />
-              <text x="0" y="0" textAnchor="middle" dy="0.35em" fill="#8b5cf6" fontSize="12" fontWeight="bold">E</text>
+            <g transform="translate(750, 500)">
+              <circle r="30" fill="#8b5cf6" fillOpacity="0.2" stroke="#8b5cf6" strokeWidth="2.5" />
+              <text x="0" y="0" textAnchor="middle" dy="0.4em" fill="#8b5cf6" fontSize="14" fontWeight="bold">E</text>
             </g>
-
-            {/* West - Dwarka */}
-            <g transform="translate(80, 500)">
-              <circle r="25" fill="#f59e0b" fillOpacity="0.2" stroke="#f59e0b" strokeWidth="2" />
-              <text x="0" y="0" textAnchor="middle" dy="0.35em" fill="#f59e0b" fontSize="12" fontWeight="bold">W</text>
+            <g transform="translate(50, 420)">
+              <circle r="30" fill="#f59e0b" fillOpacity="0.2" stroke="#f59e0b" strokeWidth="2.5" />
+              <text x="0" y="0" textAnchor="middle" dy="0.4em" fill="#f59e0b" fontSize="14" fontWeight="bold">W</text>
             </g>
-
-            {/* North - Jyotir Math */}
-            <g transform="translate(420, 270)">
-              <circle r="25" fill="#ef4444" fillOpacity="0.2" stroke="#ef4444" strokeWidth="2" />
-              <text x="0" y="0" textAnchor="middle" dy="0.35em" fill="#ef4444" fontSize="12" fontWeight="bold">N</text>
-            </g>
-
-            {/* Compass Rose */}
-            <g transform="translate(700, 120)">
-              <CompassIcon className="w-12 h-12 text-[#92400e] dark:text-[#fbbf24] opacity-70" />
+            <g transform="translate(490, 160)">
+              <circle r="30" fill="#ef4444" fillOpacity="0.2" stroke="#ef4444" strokeWidth="2.5" />
+              <text x="0" y="0" textAnchor="middle" dy="0.4em" fill="#ef4444" fontSize="14" fontWeight="bold">N</text>
             </g>
           </g>
 
@@ -360,9 +367,9 @@ export default function TravelsMapEnhanced() {
             const isMatha = ['sringeri', 'puri', 'dwarka', 'joshimath'].includes(location.id)
 
             let markerColor = '#e07c24'
-            if (isFirst) markerColor = '#10b981' // Green for birthplace
-            else if (isLast) markerColor = '#dc2626' // Red for samadhi
-            else if (isMatha) markerColor = '#8b5cf6' // Purple for mathas
+            if (isFirst) markerColor = '#10b981'
+            else if (isLast) markerColor = '#dc2626'
+            else if (isMatha) markerColor = '#8b5cf6'
 
             return (
               <g
@@ -373,17 +380,13 @@ export default function TravelsMapEnhanced() {
                 className="cursor-pointer transition-all duration-300"
                 filter="url(#dropShadow)"
               >
-                {/* Pulse animation for hovered */}
+                {/* Pulse on hover */}
                 {isHovered && (
-                  <circle
-                    r="20"
-                    fill={markerColor}
-                    fillOpacity="0.3"
-                  >
+                  <circle r="25" fill={markerColor} fillOpacity="0.3">
                     <animate
                       attributeName="r"
-                      from="15"
-                      to="25"
+                      from="18"
+                      to="30"
                       dur="1.5s"
                       repeatCount="indefinite"
                     />
@@ -397,90 +400,73 @@ export default function TravelsMapEnhanced() {
                   </circle>
                 )}
 
-                {/* Marker Circle */}
+                {/* Marker */}
                 <circle
-                  r={isHovered ? 14 : isMatha || isFirst || isLast ? 11 : 8}
+                  r={isHovered ? 16 : isMatha || isFirst || isLast ? 13 : 10}
                   fill={markerColor}
                   stroke="white"
-                  strokeWidth="3"
+                  strokeWidth="3.5"
                   className="transition-all duration-300"
                 />
 
-                {/* Inner circle for mathas */}
-                {isMatha && (
-                  <circle
-                    r="4"
-                    fill="white"
-                    opacity="0.9"
-                  />
-                )}
+                {/* Matha inner dot */}
+                {isMatha && <circle r="5" fill="white" opacity="0.9" />}
 
                 {/* Number */}
                 <text
                   textAnchor="middle"
-                  dy="0.35em"
+                  dy="0.4em"
                   fill="white"
-                  fontSize={isHovered ? "11" : "9"}
+                  fontSize={isHovered ? "13" : "10"}
                   fontWeight="bold"
-                  className="transition-all duration-300 pointer-events-none"
+                  className="pointer-events-none"
                 >
                   {index + 1}
                 </text>
 
-                {/* Enhanced tooltip on hover */}
+                {/* Tooltip */}
                 {isHovered && (
                   <g>
-                    {/* Tooltip background */}
                     <rect
-                      x="-90"
-                      y="-70"
-                      width="180"
-                      height="55"
+                      x="-95"
+                      y="-75"
+                      width="190"
+                      height="60"
                       rx="8"
                       fill="white"
                       stroke={markerColor}
-                      strokeWidth="2"
+                      strokeWidth="2.5"
                       opacity="0.98"
                       className="dark:fill-[#1a1814]"
                     />
-
-                    {/* Location name */}
                     <text
                       textAnchor="middle"
-                      dy="-50"
+                      dy="-52"
                       fill={markerColor}
-                      fontSize="13"
+                      fontSize="14"
                       fontWeight="bold"
-                      className="pointer-events-none"
                     >
                       {location.name}
                     </text>
-
-                    {/* State */}
                     <text
                       textAnchor="middle"
                       dy="-35"
                       fill="#6b7280"
-                      fontSize="9"
-                      className="pointer-events-none dark:fill-[#d9c5a9]"
+                      fontSize="10"
+                      className="dark:fill-[#d9c5a9]"
                     >
                       {location.state}
                       {location.visitYear && ` • ${location.visitYear}`}
                     </text>
-
-                    {/* Purpose */}
                     <text
                       textAnchor="middle"
                       dy="-20"
                       fill="#374151"
-                      fontSize="8"
-                      className="pointer-events-none dark:fill-[#a8a29e]"
-                      style={{ maxWidth: '160px' }}
+                      fontSize="9"
+                      className="dark:fill-[#a8a29e]"
                     >
-                      {location.purpose.length > 40
-                        ? location.purpose.substring(0, 37) + '...'
-                        : location.purpose
-                      }
+                      {location.purpose.substring(0, 45)}
+                      {location.purpose.length > 45 ? '...' : ''}
                     </text>
                   </g>
                 )}
@@ -492,68 +478,60 @@ export default function TravelsMapEnhanced() {
         {/* Legend */}
         <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3">
           <div className="flex items-center gap-2 p-3 rounded-lg bg-white dark:bg-[#2a241e] border-2 border-[#10b981]/40 shadow">
-            <div className="w-5 h-5 rounded-full bg-[#10b981] border-2 border-white shadow"></div>
-            <span className="text-xs font-semibold text-[#10b981]">
-              Birthplace (Kaladi)
-            </span>
+            <div className="w-6 h-6 rounded-full bg-[#10b981] border-2 border-white shadow"></div>
+            <span className="text-xs font-semibold text-[#10b981]">Birthplace</span>
           </div>
           <div className="flex items-center gap-2 p-3 rounded-lg bg-white dark:bg-[#2a241e] border-2 border-[#8b5cf6]/40 shadow">
-            <div className="w-5 h-5 rounded-full bg-[#8b5cf6] border-2 border-white shadow flex items-center justify-center">
-              <div className="w-2 h-2 rounded-full bg-white"></div>
+            <div className="w-6 h-6 rounded-full bg-[#8b5cf6] border-2 border-white shadow flex items-center justify-center">
+              <div className="w-2.5 h-2.5 rounded-full bg-white"></div>
             </div>
-            <span className="text-xs font-semibold text-[#8b5cf6]">
-              Four Mathas
-            </span>
+            <span className="text-xs font-semibold text-[#8b5cf6]">Four Mathas</span>
           </div>
           <div className="flex items-center gap-2 p-3 rounded-lg bg-white dark:bg-[#2a241e] border-2 border-[#e07c24]/40 shadow">
-            <div className="w-5 h-5 rounded-full bg-[#e07c24] border-2 border-white shadow"></div>
-            <span className="text-xs font-semibold text-[#e07c24]">
-              Major Stops
-            </span>
+            <div className="w-6 h-6 rounded-full bg-[#e07c24] border-2 border-white shadow"></div>
+            <span className="text-xs font-semibold text-[#e07c24]">Major Stops</span>
           </div>
           <div className="flex items-center gap-2 p-3 rounded-lg bg-white dark:bg-[#2a241e] border-2 border-[#dc2626]/40 shadow">
-            <div className="w-5 h-5 rounded-full bg-[#dc2626] border-2 border-white shadow"></div>
-            <span className="text-xs font-semibold text-[#dc2626]">
-              Samadhi (Kedarnath)
-            </span>
+            <div className="w-6 h-6 rounded-full bg-[#dc2626] border-2 border-white shadow"></div>
+            <span className="text-xs font-semibold text-[#dc2626]">Samadhi</span>
           </div>
         </div>
 
-        {/* Geographic Info Panel */}
+        {/* Geographic Info */}
         <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="p-4 rounded-xl bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 border border-blue-200 dark:border-blue-800">
             <div className="flex items-center gap-2 mb-2">
-              <WavesIcon className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+              <WavesIcon className="w-5 h-5 text-blue-600" />
               <h4 className="font-semibold text-blue-900 dark:text-blue-300 text-sm">Sacred Rivers</h4>
             </div>
             <p className="text-xs text-blue-700 dark:text-blue-400">
-              Ganges, Godavari & Krishna rivers marked the spiritual geography of his travels
+              Ganges, Godavari & Krishna rivers marked the spiritual geography
             </p>
           </div>
 
           <div className="p-4 rounded-xl bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/30 dark:to-orange-950/30 border border-amber-200 dark:border-amber-800">
             <div className="flex items-center gap-2 mb-2">
-              <MountainIcon className="w-5 h-5 text-amber-700 dark:text-amber-400" />
-              <h4 className="font-semibold text-amber-900 dark:text-amber-300 text-sm">From South to Himalayas</h4>
+              <MountainIcon className="w-5 h-5 text-amber-700" />
+              <h4 className="font-semibold text-amber-900 dark:text-amber-300 text-sm">South to Himalayas</h4>
             </div>
             <p className="text-xs text-amber-700 dark:text-amber-400">
-              Journey from Kerala's coastal lands to the Himalayan heights of Kedarnath
+              From Kerala's coast to Himalayan heights of Kedarnath
             </p>
           </div>
 
           <div className="p-4 rounded-xl bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 border border-purple-200 dark:border-purple-800">
             <div className="flex items-center gap-2 mb-2">
-              <CompassIcon className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+              <CompassIcon className="w-5 h-5 text-purple-600" />
               <h4 className="font-semibold text-purple-900 dark:text-purple-300 text-sm">Four Directions</h4>
             </div>
             <p className="text-xs text-purple-700 dark:text-purple-400">
-              Strategically established mathas in all four cardinal directions of India
+              Strategic mathas in all four cardinal directions of India
             </p>
           </div>
         </div>
       </div>
 
-      {/* Location Details Cards */}
+      {/* Location Details */}
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
         {travelLocations.map((location, index) => {
           const isFirst = index === 0
@@ -578,7 +556,7 @@ export default function TravelsMapEnhanced() {
               key={location.id}
               className={`p-5 rounded-xl border-2 transition-all duration-300 ${
                 hoveredLocation === location.id
-                  ? `${borderColor.replace('/20', '/80').replace('/30', '')} shadow-xl bg-white dark:bg-[#2a241e] scale-[1.02]`
+                  ? `${borderColor.replace('/20', '').replace('/30', '')} shadow-xl bg-white dark:bg-[#2a241e] scale-[1.02]`
                   : `${borderColor} bg-white/60 dark:bg-[#2a241e]/60 hover:shadow-lg`
               }`}
               onMouseEnter={() => setHoveredLocation(location.id)}
@@ -586,11 +564,11 @@ export default function TravelsMapEnhanced() {
             >
               <div className="flex items-start gap-4">
                 <div
-                  className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 border-2 border-white shadow-md"
+                  className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 border-2 border-white shadow-md relative"
                   style={{ backgroundColor: markerColor }}
                 >
                   {isMatha && <div className="w-2.5 h-2.5 rounded-full bg-white absolute"></div>}
-                  {index + 1}
+                  <span className={isMatha ? "opacity-0" : ""}>{index + 1}</span>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-serif font-bold text-[#8b5d33] dark:text-[#e07c24] mb-1">
