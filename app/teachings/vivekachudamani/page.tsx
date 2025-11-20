@@ -30,7 +30,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import SanskritAudio from "@/components/SanskritAudio"
+import SanskritAudioEnhanced from "@/components/SanskritAudioEnhanced"
 
 const themeLabels: Record<string, string> = {
   'qualification': 'Qualification',
@@ -345,9 +345,11 @@ export default function VivekachudamaniPage() {
                   </div>
 
                   {/* Sanskrit Audio Player */}
-                  <SanskritAudio
+                  <SanskritAudioEnhanced
                     text={currentVerse.sanskrit}
                     transliteration={currentVerse.transliteration}
+                    textId="vivekachudamani"
+                    verseNumber={currentVerse.number}
                   />
 
                   {/* Translation */}
@@ -496,9 +498,11 @@ export default function VivekachudamaniPage() {
 
                       {/* Compact Audio Player */}
                       <div className="flex items-center gap-2">
-                        <SanskritAudio
+                        <SanskritAudioEnhanced
                           text={verse.sanskrit}
                           transliteration={verse.transliteration}
+                          textId="vivekachudamani"
+                          verseNumber={verse.number}
                           compact
                         />
                         <span className="text-xs text-[#5a4a3f] dark:text-[#d9c5a9]">
@@ -551,9 +555,11 @@ export default function VivekachudamaniPage() {
                       </div>
 
                       {/* Sanskrit Audio Player */}
-                      <SanskritAudio
+                      <SanskritAudioEnhanced
                         text={currentVerse.sanskrit}
                         transliteration={currentVerse.transliteration}
+                        textId="vivekachudamani"
+                        verseNumber={currentVerse.number}
                       />
 
                       <div className="p-4 rounded-xl bg-[#f7f3e9] dark:bg-[#1a1814] border-l-4 border-[#e07c24]">
