@@ -347,6 +347,150 @@ export const vivekachudamaniVerses: VivekachudamaniVerse[] = [
     practicalApplication: "When caught in mental suffering, recognize it's part of the beginningless pattern of samsara. Don't try to find 'why' it started (endless regress). Instead, focus on the solution: discrimination between the changing and unchanging. This very moment, you can choose awareness over identification with thoughts. Bliss is not something to gain in the future; it's your nature to recognize now."
   },
   {
+    number: 48,
+    sanskrit: "संसारस्य कारणं अज्ञानं तदुच्छेदे न भवति पुनः संसारः। ज्ञानादेव मुक्तिः न कर्मभिः न भक्तिभिः॥",
+    transliteration: "saṁsārasya kāraṇaṁ ajñānaṁ taduccede na bhavati punaḥ saṁsāraḥ | jñānādeva muktiḥ na karmabhiḥ na bhaktibhiḥ ||",
+    translation: "Ignorance is the cause of samsara. When it is destroyed, samsara does not arise again. Liberation comes from knowledge alone, not from actions or devotion.",
+    commentary: "This verse establishes the causal relationship clearly: ajnana (ignorance) is the karana (cause) of samsara. Not karma (action), not fate, not God's will—simply not-knowing your true nature. This is empowering because what you don't know can be known. The verse promises that when ignorance is destroyed (uccede—cut at the root), samsara doesn't arise again (na bhavati punah). This is final liberation, not temporary relief. Once you realize 'I am Brahman,' that knowledge cannot be reversed. You might forget it temporarily, but the fundamental recognition remains. Why knowledge alone? Actions happen in time and produce results that exhaust in time. Knowledge is not an action but a revealing of what is. When you know the rope is rope, the snake never existed—no action needed to kill the imaginary snake. Similarly, when you know you are Brahman, bondage never existed—no action needed to break non-existent chains. This doesn't diminish karma or bhakti, but clarifies their role: they prepare the mind for knowledge, not substitute for it.",
+    theme: 'discrimination',
+    practicalApplication: "Stop trying to 'do' your way to liberation. Actions are valuable for purifying the mind, but freedom itself comes from understanding. Shift your primary effort from accumulating spiritual practices to clarifying understanding: Who am I? What is real? What is my true nature? This inquiry is the direct path."
+  },
+  {
+    number: 49,
+    sanskrit: "अनात्मसु आत्मदर्शनं ब्रह्मणि च अब्रह्मदर्शनम्। एवं विपरीतं ज्ञानं बन्धस्य कारणं महत्॥",
+    transliteration: "anātmasu ātmadarśanaṁ brahmaṇi ca abrahmadarśanam | evaṁ viparītaṁ jñānaṁ bandhasya kāraṇaṁ mahat ||",
+    translation: "Seeing Self in the non-Self and non-Brahman in Brahman—such inverted knowledge is the great cause of bondage.",
+    commentary: "This verse describes vipareeta jnana (inverted/perverted knowledge)—knowing wrongly rather than not knowing at all. It has two forms: (1) Anatmasu atma-darshana—seeing Self where there is no Self. You think 'I am the body,' 'I am the mind,' 'I am this personality.' The limited is mistaken for the unlimited. (2) Brahmani abrahma-darshana—seeing limitation in the limitless. You think Brahman (your true nature) is incomplete, needs improvement, can be hurt, dies with the body. The infinite is imagined as finite. This inversion is called the 'great cause' (mahat karana) of bondage because it's the root confusion. It's like mistaking the rope for a snake (seeing snake in rope) and simultaneously missing the rope (not seeing rope). All suffering flows from this double error. The solution is correcting the vision through discrimination: systematically negating false attributions ('This body/mind is not-Self') and recognizing true nature ('I am the unchanging, unlimited Witness').",
+    theme: 'discrimination',
+    practicalApplication: "Catch yourself in inverted knowing. When you think 'I'm getting old' (attributing age to the changeless Self), recognize the inversion. When you think 'I'm just a limited person' (limiting the limitless), notice the error. Each recognition weakens the habit of inverted knowing and clarifies true vision."
+  },
+  {
+    number: 50,
+    sanskrit: "ततः विवेकेन विपरीतज्ञानं निवर्तते। तस्मिन् निवृत्ते संसारो नश्यति समूलतः॥",
+    transliteration: "tataḥ vivekena viparītajñānaṁ nivartate | tasmin nivṛtte saṁsāro naśyati samūlataḥ ||",
+    translation: "Through discrimination, inverted knowledge is removed. When it is removed, samsara is destroyed completely, root and all.",
+    commentary: "This is the prescription: viveka (discrimination) removes vipareeta-jnana (inverted knowledge). Viveka means clearly distinguishing real from unreal, Self from non-Self, eternal from temporal. It's not intellectual philosophy but direct looking: 'Am I this changing body or the unchanging witness?' With sustained discrimination, the inversion corrects itself—like studying the rope carefully reveals it's not a snake. The promise is dramatic: when inverted knowledge is removed (nivṛtte), samsara is destroyed samulata (root and all—completely, utterly). Not just its fruits, not just its branches, but the very root. This is unlike karma-based paths that might give temporary relief but leave the root intact. Knowledge goes to the source. Once you clearly know 'I am not the body-mind; I am infinite Consciousness,' samsara cannot resume because its causal ignorance is gone. The rope-snake never frightens again once clearly seen as rope.",
+    theme: 'discrimination',
+    practicalApplication: "Practice sustained discrimination daily. Set aside time for inquiry: 'What changes? What witnesses the change?' 'What is limited? What observes limitation?' As this becomes your habitual way of seeing, inverted knowledge naturally weakens. The truth doesn't need to be created; it needs obscuration removed."
+  },
+  {
+    number: 51,
+    sanskrit: "न देहं न प्राणं न मनः न बुद्धिः न च अहङ्कारं आत्मानं मन्यते विवेकी। सोऽहं असंगः चिन्मात्रः इति जानाति॥",
+    transliteration: "na dehaṁ na prāṇaṁ na manaḥ na buddhiḥ na ca ahaṅkāraṁ ātmānaṁ manyate vivekī | so'haṁ asaṅgaḥ cinmātraḥ iti jānāti ||",
+    translation: "The discriminating one does not consider body, prana, mind, intellect, or ego as the Self. He knows: I am unattached, pure Consciousness alone.",
+    commentary: "This verse shows the method of progressive negation (neti neti—not this, not this) used by the viveki (discriminating one). Systematically: (1) Na deham—not the body (it's inert, changing, object of my awareness). (2) Na pranam—not the life-force (it comes and goes, I witness its presence and absence). (3) Na manah—not the mind (thoughts appear and disappear in me). (4) Na buddhiḥ—not the intellect (its conclusions are witnessed by me). (5) Na ahankara—not the ego-sense (the notion 'I am this' is itself witnessed). After all negations, what remains? 'So'ham asangah chinmatrah'—I am the unattached (not stuck to anything), pure (unmixed with anything), Consciousness alone (chit-matra). This is not nihilism ('nothing exists') but the positive recognition of your true nature as the witnessing awareness in which all these appear. You are not any content of experience but the conscious space of experiencing itself.",
+    theme: 'discrimination',
+    practicalApplication: "Practice the five-fold negation in meditation. Witness the body and declare 'I am not this.' Witness prana and declare 'I am not this.' Continue through mind, intellect, ego. After each negation, rest in what remains—the witnessing awareness. That awareness, free of all identifications, is your true Self."
+  },
+  {
+    number: 52,
+    sanskrit: "सर्वं विवेकेन निरस्य अनात्मतत्त्वं यत् शिष्यते केवलं आत्मतत्त्वम्। सच्चिदानन्दं अद्वैतं ब्रह्म तत् त्वं असि॥",
+    transliteration: "sarvaṁ vivekena nirasya anātmatattvaṁ yat śiṣyate kevalaṁ ātmatattvam | saccidānandaṁ advaitaṁ brahma tat tvaṁ asi ||",
+    translation: "By discrimination, having rejected all non-Self elements, what remains pure is the Self-reality—Existence-Consciousness-Bliss, non-dual Brahman. That thou art.",
+    commentary: "This describes the complete process: (1) Nirasya (rejecting) all anatma-tattva (non-Self elements) through viveka. This includes body, mind, world—everything that's not your essential nature. (2) What remains (yat shishyate) kevalam (pure/alone) is atma-tattva (Self-reality). This isn't something new revealed but what was always there, now uncovered. (3) That Self is defined as sat-chit-ananda (existence-consciousness-bliss), advaita (non-dual—not two, no subject-object split), Brahman (the absolute reality). (4) The culmination: 'Tat tvam asi' (That thou art)—the great Upanishadic statement. This is not information but recognition. You are THAT which you've been seeking. Not that you will become it, not that you must deserve it, but you ARE it, right now, always have been. Bondage was the misidentification; liberation is recognizing what is.",
+    theme: 'discrimination',
+    practicalApplication: "Contemplate 'Tat tvam asi' (That you are) deeply. Not as a belief but as investigation. 'That' = the infinite, unchanging, aware reality described in scriptures. 'You' = not the limited person but the 'I am' that witnesses the person. Investigate: is there any difference between the awareness that I am and the awareness that is Brahman? Discovering no difference is enlightenment."
+  },
+  {
+    number: 53,
+    sanskrit: "योऽयं सर्वभूतेषु गूढः आत्मा न प्रकाशते। दृश्यते त्वग्र्यया बुद्ध्या सूक्ष्मया सूक्ष्मदर्शिभिः॥",
+    transliteration: "yo'yaṁ sarvabhūteṣu gūḍhaḥ ātmā na prakāśate | dṛśyate tvagryayā buddhyā sūkṣmayā sūkṣmadarśibhiḥ ||",
+    translation: "This Self, hidden in all beings, does not shine forth. It is seen only by those with subtle vision, through sharp and refined intellect.",
+    commentary: "Why don't people recognize the Self despite it being their very essence? Because it's gūḍha (hidden)—not spatially concealed but obscured by wrong identification and mental noise. The verse clarifies: it 'na prakāśate' (doesn't appear) to the ordinary mind. But to whom does it appear? To 'sūkṣma-darśibhiḥ' (those with subtle vision)—practitioners who've refined their perception through discipline and study. The tool for this seeing is 'agryayā buddhyā sūkṣmayā' (sharp, subtle intellect). Not gross, scattered thinking but focused, penetrating inquiry. The intellect must be: (1) Agra (sharp)—able to distinguish fine points, not confused by surface appearances. (2) Sūkṣma (subtle)—capable of perceiving what's not grossly obvious. How is this sharpness developed? Through study of scripture, contemplation, meditation, and guidance from a teacher. The Self is always present, always self-revealing, but mental clarity is needed to recognize it—like the sun is always shining but clear eyes are needed to see it.",
+    theme: 'inquiry',
+    practicalApplication: "Recognize that Self-knowledge requires preparation. Don't expect instant recognition if your mind is scattered or untrained. Develop subtle vision through: daily meditation (calms mental noise), scriptural study (points attention correctly), and contemplation (sharpens discrimination). With persistent practice, what seemed invisible becomes obvious."
+  },
+  {
+    number: 54,
+    sanskrit: "श्रोत्रादीनि न ग्राहयन्ति आत्मानं अतीन्द्रियत्वात्। मनसा अपि न ग्राह्यः परोक्षत्वात् केवलं शास्त्रेण॥",
+    transliteration: "śrotrādīni na grāhayanti ātmānaṁ atīndriyatvāt | manasā api na grāhyaḥ parokṣatvāt kevalaṁ śāstreṇa ||",
+    translation: "The senses cannot grasp the Self, as it is beyond the senses. It cannot be grasped even by the mind. It is revealed only through scripture and the teacher's instruction.",
+    commentary: "This verse addresses a common confusion: why can't we find the Self through direct perception? Because the Self is atīndriya (beyond senses). Senses (shrotra-adi—hearing, etc.) grasp objects—sounds, sights, tastes. The Self is the subject, the grasper, never an object to be grasped. You can't see the eye with the eye, touch the hand with the same hand, or know the knower as an object of knowledge. Even the mind (manas) can't grasp it as paroksha (an object of indirect knowledge). The Self is the witness of mental activity, not a mental content. Then how is it known? 'Kevalam shastrena'—through scripture alone. Not scripture as mere words but scripture as a means of knowledge (pramana) that points the awareness back to itself. The teacher (guru) explicates the scripture, showing you how to look for what you already are rather than seeking something external. The Self is revealed not by gaining new information but by removing the misapprehension that it's not already known.",
+    theme: 'inquiry',
+    practicalApplication: "Stop trying to experience the Self as an object. You can't. The Self is the experiencer, not the experienced. Instead, use scripture and teaching as pointers to recognize: 'I am the awareness that's aware of all experiences.' That awareness is always present, never absent—that's the Self you seek."
+  },
+  {
+    number: 55,
+    sanskrit: "आत्मानं चेत् विजानीयात् अयं अस्मि इति पूरुषः। किम् इच्छन् कस्य कामाय शरीरं अनुसंज्वरेत्॥",
+    transliteration: "ātmānaṁ cet vijānīyāt ayaṁ asmi iti pūruṣaḥ | kim icchan kasya kāmāya śarīraṁ anusaṁjvaret ||",
+    translation: "If a person knows the Self as 'I am This,' desiring what and for whose sake would he torment himself over the body?",
+    commentary: "This verse shows the natural result of Self-knowledge: complete freedom from suffering. When you know 'aham ayam asmi' (I am This—the infinite Self), certain questions become absurd: (1) 'Kim icchan'—desiring what? You are fullness itself; what could you lack? Desire arises from sense of incompleteness, but if you are infinite, what's missing? (2) 'Kasya kamaya'—for whose sake? Who is the 'other' for whom you're working? In non-dual realization, there's no separate person to please or compete with. (3) 'Shariram anusanjvaret'—why would you torment yourself over the body? The body's inevitable aging, sickness, death no longer disturb because you know you're not the body. This doesn't mean neglecting the body—you care for it practically, like maintaining a vehicle. But you don't identify with it or suffer over its changes. The jnani still acts, still engages with life, but from fullness not lack, from wisdom not confusion, from freedom not bondage.",
+    theme: 'inquiry',
+    practicalApplication: "Reflect deeply: if you truly knew yourself as complete, unlimited awareness, what would you still desire? What anxiety would remain? Most desires and worries exist only because of the belief 'I am limited, separate, incomplete.' Question that belief directly: 'Am I really the limited person I think I am, or am I the unlimited awareness in which this person appears?'"
+  },
+  {
+    number: 56,
+    sanskrit: "यस्त्वात्मानं नृपत्युं न जानाति सोऽभिमन्यते देहादिकम्। ततः तस्य भवति राग द्वेष भयं शोकः मोहः सर्वे विकाराः॥",
+    transliteration: "yastvātmānaṁ nṛpatyuṁ na jānāti so'bhimanyate dehādikam | tataḥ tasya bhavati rāga dveṣa bhayaṁ śokaḥ mohaḥ sarve vikārāḥ ||",
+    translation: "One who does not know the emperor Self identifies with body and such. From that arise attraction, aversion, fear, grief, delusion—all modifications.",
+    commentary: "This verse uses a powerful metaphor: the Self is compared to a nṛpatyu (emperor/king). Just as an emperor who doesn't know his own royalty might live as a beggar, one who doesn't know the Self's majesty lives in identification with the body. The result? All suffering (sarve vikarah—all modifications): (1) Raga (attraction)—craving what you think you lack. (2) Dvesha (aversion)—fearing what threatens your assumed identity. (3) Bhaya (fear)—terror of death, loss, harm to body-mind. (4) Shoka (grief)—sorrow over what's lost or not gained. (5) Moha (delusion)—ongoing confusion about who you are. All these are unnecessary, like the emperor-turned-beggar's poverty—real in experience but based on false identity. The moment the emperor remembers his status, begging ends. Similarly, the moment you recognize your true nature as the Self—limitless, deathless, complete—all these afflictions lose their foundation. They don't have to be individually eliminated; their root (misidentification) dissolves.",
+    theme: 'inquiry',
+    practicalApplication: "When experiencing any negative emotion, trace it to its root. Fear—what's threatened? The body or your true Self? Desire—what's lacking? For the person or for awareness itself? Grief—what's lost? An object or your essential being? By tracing back, you recognize that all suffering is based on the mistaken identity of being a limited entity."
+  },
+  {
+    number: 57,
+    sanskrit: "देहे अहमिति बुद्धिः न विद्यते यस्य आत्मनि। तस्य सर्वेषु भूतेषु समदर्शनं भवति नित्यम्॥",
+    transliteration: "dehe ahamiti buddhiḥ na vidyate yasya ātmani | tasya sarveṣu bhūteṣu samadarśanaṁ bhavati nityam ||",
+    translation: "For whom the notion 'I am the body' does not exist, and who is established in the Self—for such a one, equal vision toward all beings arises naturally.",
+    commentary: "This verse describes a profound result of disidentification with the body: sama-darshana (equal vision). When body-identification (deha-ahamiti-buddhi) is gone and you're established in the Self (atmani), you naturally see all beings equally. Why? Because you recognize the same Self in all—the one Consciousness appearing as many forms. Just as gold is the same substance whether in a crown or a ring, the Self is identical in all bodies. This isn't forced tolerance or intellectual acceptance but direct seeing: 'The awareness looking through these eyes is the same awareness looking through those eyes. The essence is one; only forms differ.' This vision dissolves: (1) Superiority/inferiority (all contain the same infinite Self). (2) Hatred (how can you hate your own Self?). (3) Separation (the boundaries between 'me' and 'you' are seen as surface-level, not essential). The jnani doesn't ignore differences in forms, roles, or capacities but sees through them to the underlying unity. This is the basis of universal compassion—not emotional sympathy alone but metaphysical recognition.",
+    theme: 'inquiry',
+    practicalApplication: "When interacting with others, try to glimpse the awareness behind their eyes—the same awareness that's here, looking out through your eyes. The forms differ, personalities differ, but the conscious presence is the same. This recognition naturally softens judgment and increases compassion. You're essentially meeting yourself everywhere."
+  },
+  {
+    number: 58,
+    sanskrit: "ज्ञानाग्निः सर्वकर्माणि भस्मसात् कुरुते तथा। ज्ञानात् पूर्वम् कृतं कर्म न आवर्तते पुनः॥",
+    transliteration: "jñānāgniḥ sarvakarmāṇi bhasmasāt kurute tathā | jñānāt pūrvam kṛtaṁ karma na āvartate punaḥ ||",
+    translation: "The fire of knowledge reduces all karmas to ashes. Karmas done before knowledge do not bind again.",
+    commentary: "This verse uses the metaphor of fire: jnana-agni (the fire of knowledge) burns karma to bhasma (ashes). Karma has three types: (1) Sanchita—accumulated from past lives. (2) Prarabdha—currently fructifying (gave this birth). (3) Agami—being created now. Knowledge destroys sanchita karma completely—you're not bound to return to exhaust past accumulated actions. Prarabdha continues (the body lives out its karma), but without binding—the jnani experiences results without identifying ('I am the experiencer'). Agami karma isn't created because there's no sense of doership ('I am the doer')—actions happen through the body-mind, but the jnani knows 'I am the witnessing awareness, not the doer.' The verse promises 'na avartate punah' (doesn't return again)—no rebirth to exhaust karma. This isn't because karma magically disappears but because the ignorance that made karma binding is gone. It's like dream karma—when you wake, dream actions don't bind you. Similarly, when you wake to your true nature, worldly karma loses its binding power.",
+    theme: 'inquiry',
+    practicalApplication: "Reflect on the freedom this brings. You don't have to be anxious about past mistakes (sanchita burned) or future consequences (agami not binding). Whatever is happening now (prarabdha) happens, but you're the unchanging witness of it all. This understanding liberates from guilt about the past and anxiety about the future. You're free NOW, regardless of karmic circumstances."
+  },
+  {
+    number: 59,
+    sanskrit: "स्वयं ज्योतिः आत्मा सदा प्रकाशते न तमसा आवृतः। कदापि न अस्ति आवरणं ज्ञानिनः आत्मनि॥",
+    transliteration: "svayaṁ jyotiḥ ātmā sadā prakāśate na tamasā āvṛtaḥ | kadāpi na asti āvaraṇaṁ jñāninaḥ ātmani ||",
+    translation: "The Self is self-luminous and always shines. It is never covered by darkness. For the wise one, there is never any covering over the Self.",
+    commentary: "This verse declares the Self's nature as svayam-jyoti (self-luminous)—it shines by its own light, needs no other source to be known. Just as the sun doesn't need another light to be visible, awareness doesn't need another consciousness to be aware. It's sadā prakāśate (always shining)—never absent, never off, never asleep. Even in deep sleep, awareness is present (otherwise, who would report 'I slept'?). The verse addresses a possible doubt: 'But I don't see the Self!' Response: 'na tamasa avrtah' (not covered by darkness). Ignorance seems to cover it, but actually ignorance is the absence of looking correctly, not a real obstruction. It's like clouds don't actually cover the sun (they pass below it); they only obstruct earthly vision. Similarly, ignorance doesn't cover the Self; it obscures recognition. For the jnani, there's 'kadapi na asti avaranam' (never any covering)—because the jnani knows how to look. The Self is recognized as the very light by which all else is known.",
+    theme: 'self',
+    practicalApplication: "Notice right now: are you conscious? Of course—you're reading this. That consciousness doesn't come and go; it's always present. Before thought, after thought, between thoughts—consciousness is constant. That ever-present, self-evident awareness is the Self. It's not hidden; you simply haven't recognized it as your true identity. Shift from seeking it as an object to recognizing it as the ever-present subject."
+  },
+  {
+    number: 60,
+    sanskrit: "अजरं अमरं नित्यं कूटस्थं अचलं ध्रुवम्। न जायते न म्रियते वा कदाचित् आत्मा अयं पुराणः॥",
+    transliteration: "ajaraṁ amaraṁ nityaṁ kūṭasthaṁ acalaṁ dhruvam | na jāyate na mriyate vā kadācit ātmā ayaṁ purāṇaḥ ||",
+    translation: "Ageless, deathless, eternal, unchanging, immovable, permanent—this ancient Self is never born nor does it ever die.",
+    commentary: "This verse piles up epithets describing the Self's transcendence of time and change: (1) Ajara (ageless)—not subject to aging or decay. (2) Amara (deathless)—beyond death. (3) Nitya (eternal)—always existing, not created. (4) Kūṭastha (unchanging like an anvil)—immovable foundation. (5) Achala (motionless)—not going anywhere. (6) Dhruva (permanent/fixed)—stable like the pole star. Then the verse quotes the Bhagavad Gita: 'na jāyate na mriyate vā' (neither born nor dies). Birth and death apply to bodies, not to the Self. The Self is purāṇa (ancient/primordial)—existing before all time, prior to creation. These are not poetic exaggerations but pointing to your actual nature. The person (body-mind) is born, ages, dies. But the awareness witnessing the person's life-span—was it born when the body was born? Will it die when the body dies? Investigate directly: your essential awareness is beyond time.",
+    theme: 'self',
+    practicalApplication: "Contemplate each epithet as pointing to your direct experience. Notice: awareness itself doesn't age (even as the body ages). Awareness doesn't die (it observes the fear of death but isn't touched by it). Awareness is unchanging (thoughts change, but the witness of thoughts is steady). Recognize: these descriptions point to what you already, always are—not something to become."
+  },
+  {
+    number: 61,
+    sanskrit: "न हन्यते हन्यमाने शरीरे न लिप्यते कर्मभिः देहकृतैः। निर्विकारः सदा शुद्धः स्वयंज्योतिः परः शिवः॥",
+    transliteration: "na hanyate hanyamāne śarīre na lipyate karmabhiḥ dehakṛtaiḥ | nirvikāraḥ sadā śuddhaḥ svayaṁjyotiḥ paraḥ śivaḥ ||",
+    translation: "It is not killed when the body is killed, nor is it tainted by actions performed by the body. Changeless, ever pure, self-luminous, supreme, auspicious.",
+    commentary: "This addresses perhaps the deepest fear: death. The verse declares unequivocally: 'na hanyate hanyamane sharire' (it is not killed when the body is killed). The Self survives the body's destruction because it was never contained in or limited to the body. It's like space 'in' a pot—when the pot breaks, space isn't affected. Similarly, when the body dies, the Self remains untouched. Further, the Self is 'na lipyate karmabhih dehavirtaiḥ' (not tainted by body-performed actions). Actions create effects in the doer, but the Self is not the doer—the body-mind complex acts while the Self witnesses. Four more epithets: (1) Nirvikara (changeless)—actions don't modify it. (2) Sada shuddha (ever pure)—never contaminated by experience. (3) Svayamjyoti (self-luminous)—self-aware. (4) Parah Shivah (supreme auspiciousness)—absolute wellbeing. This teaching liberates from the terror of annihilation and the anxiety of moral imperfection.",
+    theme: 'self',
+    practicalApplication: "When death-fear arises, inquire: 'What is afraid of death? The body? No, it can't fear its own end. The mind? Mental fear is witnessed. Who witnesses the fear?' The witness—pure awareness—is untouched by what it witnesses. Recognizing yourself as that witness dissolves the deepest fear because you realize you're not what can die."
+  },
+  {
+    number: 62,
+    sanskrit: "अन्तर्यामी सर्वस्य सर्वव्यापी सर्वभूतेषु गूढः। सर्वस्य साक्षी केवलः निर्गुणः सदा मुक्तः॥",
+    transliteration: "antaryāmī sarvasya sarvavyāpī sarvabhūteṣu gūḍhaḥ | sarvasya sākṣī kevalaḥ nirguṇaḥ sadā muktaḥ ||",
+    translation: "The inner controller of all, all-pervading, hidden in all beings—the witness of all, alone, attributeless, and ever free.",
+    commentary: "The Self is described as: (1) Antaryami (inner controller)—not an external God but the conscious principle within all beings, governing from within. (2) Sarvavyapi (all-pervading)—not confined to any body but present everywhere, like space. (3) Sarvabhuteshu gudha (hidden in all beings)—present in all but not obvious, like gold in ornaments of different shapes. (4) Sarvasya sakshi (witness of all)—observer of all experience, never involved. (5) Kevalah (alone/isolated)—not mixed with anything, though present in everything. (6) Nirguna (without attributes)—no qualities, so can't be described positively, only negatively (not this, not this). (7) Sada mukta (ever free)—never bound, so liberation is recognition not achievement. This points to the paradox: the Self is totally transcendent (nirguna, kevala) yet totally immanent (antaryami, sarvavyapi). It's everywhere yet nowhere specific, within all yet beyond all. This non-dual vision transcends both theism (God as other) and atheism (no consciousness) to reveal consciousness as the sole reality.",
+    theme: 'self',
+    practicalApplication: "Meditate on the Self as the witness within you and within all beings. Notice the awareness here; recognize that same awareness is looking through every pair of eyes. The Self is not a separate individual soul but the one universal consciousness appearing as many. This recognition brings profound unity: you are within all, and all is within you."
+  },
+  {
+    number: 63,
+    sanskrit: "सर्वशब्दानां वाच्यं सर्वबुद्धीनां विषयं परम्। अग्राह्यं इन्द्रियैः सर्वैः आत्मानं तं विजानीयात्॥",
+    transliteration: "sarvaśabdānāṁ vācyaṁ sarvabuddhīnāṁ viṣayaṁ param | agrāhyaṁ indriyaiḥ sarvaiḥ ātmānaṁ taṁ vijānīyāt ||",
+    translation: "The Self is the meaning of all words, the supreme object of all thoughts, yet ungraspable by any senses. Know that Self.",
+    commentary: "This verse presents a beautiful paradox about the Self: It is 'sarva-shabdanam vachyam' (the meaning behind all words)—every word ultimately refers to existence-consciousness, which is the Self. When you say 'tree,' you're speaking of something that exists (sat) and is known (chit)—both pointing to the Self. It is 'sarva-buddhinam vishayam param' (the supreme object of all cognitions)—everything you think about is ultimately an appearance in consciousness, so consciousness is the hidden 'object' of all knowledge. Yet it is 'agrahyam indriyaih sarvaih' (ungraspable by all senses)—because it's not an object but the subject, the light by which all objects are known. How do you know what can't be grasped? Through self-reflection: you can't see it as an object, but you are it. It's like the eye—can't see itself, but it IS the seer. The verse concludes: 'vijānīyāt' (one should know/recognize). This knowing is unique—not objective knowledge but the Self's recognition of itself.",
+    theme: 'self',
+    practicalApplication: "Notice that in every experience—seeing, thinking, feeling—there's the constant factor of awareness. You can't step outside awareness to look at it, because you ARE awareness. This immediate, self-evident 'I am' before all qualifications—that is the Self. It's not something remote to be found; it's the finding itself, always present."
+  },
+  {
     number: 94,
     sanskrit: "अज्ञानेन आवृतं ज्ञानं तेन मुह्यन्ति जन्तवः। स्वात्मज्ञानेन सर्वं च ज्ञातं भवति तत्त्वतः॥",
     transliteration: "ajñānena āvṛtaṁ jñānaṁ tena muhyanti jantavaḥ | svātmajñānena sarvaṁ ca jñātaṁ bhavati tattvataḥ ||",
