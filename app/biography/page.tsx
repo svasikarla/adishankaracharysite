@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import LifeTimeline from "@/components/LifeTimeline"
-import TravelsMap from "@/components/TravelsMap"
+import TravelsMapEnhanced from "@/components/TravelsMapEnhanced"
 import { DebatesSection, StoriesSection } from "@/components/DebatesAndStories"
 import {
   CalendarIcon,
@@ -146,7 +146,7 @@ export default function BiographyPage() {
 
             {/* Travels Tab */}
             <TabsContent value="travels" className="space-y-8">
-              <TravelsMap />
+              <TravelsMapEnhanced />
             </TabsContent>
 
             {/* Debates Tab */}
