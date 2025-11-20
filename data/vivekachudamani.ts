@@ -189,8 +189,154 @@ export const vivekachudamaniVerses: VivekachudamaniVerse[] = [
     theme: 'qualification',
     practicalApplication: "Follow this sequence systematically. First, develop qualifications (don't rush into advanced teachings without preparation). Second, find proper guidance (through living teachers or authentic texts). Third, practice shravana-manana-nididhyasana daily: study the teaching carefully, reflect on it deeply, meditate on it continuously. This is the proven path. Trust it and walk it with commitment. Realization is not luck; it's the natural result of proper preparation and practice."
   },
+  {
+    number: 29,
+    sanskrit: "बोधोऽन्यसाधनेभ्यः दुर्लभतरः तेन विना मोक्षः न सिध्यति। सहस्त्रशः क्रियाः कुर्वन्नपि बन्धमुक्तो न भवति॥",
+    transliteration: "bodho'nyasādhanebhyaḥ durlabhataraḥ tena vinā mokṣaḥ na sidhyati | sahastralśaḥ kriyāḥ kurvannapi bandhamukto na bhavati ||",
+    translation: "Self-knowledge is rarer than all other means. Without it, liberation is not attained. Even performing thousands of actions, one is not freed from bondage.",
+    commentary: "This verse establishes the unique primacy of knowledge (bodha) over action (karma) for liberation. While many spiritual paths emphasize rituals, austerities, or good deeds, Vedanta declares these insufficient for moksha. Why? Because bondage is not a physical chain but a misunderstanding—the false identification of the Self with body-mind. No amount of action can remove misunderstanding; only correct understanding can. It's like treating a rope-snake: no amount of physical action helps, only the knowledge 'This is rope, not snake' instantly dissolves the fear. Similarly, bondage dissolves not through doing but through seeing your true nature. Actions can purify the mind, making it receptive to knowledge, but the actual liberation comes only from realization: 'I am not the limited person; I am infinite Consciousness.' The verse uses 'durlabhatara' (rarer/harder to obtain) to emphasize that while many can perform actions, few attain the mature discrimination required for Self-knowledge. This is not to discourage but to direct effort properly—seek knowledge, not just activity.",
+    theme: 'qualification',
+    practicalApplication: "Examine whether you're trying to 'earn' liberation through spiritual practices. While practices are valuable for purifying the mind, recognize that freedom comes from understanding, not accumulation. Shift focus from 'What should I do?' to 'What is true about my nature?' Self-knowledge is not the reward for good behavior but the recognition of what you already are."
+  },
 
   // THEME: BONDAGE (Verses on the nature of bondage and ignorance)
+  {
+    number: 31,
+    sanskrit: "अनात्मनि आत्मबुद्धिः आत्मनि अनात्मदर्शनम्। अध्यासो अयं अज्ञानात् संसारः सर्वकारणम्॥",
+    transliteration: "anātmani ātmabuddhiḥ ātmani anātmadarśanam | adhyāso ayaṁ ajñānāt saṁsāraḥ sarvakāraṇam ||",
+    translation: "Seeing the Self in the non-Self and the non-Self in the Self—this superimposition born of ignorance is the root cause of all samsara.",
+    commentary: "This verse identifies adhyasa (superimposition/erroneous attribution) as the fundamental error causing bondage. It works both ways: (1) Anatmani atma-buddhi—seeing Self where there is no Self. You attribute consciousness, reality, and 'I'-ness to body, mind, possessions ('I am the body,' 'I am the thinker'). (2) Atmani anatma-darshana—seeing non-Self in the Self. You attribute limitations, modifications, and suffering to the infinite, unchanging Consciousness. This mutual superimposition is like seeing silver in nacre or snake in rope—the real (rope/Self) is not seen for what it is, and the unreal (snake/body-mind) is taken as real. This error, born of ignorance (ajnana), is said to be 'sarva-karana' (the root cause) of all samsara. Every other problem—desire, fear, attachment, aversion, suffering—stems from this basic misidentification. Remove this error through discrimination, and all derivative problems collapse instantly.",
+    theme: 'bondage',
+    practicalApplication: "Watch for superimposition in daily life. When you think 'I am anxious,' notice: is Consciousness (your true nature) anxious, or is there anxiety appearing in Consciousness? When you think 'I am the body,' pause: does the witnessing awareness have a body, or is body witnessed by awareness? Distinguishing the witness from the witnessed gradually dismantles superimposition."
+  },
+  {
+    number: 32,
+    sanskrit: "देहात्मबुद्धिः एषा एव संसारबीजम्। तस्मात् देहं अनात्मानं विद्धि तत्र न संशयः॥",
+    transliteration: "dehātmabuddhiḥ eṣā eva saṁsārabījam | tasmāt dehaṁ anātmānaṁ viddhi tatra na saṁśayaḥ ||",
+    translation: "The identification of the Self with the body is the seed of samsara. Therefore, know the body as non-Self—about this there is no doubt.",
+    commentary: "This verse pinpoints the specific form of adhyasa that's most problematic: deha-atma-buddhi (body-Self identification). This is called the 'seed' (bija) of samsara because from it all suffering sprouts. When you believe 'I am the body,' you inherit all the body's limitations—mortality, hunger, pain, aging. You become vulnerable to all threats to the body. Fear, desire, possessiveness all arise from this root misidentification. The solution is clear: 'deham anatmanam viddhi' (know the body as non-Self). The body is an object perceived by you, the subject. You are aware of the body; therefore, you cannot BE the body. The body changes—childhood, youth, age—but the 'I' sense remains constant throughout. The verse adds 'tatra na samshayah' (no doubt about this)—this is not speculation but observable fact. You are the unchanging witness, not the changing body.",
+    theme: 'bondage',
+    practicalApplication: "Practice witnessing the body from awareness. Notice: 'There is the body, and there is the awareness of the body.' When the body is tired, observe: 'The body is tired, but I (awareness) am not tired.' When eating, notice: 'The body eats, but the witnessing awareness doesn't need food.' This creates space between your true identity and the body, weakening identification."
+  },
+  {
+    number: 33,
+    sanskrit: "एतदेव अविद्या परमार्थतत्त्वं आवृणोति। तत एव जन्म मरणं च पुनः पुनः॥",
+    transliteration: "etadeva avidyā paramārthatattvaṁ āvṛṇoti | tata eva janma maraṇaṁ ca punaḥ punaḥ ||",
+    translation: "This very ignorance veils the ultimate truth. From this alone arises repeated birth and death.",
+    commentary: "Avidya (ignorance/nescience) is not mere lack of information but an active covering (avarana) of the paramantha-tattva (ultimate truth/reality). It's like cataracts covering the eye—not just absence of sight but an obstruction to seeing. This ignorance has two powers: (1) Avarana (veiling)—it hides your true nature as infinite Consciousness. (2) Vikshepa (projecting)—it projects the false as real, making you see world/body/mind as separate entities. From this ignorance comes the entire cycle of janma-marana (birth-death) repeated again and again (punah punah). Each birth leads to actions, which leave impressions, which demand future births for their fulfillment—an endless cycle. But here's the hope: since bondage is just ignorance, and ignorance is removed by knowledge, liberation is always immediately available. You don't have to earn it or become worthy—you just need to recognize what already is.",
+    theme: 'bondage',
+    practicalApplication: "When you feel trapped or limited, recognize this as ignorance veiling your true vastness. You're not actually bound—you're infinite Consciousness imagining limitation. This very moment, you can inquire: 'What is aware of this sense of limitation?' That which is aware of limitation is itself unlimited. Rest as that awareness, not as the limited sense."
+  },
+  {
+    number: 34,
+    sanskrit: "मोहः एव परम दुःखं तस्मात् मोहं वर्जयेत्। विवेकविचारेण मोहः नाशं गच्छति॥",
+    transliteration: "mohaḥ eva parama duḥkhaṁ tasmāt mohaṁ varjayet | vivekavicāreṇa mohaḥ nāśaṁ gacchati ||",
+    translation: "Delusion itself is the supreme suffering; therefore, one should abandon delusion. Through discriminative inquiry, delusion is destroyed.",
+    commentary: "This verse identifies moha (delusion/confusion) as the root suffering. All other pains—physical, emotional, circumstantial—are secondary and bearable. The real agony is the confusion about who you are, the sense of separation from your source, the feeling of incompleteness. This existential confusion is 'parama duhkha' (supreme suffering) because it pervades all experience, coloring everything with dissatisfaction. The good news: 'moham varjayet' (delusion should be abandoned)—it CAN be removed. How? Through 'viveka-vichara' (discriminative inquiry)—systematically distinguishing the real from unreal, permanent from temporary, Self from non-Self. This inquiry is not theoretical philosophy but experiential investigation: 'Am I this body? This mind? These thoughts?' With each negation, delusion weakens until the truth stands revealed: you are the unchanging awareness in which all changes appear.",
+    theme: 'bondage',
+    practicalApplication: "Make discrimination a daily practice. When identifying with anything (a role, emotion, thought, body state), pause and ask: 'Am I this, or am I aware of this?' Anything you're aware of cannot be you—you're the awareness. This simple inquiry, practiced consistently, gradually dissolves the delusion of being a limited entity."
+  },
+  {
+    number: 35,
+    sanskrit: "अहंकारः ममकारश्च द्वावेतौ बन्धकारकौ। तौ त्यक्त्वा मुक्तो भवति साधकः परमात्मनि॥",
+    transliteration: "ahaṁkāraḥ mamakāraśca dvāvetau bandhakārakau | tau tyaktvā mukto bhavati sādhakaḥ paramātmani ||",
+    translation: "Ego-sense (I-notion) and possessiveness (my-notion)—these two are the causes of bondage. Abandoning both, the seeker becomes free in the Supreme Self.",
+    commentary: "This verse identifies the twin culprits of bondage: (1) Ahankara (ego-sense)—the notion 'I am this person, separate individual, limited entity.' This creates the sense of being a doer, experiencer, sufferer. (2) Mamakara (possessiveness)—the notion 'this is mine'—my body, my family, my property, my achievements. This extends the ego into objects, making their gain your joy and their loss your sorrow. These two notions are called 'bandha-karaka' (bondage-makers). All suffering traces back to them. The solution: 'tau tyaktva' (abandoning both). This doesn't mean rejecting the world or becoming irresponsible. It means seeing through the false identification. You function in the world—using body, relating to people, handling property—but without the claim 'I am this' or 'this is mine.' In that abandonment, you become 'mukta' (free) in the Paramatman (Supreme Self). Freedom is not a state you enter but the recognition of what you are when false notions drop away.",
+    theme: 'bondage',
+    practicalApplication: "Notice how often 'I' and 'mine' appear in your thoughts. 'I am successful/failing.' 'My opinion/my rights.' Each time, pause: Who is this 'I'? What is this 'mine'? Looking for the 'I' directly, you'll find only awareness—not a separate entity. Looking at possessions, you'll see they're not intrinsically 'yours'—ownership is a mental concept. This looking dissolves the bondage of I and mine."
+  },
+  {
+    number: 36,
+    sanskrit: "रागद्वेषौ मनोधर्मौ न स्तः आत्मनः कदाचन। आत्मा निर्विकारः शुद्धः एक एव सदा शिवः॥",
+    transliteration: "rāgadveṣau manodharmau na staḥ ātmanaḥ kadācana | ātmā nirvikāraḥ śuddhaḥ eka eva sadā śivaḥ ||",
+    translation: "Attraction and aversion are properties of the mind, never of the Self. The Self is changeless, pure, one, and always auspicious.",
+    commentary: "This verse liberates you from emotional bondage by clarifying ownership: raga (attraction/desire) and dvesha (aversion/hatred)—the fundamental pulls and pushes that drive all behavior—are mano-dharma (properties of mind), not atma-dharma (properties of Self). The Self is described with four attributes that contradict emotional fluctuation: (1) Nirvikara (changeless)—emotions are modifications; the Self is unmodified witness of them. (2) Shuddha (pure)—emotions color experience; the Self is the clear screen on which they play. (3) Eka (one)—emotions are many and conflicting; the Self is singular, non-dual. (4) Sada Shiva (always auspicious/peaceful)—emotions disturb; the Self is eternally at peace. Understanding this distinction is profoundly freeing. You're not trying to eliminate emotions (impossible while mind functions) but recognizing they're not happening to YOU. They're weather patterns in the mind-sky, while you are the unchanging space in which weather appears.",
+    theme: 'bondage',
+    practicalApplication: "When caught in strong emotion—desire or aversion—pause and locate it. Is it in awareness itself or arising in awareness? Notice: the emotion has a beginning, middle, end, but your awareness of it is constant. You are the space in which emotion appears and dissolves, not the emotion itself. This recognition doesn't suppress emotion but creates liberating space around it."
+  },
+  {
+    number: 37,
+    sanskrit: "इच्छाद्वेषौ सुखदुःखे शीतोष्णे सर्वे विकाराः अनात्मनः। आत्मा साक्षी असंगः नित्यमुक्तः स्वयं ज्योतिः॥",
+    transliteration: "icchādveṣau sukhaduḥkhe śītoṣṇe sarve vikārāḥ anātmanaḥ | ātmā sākṣī asaṁgaḥ nityamuktaḥ svayaṁ jyotiḥ ||",
+    translation: "Desire and aversion, pleasure and pain, cold and heat—all modifications belong to the non-Self. The Self is the witness, unattached, eternally free, self-luminous.",
+    commentary: "This verse extends the previous teaching, listing various pairs of opposites (dvandvas) that people mistakenly attribute to the Self: ichha-dvesha (desire-aversion), sukha-duhkha (pleasure-pain), shita-ushna (cold-heat). All are declared to be vikara (modifications) belonging to anatman (non-Self)—specifically body and mind. The Self is then described positively: (1) Sakshi (witness)—observes all changes without changing. (2) Asanga (unattached)—not stuck to any experience. (3) Nitya-mukta (eternally free)—never bound, so liberation is recognition of what already is, not achievement. (4) Svayam jyoti (self-luminous)—self-aware, needs nothing to know itself. This teaching is revolutionary: you don't have to fix or perfect your experience. Experiences will continue to fluctuate—sometimes pleasant, sometimes painful. But you are the unchanging witness of all fluctuation. When you rest in that identity, experiences lose their binding power. They come and go like clouds, but the sky (your true nature) remains ever clear.",
+    theme: 'bondage',
+    practicalApplication: "Practice witnessing in daily life. When experiencing pleasure, notice: 'Pleasure is arising.' When experiencing pain: 'Pain is arising.' Not 'I am happy' or 'I am suffering,' but observing the states as temporary arisings in the permanent awareness you are. This simple shift from identification to witnessing is the essence of freedom."
+  },
+  {
+    number: 38,
+    sanskrit: "सुषुप्तौ मनः नष्टं सर्वं तथापि अहं न नष्टः। प्रबुद्धः वक्ति 'सुखेन असुष्वं' इति स्मृतिः आत्मनः॥",
+    transliteration: "suṣuptau manaḥ naṣṭaṁ sarvaṁ tathāpi ahaṁ na naṣṭaḥ | pra buddhaḥ vakti 'sukhena asuṣvaṁ' iti smṛtiḥ ātmanaḥ ||",
+    translation: "In deep sleep, mind is destroyed along with everything, yet 'I' am not destroyed. Upon waking, one says 'I slept happily'—this memory proves the Self's continuity.",
+    commentary: "This is a powerful argument for the Self's independence from mind and body. In deep sleep (sushupti), the entire mental apparatus—thoughts, memories, personality—temporarily shuts down. The world disappears, the body is not felt, 'I' as person is absent. If you were the mind, you would cease to exist in deep sleep. Yet upon waking, you say 'I slept happily' or 'I slept deeply.' This statement proves: (1) You existed in sleep (otherwise, who slept?). (2) You were conscious in sleep (otherwise, how could you report it?). (3) You were independent of mind in sleep (since mind was dormant). That 'I' which continues through all three states (waking, dream, deep sleep) and witnesses all of them—that is the Self. It's the constant factor, the unchanging witness, your true identity. The mind is a tool you use in waking and dream states, but you are the awareness that exists before, during, and after mental activity.",
+    theme: 'discrimination',
+    practicalApplication: "Reflect on deep sleep as evidence of your true nature. You existed in sleep without body-identification, without thoughts, without world—yet you existed peacefully. That pure existence-consciousness in sleep is what you truly are, right now, even while reading this. The difference is now there's also the appearance of mind and world, but the fundamental consciousness hasn't changed from sleep to waking."
+  },
+  {
+    number: 39,
+    sanskrit: "जाग्रत्स्वप्नसुषुप्तिषु स्फुटतरा या संविदुज्ज्ृम्भते सा ब्रह्माहमस्मि इति एव विज्ञायते॥",
+    transliteration: "jāgratsvapnasuṣuptiṣu sphuṭatarā yā saṁvidujjṛmbhate sā brahmāhamasmi iti eva vijñāyate ||",
+    translation: "That consciousness which shines clearly in waking, dream, and deep sleep—know that 'I am that Brahman.'",
+    commentary: "This verse points to the common factor (samanya dharma) in all three states of experience: the consciousness that illuminates all three. In waking, you're conscious of the external world. In dream, you're conscious of the mental world. In deep sleep, you're conscious as pure being without objects. That consciousness which continues through all states, making each state known—that is Brahman, and the verse declares 'aham asmi' (I am That). This is not creation of identity but recognition of existing truth. You are not a person who has consciousness; you are Consciousness in which the person appears. The person changes—child, adult, elder; waking, dreaming, sleeping—but Consciousness remains constant. By identifying with that constancy rather than the changing states, you realize your true nature as Brahman.",
+    theme: 'discrimination',
+    practicalApplication: "Notice the 'I am' that's present in all experiences. When awake: 'I am aware of this.' When dreaming: 'I am experiencing this dream.' Even in deep sleep: 'I am.' That fundamental 'I am'—the sense of being-consciousness itself, prior to any qualification—that is what you truly are. Rest attention on that 'I am'-ness, not on the changing experiences it witnesses."
+  },
+  {
+    number: 40,
+    sanskrit: "देहत्रयं त्यजति आत्मा त्रिषु अवस्थासु तिष्ठति। नित्यः सदैकरूपः स्वयंप्रकाशः विभुः सदा॥",
+    transliteration: "dehatrayaṁ tyajati ātmā triṣu avasthāsu tiṣṭhati | nityaḥ sadaikarūpaḥ svayaṁprakāśaḥ vibhuḥ sadā ||",
+    translation: "The Self transcends the three bodies and remains constant in the three states—eternal, ever the same, self-luminous, and all-pervading.",
+    commentary: "This verse teaches two important discriminations: (1) The Self transcends the three bodies: sthula sharira (gross/physical body), sukshma sharira (subtle body of mind-intellect-ego), and karana sharira (causal body of ignorance). Each body has its sphere of function, but the Self is the witness of all three, never identified with any. (2) The Self remains constant (tishtati) through the three states (avastha): waking, dream, deep sleep. Bodies change, states change, but the Self is described as: nitya (eternal, never absent), sadaika-rupa (always of one nature, not changing), svayam-prakasha (self-revealing, conscious by its own light), vibhu (all-pervading, not limited to space), sada (always, not limited to time). By this analysis, you discriminate your true identity from all changing phenomena. You are the unchanging witness, not the changing witnessed.",
+    theme: 'discrimination',
+    practicalApplication: "When meditating, notice that you are aware of the physical body (first body), aware of thoughts and emotions (second body), and in deep meditation or sleep, even the sense of separation (third body) is transcended. That which witnesses all these—steady, unchanging, aware—that is what you are. Identify with the witness, not the witnessed."
+  },
+  {
+    number: 41,
+    sanskrit: "आत्मा पञ्चकोशैः वेष्टितः तथापि अस्पृष्टः रहति। यथा आकाशः घटादिभिः न लिप्यते तथा आत्मा॥",
+    transliteration: "ātmā pañcakośaiḥ veṣṭitaḥ tathāpi aspṛṣṭaḥ rahati | yathā ākāśaḥ ghaṭādibhiḥ na lipyate tathā ātmā ||",
+    translation: "Though apparently covered by the five sheaths, the Self remains untouched, just as space is not touched by pots and other containers.",
+    commentary: "This introduces the important teaching of pancha kosha (five sheaths/coverings): (1) Annamaya kosha (food sheath)—physical body. (2) Pranamaya kosha (vital sheath)—life force and senses. (3) Manomaya kosha (mental sheath)—mind and emotions. (4) Vijnanamaya kosha (intellectual sheath)—intellect and ego. (5) Anandamaya kosha (bliss sheath)—causal ignorance experienced as deep sleep bliss. These five appear to cover the Self, creating the illusion of limitation. But the verse asserts the Self remains 'asprista' (untouched) by them. The analogy: space is apparently divided and contained by pots, but actually space is never truly contained—it remains free and whole. Breaking the pot doesn't free space (it was always free); it just reveals what was always true. Similarly, negating/seeing through the koshas doesn't liberate the Self (it was always free); it reveals the freedom that is your nature. You are not the koshas but the awareness in which they all appear.",
+    theme: 'discrimination',
+    practicalApplication: "Practice kosha discrimination: 'I have a body but am not the body (annamaya). I have vital energy but am not the prana (pranamaya). I have thoughts but am not the mind (manomaya). I have an intellect but am not thoughts (vijnanamaya). I experience causality but am not ignorance (anandamaya).' What remains after all negations? Pure consciousness—that's your true identity."
+  },
+  {
+    number: 42,
+    sanskrit: "कोशात्मानौ विवेकः आत्यन्तिकः कार्यः साधकेन। ततः एव आत्मस्वरूपं प्रत्यक्षं भवति सुस्पष्टम्॥",
+    transliteration: "kośātmānau vivekaḥ ātyantikaḥ kāryaḥ sādhakena | tataḥ eva ātmasvarūpaṁ pratyakṣaṁ bhavati suspaṣṭam ||",
+    translation: "The seeker must thoroughly discriminate between the sheaths and the Self. Through this alone, the true nature of the Self becomes directly evident and crystal clear.",
+    commentary: "This verse prescribes the method: atyantika viveka (absolute/thorough discrimination) between kosha (sheaths) and Atman (Self). This is not intellectual analysis alone but sustained inquiry: observing that all koshas are objects of your awareness, therefore not you. The koshas are anatman (not-Self) because they're: inert (need consciousness to be known), changing (temporary), limited, and composite. The Self is satya (real), nitya (permanent), eka (one), and svayam-prakasha (self-aware). By consistently distinguishing these, the verse promises, atma-svarupa (true nature of Self) becomes 'pratyaksha' (directly evident, not theoretical) and 'suspashta' (very clear, beyond doubt). This is not creating something new but removing the obscuration. The Self is already here, already evident, but hidden by false identification with koshas. Remove the false, and the true stands revealed.",
+    theme: 'discrimination',
+    practicalApplication: "Daily practice: Sit quietly and systematically go through each kosha, negating identification. 'I am not this body, not this energy, not these thoughts, not this intellect, not even this ignorance.' After each negation, remain in the awareness that observes but isn't any of these. That observer—unchanging, peaceful, complete—is your real Self. Practice until this becomes your natural default identity."
+  },
+  {
+    number: 43,
+    sanskrit: "सत् चित् आनन्दः स्वरूपं यस्य अस्ति सः एव आत्मा। असत् अचित् दुःखं सर्वं अनात्मा इति जानीयात्॥",
+    transliteration: "sat cit ānandaḥ svarūpaṁ yasya asti saḥ eva ātmā | asat acit duḥkhaṁ sarvaṁ anātmā iti jānīyāt ||",
+    translation: "That whose nature is existence-consciousness-bliss is the Self. Whatever is non-existence, inert, and suffering—know that as non-Self.",
+    commentary: "This verse gives the ultimate definition of Self: Sat-Chit-Ananda (Existence-Consciousness-Bliss). (1) Sat (existence/reality)—the Self is not something that comes and goes; it's the unchanging being that IS. (2) Chit (consciousness)—the Self is not an object known by consciousness; it IS consciousness itself, self-aware. (3) Ananda (bliss/fullness)—the Self is not seeking happiness; it IS the fullness from which joy springs. Everything opposite to these three is anatman (non-Self): asat (non-existent/changing), achit (inert/insentient), duhkha (suffering/limited). By this clear definition, discrimination becomes simple: body is changing (asat), inert (needs consciousness to be known—achit), and subject to suffering (duhkha)—therefore body is not Self. Mind is changing, needs witnessing, and experiences pain—not Self. What remains? The sat-chit-ananda that you truly are—eternal being, self-aware consciousness, inherent fullness.",
+    theme: 'discrimination',
+    practicalApplication: "Use this as a litmus test for discrimination. When identified with something, ask: Is this permanent (sat) or changing (asat)? Is this conscious in itself (chit) or inert requiring consciousness to be known (achit)? Is this inherently blissful (ananda) or containing suffering (duhkha)? If any answer is negative, it's not your true Self. Only that which is sat-chit-ananda is you."
+  },
+  {
+    number: 44,
+    sanskrit: "नित्यानित्यविवेकः साधनानां प्रथमं महत्। तेन विना वैराग्यं न भवति परं शान्तिं न प्राप्यते॥",
+    transliteration: "nityānityavivekaḥ sādhanānāṁ prathamaṁ mahat | tena vinā vairāgyaṁ na bhavati paraṁ śāntiṁ na prāpyate ||",
+    translation: "Discrimination between the eternal and non-eternal is the first and greatest of all spiritual practices. Without it, dispassion does not arise, nor is supreme peace attained.",
+    commentary: "This verse establishes nitya-anitya viveka (discrimination between eternal and temporal) as 'prathama mahat sadhana' (first and foremost practice). Why first? Because without clarity on what's worth pursuing (eternal) versus what's ultimately futile (temporal), spiritual effort lacks direction. You might pursue temporary pleasures thinking they'll bring lasting fulfillment, or try to perfect the imperfectable. This discrimination leads naturally to vairagya (dispassion)—not forced renunciation but natural turning away from the temporary once its nature is understood. A child gives up playing with mud pies not through suppression but through maturing interest. Similarly, viveka matures your interest from temporary to eternal. Without viveka, you might externally renounce but internally still crave, leading to suppression and eventual reaction. The verse promises: with proper viveka leading to genuine vairagya, 'parama shanti' (supreme peace) is attained—not the fragile peace dependent on favorable circumstances, but the unshakeable peace of resting in the eternal.",
+    theme: 'discrimination',
+    practicalApplication: "Regularly examine your pursuits and attachments. Ask: Is this permanent or will it end? If it will end (and honestly, everything worldly will), then attachment to it guarantees future suffering when it ends. This doesn't mean you can't enjoy temporal things, but you don't depend on them for your essential well-being. Your peace rests in the eternal (your own Self), not the changing."
+  },
+  {
+    number: 45,
+    sanskrit: "ज्ञानं एव मुक्तिः न कर्म न भक्तिः न योगः तत्त्वतः। ज्ञानादृते मोक्षो न अस्ति सत्यमेतद्वचः गुरोः॥",
+    transliteration: "jñānaṁ eva muktiḥ na karma na bhaktiḥ na yogaḥ tattvataḥ | jñānādṛte mokṣo na asti satyametadvacat gurorḥ ||",
+    translation: "Knowledge alone liberates—not action, not devotion, not yoga, in reality. Without knowledge, there is no liberation. This word of the guru is truth.",
+    commentary: "This verse makes an uncompromising statement that can be controversial: jnana (Self-knowledge) alone (eva) liberates. Not karma (action/rituals), not bhakti (devotion), not yoga (practices) in the ultimate sense (tattvata). This isn't dismissing these paths—they're valuable for purifying the mind and preparing it for knowledge. But the verse insists they cannot, by themselves, cause liberation because liberation is not an achievement but a recognition. Ignorance is the problem; only knowledge removes ignorance. Actions purify, devotion softens, yoga concentrates—all preparing the mind for the crucial recognition: 'I am not the limited person; I am infinite Brahman.' That recognition (jnana) alone is moksha. The verse adds authority: 'satyam etad vachah guroh' (this word of the guru is truth)—indicating this is traditional teaching, not individual opinion. Trust it and direct your ultimate effort toward knowledge, while using other practices as preparatory.",
+    theme: 'discrimination',
+    practicalApplication: "While continuing devotional or practical disciplines, keep clear that these prepare you for knowledge but don't substitute for it. Ask yourself: Am I accumulating practices hoping they'll somehow magically liberate me? Or am I using them to clarify my mind for the essential recognition of who I truly am? The goal is not a future state but present understanding."
+  },
+
+  // BONDAGE continued
   {
     number: 47,
     sanskrit: "अविवेकिनः पुरुषस्य संसारः अनादिरनन्तः महादुःखसागरः। तत्रोत्तरणोपायः अभ्यस्यतां भवता नित्यम् आनन्दप्राप्तये॥",
