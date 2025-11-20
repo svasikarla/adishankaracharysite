@@ -9,6 +9,7 @@ import { Slider } from "@/components/ui/slider"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger, DropdownMenuSeparator } from "@/components/ui/dropdown-menu"
 import { ChevronLeftIcon, ChevronRightIcon, BookOpenIcon, SparklesIcon, HeartIcon, LayoutListIcon, BookTextIcon, SettingsIcon, BookmarkIcon } from "lucide-react"
 import Link from "next/link"
+import SanskritAudio from "@/components/SanskritAudio"
 
 type ViewMode = 'single' | 'scroll' | 'study'
 
@@ -89,6 +90,12 @@ export default function NirvanaShatkamPage() {
           {verse.transliteration}
         </p>
       </div>
+
+      {/* Sanskrit Audio Player */}
+      <SanskritAudio
+        text={verse.sanskrit}
+        transliteration={verse.transliteration}
+      />
 
       {/* Translation */}
       <div className="p-6 rounded-2xl bg-gradient-to-br from-[#f7f3e9] to-[#e9e1d3] dark:from-[#1a1814] dark:to-[#2a241e] border-2 border-[#e07c24]/30">

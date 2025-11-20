@@ -9,6 +9,7 @@ import { Slider } from "@/components/ui/slider"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, DropdownMenuSeparator } from "@/components/ui/dropdown-menu"
 import { ChevronLeftIcon, ChevronRightIcon, BookOpenIcon, LayoutListIcon, BookTextIcon, SettingsIcon, BookmarkIcon, ArrowLeftIcon } from "lucide-react"
 import Link from "next/link"
+import SanskritAudio from "@/components/SanskritAudio"
 
 type ViewMode = 'single' | 'scroll' | 'study'
 
@@ -85,6 +86,12 @@ export default function HastamalakaStotraPage() {
           {verse.transliteration}
         </p>
       </div>
+
+      {/* Sanskrit Audio Player */}
+      <SanskritAudio
+        text={verse.sanskrit}
+        transliteration={verse.transliteration}
+      />
 
       {/* Translation */}
       <div>
