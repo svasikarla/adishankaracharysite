@@ -14,26 +14,9 @@ const latLngToXY = (lat: number, lng: number) => {
   return { x, y }
 }
 
-// Simple, working India map outline that matches reference image
+// Using external SVG file from /public/in.svg
+// No need for hardcoded path - the SVG will be loaded as an image
 // Coordinate range: x: 150-600, y: 100-800 (based on latLngToXY function)
-// Recognizable triangular peninsula with proper proportions
-const indiaOutlinePath = `
-  M 350,150
-  L 380,145 L 410,142 L 440,142 L 470,145 L 500,152
-  L 525,163 L 545,178 L 560,197 L 570,220
-  L 577,245 L 582,272 L 585,300 L 586,330
-  L 585,360 L 582,390 L 577,420 L 570,448
-  L 560,475 L 545,500 L 525,522 L 500,540
-  L 472,555 L 442,567 L 410,576 L 377,582
-  L 344,585 L 311,585 L 278,582 L 247,576
-  L 218,567 L 192,555 L 170,540 L 152,522
-  L 138,500 L 128,475 L 122,448 L 118,420
-  L 116,390 L 116,360 L 118,330 L 122,300
-  L 128,272 L 138,245 L 152,220 L 170,197
-  L 192,178 L 218,163 L 247,152 L 278,145
-  L 308,142 L 330,144
-  Z
-`
 
 // State boundaries (properly positioned)
 const statePaths = [
@@ -225,26 +208,16 @@ export default function TravelsMapEnhanced() {
             />
           ))}
 
-          {/* India Main Outline - THE KEY VISIBLE ELEMENT */}
-          <path
-            d={indiaOutlinePath}
-            fill="#fef3c7"
-            fillOpacity="0.85"
-            stroke="#92400e"
-            strokeWidth="4"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="dark:fill-[#3a2f1f] dark:stroke-[#fbbf24]"
-          />
-
-          {/* India Land texture */}
-          <path
-            d={indiaOutlinePath}
-            fill="none"
-            stroke="#d97706"
-            strokeWidth="0.8"
-            strokeOpacity="0.15"
-            strokeDasharray="3,3"
+          {/* India Map from External SVG File */}
+          <image
+            href="/in.svg"
+            x="150"
+            y="100"
+            width="450"
+            height="700"
+            preserveAspectRatio="xMidYMid meet"
+            opacity="0.9"
+            className="dark:opacity-80"
           />
 
           {/* Major Rivers */}
