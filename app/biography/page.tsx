@@ -2,9 +2,10 @@ import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import LifeTimeline from "@/components/LifeTimeline"
+import Timeline from "@/components/Timeline"
 import TravelsMapEnhanced from "@/components/TravelsMapEnhanced"
 import { DebatesSection, StoriesSection } from "@/components/DebatesAndStories"
+import { timeline as timelineEvents } from "@/data/biography"
 import {
   CalendarIcon,
   MapIcon,
@@ -141,7 +142,7 @@ export default function BiographyPage() {
 
             {/* Timeline Tab */}
             <TabsContent value="timeline" className="space-y-8">
-              <LifeTimeline />
+              <Timeline events={timelineEvents} />
             </TabsContent>
 
             {/* Travels Tab */}

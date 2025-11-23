@@ -57,11 +57,10 @@ export function DebatesSection() {
           return (
             <Card
               key={debate.id}
-              className={`border-2 transition-all duration-300 ${
-                isExpanded
+              className={`border-2 transition-all duration-300 ${isExpanded
                   ? 'border-[#e07c24] shadow-xl'
                   : 'border-[#e07c24]/20 shadow-md'
-              }`}
+                }`}
             >
               <CardHeader>
                 <div className="flex items-start justify-between mb-3">
@@ -107,6 +106,17 @@ export function DebatesSection() {
 
                   {isExpanded && (
                     <>
+                      {debate.detailedDescription && (
+                        <div className="p-4 rounded-lg bg-gradient-to-br from-[#f7f3e9] to-[#e9e1d3] dark:from-[#1a1814] dark:to-[#2a241e] border border-[#e07c24]/20 mb-3">
+                          <h4 className="text-sm font-semibold text-[#8b5d33] dark:text-[#e07c24] mb-2 flex items-center gap-2">
+                            <BookOpenIcon className="w-4 h-4" />
+                            The Story
+                          </h4>
+                          <p className="text-[#5a4a3f] dark:text-[#d9c5a9] text-sm md:text-base leading-relaxed whitespace-pre-line">
+                            {debate.detailedDescription}
+                          </p>
+                        </div>
+                      )}
                       <div>
                         <h4 className="text-sm font-semibold text-[#8b5d33] dark:text-[#e07c24] mb-1">
                           Outcome:
@@ -184,11 +194,10 @@ export function StoriesSection() {
         {/* Category Filters */}
         <div className="flex flex-wrap justify-center gap-2 mb-6">
           <Badge
-            className={`cursor-pointer transition-all ${
-              selectedCategory === null
+            className={`cursor-pointer transition-all ${selectedCategory === null
                 ? 'bg-[#e07c24] text-white'
                 : 'bg-[#f7f3e9] dark:bg-[#2a241e] text-[#8b5d33] dark:text-[#d9c5a9] border border-[#e07c24]/30'
-            }`}
+              }`}
             onClick={() => setSelectedCategory(null)}
           >
             All Stories ({stories.length})
@@ -201,11 +210,10 @@ export function StoriesSection() {
             return (
               <Badge
                 key={category}
-                className={`cursor-pointer transition-all flex items-center gap-1 ${
-                  selectedCategory === category
+                className={`cursor-pointer transition-all flex items-center gap-1 ${selectedCategory === category
                     ? 'text-white'
                     : 'bg-[#f7f3e9] dark:bg-[#2a241e] text-[#8b5d33] dark:text-[#d9c5a9] border border-[#e07c24]/30'
-                }`}
+                  }`}
                 style={{
                   backgroundColor: selectedCategory === category ? color : undefined
                 }}
@@ -230,11 +238,10 @@ export function StoriesSection() {
           return (
             <Card
               key={story.id}
-              className={`border-2 transition-all duration-300 ${
-                isExpanded
+              className={`border-2 transition-all duration-300 ${isExpanded
                   ? 'border-[#e07c24] shadow-xl'
                   : 'border-[#e07c24]/20 shadow-md'
-              }`}
+                }`}
             >
               <CardHeader>
                 <div className="flex items-start gap-3 mb-2">

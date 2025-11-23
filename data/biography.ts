@@ -11,6 +11,8 @@ export interface TimelineEvent {
   category: 'birth' | 'education' | 'travel' | 'debate' | 'establishment' | 'writing' | 'teaching' | 'samadhi'
 }
 
+
+
 export interface TravelLocation {
   id: string
   name: string
@@ -33,6 +35,7 @@ export interface Debate {
   outcome: string
   significance: string
   relatedTexts?: string[]
+  detailedDescription?: string
 }
 
 export interface Story {
@@ -265,7 +268,6 @@ export const timeline: TimelineEvent[] = [
   }
 ]
 
-// Major Travel Locations
 export const travelLocations: TravelLocation[] = [
   {
     id: 'kaladi',
@@ -428,7 +430,19 @@ export const debates: Debate[] = [
     topic: 'Superiority of Knowledge (Jnana) vs. Ritual Action (Karma)',
     outcome: 'Shankaracharya emerged victorious after multi-day debate. Mandana Mishra accepted Advaita and became disciple Sureshwaracharya.',
     significance: 'Most famous debate that established supremacy of Jnana over Karma. Mandana\'s wife Bharati (incarnation of Saraswati) served as impartial judge.',
-    relatedTexts: ['Brahma Sutras', 'Bhagavad Gita']
+    relatedTexts: ['Brahma Sutras', 'Bhagavad Gita'],
+    detailedDescription: 'The debate between Adi Shankaracharya and Mandana Mishra is one of the most pivotal moments in Indian philosophy. Mandana Mishra was a staunch proponent of Purva Mimamsa, which held that Vedic rituals (Karma Kanda) were the sole means to liberation, while Shankara argued that knowledge of Brahman (Jnana Kanda) was the only path to Moksha. \n\nThe conditions of the debate were severe: the loser would become the disciple of the winner. Mandana\'s wife, Ubhaya Bharati, a scholar of immense brilliance believed to be an avatar of Goddess Saraswati, was chosen as the judge. She placed a garland of fresh flowers on each contestant, declaring that the one whose garland withered first—indicating mental agitation—would be the loser.\n\nThe debate raged for days (some accounts say weeks). Shankara systematically dismantled the arguments for ritualism, proving that action, being finite, cannot produce an infinite result (liberation). Only the realization of the ever-present Brahman can liberate. Mandana Mishra, a seeker of truth, eventually recognized the validity of Shankara\'s non-dualistic logic. His garland withered, and he conceded defeat. True to his word, he renounced his householder life, became a sannyasin, and was initiated by Shankara as Sureshwaracharya, who would go on to become the first head of the Sringeri Matha.'
+  },
+  {
+    id: 'kapalikas-encounter',
+    opponent: 'Kapalikas (Ugra Bhairava)',
+    opponentSchool: 'Extreme Tantric Sect',
+    location: 'Srisailam (Andhra Pradesh)',
+    year: '811 CE',
+    topic: 'True Sacrifice and the Nature of the Self',
+    outcome: 'Shankaracharya offered his own head to the Kapalika, but was saved by his disciple Padmapada (invoking Lord Narasimha). The Kapalikas were reformed or defeated.',
+    significance: 'Demonstrated Shankara\'s fearlessness and the protective power of devotion. Marked the reform of extreme tantric practices.',
+    detailedDescription: 'At Srisailam, a Kapalika named Ugra Bhairava approached Shankaracharya. Kapalikas were a sect known for extreme practices, including human sacrifice, believing it pleased Bhairava (a fierce form of Shiva). The Kapalika told Shankara that he needed the head of an omniscient sage or a king to complete his ritual for attaining supernatural powers. \n\nShankaracharya, embodying absolute fearlessness and compassion, replied, "A king\'s head is hard to get, but you can take mine. I am a sannyasin with no attachment to this body." He agreed to meet the Kapalika at a secluded spot. As the Kapalika raised his sword to behead the deep-in-meditation Shankara, his disciple Padmapada, sensing the danger through intuition, invoked Lord Narasimha (the man-lion avatar). Possessed by divine fury, Padmapada rushed to the scene and stopped the Kapalika, saving his guru. \n\nThis dramatic encounter highlighted two things: Shankara\'s total detachment from the body (Deha-abhimana shunya) and the intense protective devotion of his disciples. Following this, Shankara purified the local practices, establishing that true sacrifice is the sacrifice of the ego, not violence against beings.'
   },
   {
     id: 'buddhist-kashmir',
