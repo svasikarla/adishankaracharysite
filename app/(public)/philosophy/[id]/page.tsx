@@ -14,12 +14,12 @@ interface PageProps {
 
 export async function generateStaticParams() {
   return CONCEPTS.map((concept) => ({
-    id: concept.id,
+    id: concept.slug,
   }))
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const concept = CONCEPTS.find((c) => c.id === params.id)
+  const concept = CONCEPTS.find((c) => c.slug === params.id)
 
   if (!concept) {
     return {
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default function ConceptPage({ params }: PageProps) {
-  const concept = CONCEPTS.find((c) => c.id === params.id)
+  const concept = CONCEPTS.find((c) => c.slug === params.id)
 
   if (!concept) {
     notFound()
@@ -213,7 +213,7 @@ export default function ConceptPage({ params }: PageProps) {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-4">
                   {relatedConcepts.map((relatedConcept) => (
-                    <Link key={relatedConcept.id} href={`/philosophy/${relatedConcept.id}`}>
+                    <Link key={relatedConcept.id} href={`/philosophy/${relatedConcept.slug}`}>
                       <div className="p-6 rounded-xl bg-gradient-to-br from-[#e9e1d3] to-[#f7f3e9] dark:from-[#1a1814] dark:to-[#2a241e] border-2 border-[#e07c24]/20 hover:border-[#e07c24] hover:shadow-lg transition-all duration-300 group cursor-pointer h-full">
                         <div className="flex justify-between items-start mb-2">
                           <div>
