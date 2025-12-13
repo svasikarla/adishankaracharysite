@@ -1,4 +1,6 @@
-﻿export const travelLocations: TravelLocation[] = [
+﻿import { TravelLocation } from "@/types"
+
+export const travelLocations: TravelLocation[] = [
   {
     id: 'kaladi',
     name: 'Kaladi',

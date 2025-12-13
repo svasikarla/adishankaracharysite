@@ -30,7 +30,7 @@ export default function ChantCounterPage() {
   const [goal, setGoal] = useState(108)
   const [selectedMantra, setSelectedMantra] = useState<string>("om")
   const [soundEnabled, setSoundEnabled] = useState(false)
-  const [history, setHistory] = useState<{[key: string]: number}>({})
+  const [history, setHistory] = useState<{ [key: string]: number }>({})
   const [showGoalMessage, setShowGoalMessage] = useState(false)
 
   // Load saved data from localStorage
@@ -45,6 +45,26 @@ export default function ChantCounterPage() {
     if (savedMantra) setSelectedMantra(savedMantra)
     if (savedHistory) setHistory(JSON.parse(savedHistory))
   }, [])
+
+  const increment = useCallback(() => {
+    setCount(c => c + 1)
+    if (soundEnabled) {
+      // Simple beep sound (could be replaced with actual mantra audio)
+      const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)()
+      const oscillator = audioContext.createOscillator()
+      const gainNode = audioContext.createGain()
+
+      oscillator.connect(gainNode)
+      gainNode.connect(audioContext.destination)
+
+      oscillator.frequency.value = 528 // Hz (Solfeggio frequency)
+      gainNode.gain.setValueAtTime(0.1, audioContext.currentTime)
+      gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1)
+
+      oscillator.start(audioContext.currentTime)
+      oscillator.stop(audioContext.currentTime + 0.1)
+    }
+  }, [soundEnabled])
 
   // Keyboard support - spacebar to increment
   useEffect(() => {
@@ -119,25 +139,6 @@ export default function ChantCounterPage() {
   const currentMantra = mantras.find(m => m.id === selectedMantra) || mantras[0]
   const progress = Math.min((count / goal) * 100, 100)
 
-  const increment = useCallback(() => {
-    setCount(c => c + 1)
-    if (soundEnabled) {
-      // Simple beep sound (could be replaced with actual mantra audio)
-      const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)()
-      const oscillator = audioContext.createOscillator()
-      const gainNode = audioContext.createGain()
-
-      oscillator.connect(gainNode)
-      gainNode.connect(audioContext.destination)
-
-      oscillator.frequency.value = 528 // Hz (Solfeggio frequency)
-      gainNode.gain.setValueAtTime(0.1, audioContext.currentTime)
-      gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1)
-
-      oscillator.start(audioContext.currentTime)
-      oscillator.stop(audioContext.currentTime + 0.1)
-    }
-  }, [soundEnabled])
 
   const decrement = () => {
     if (count > 0) setCount(c => c - 1)
@@ -353,11 +354,10 @@ export default function ChantCounterPage() {
                   <button
                     key={mantra.id}
                     onClick={() => setSelectedMantra(mantra.id)}
-                    className={`w-full p-4 rounded-xl border-2 text-left transition-all ${
-                      selectedMantra === mantra.id
-                        ? 'border-[#e07c24] bg-gradient-to-r from-[#e07c24]/10 to-[#c06a1f]/10'
-                        : 'border-[#e07c24]/20 hover:border-[#e07c24] bg-gradient-to-r from-[#f7f3e9] to-[#e9e1d3] dark:from-[#1a1814] dark:to-[#2a241e]'
-                    }`}
+                    className={`w-full p-4 rounded-xl border-2 text-left transition-all ${selectedMantra === mantra.id
+                      ? 'border-[#e07c24] bg-gradient-to-r from-[#e07c24]/10 to-[#c06a1f]/10'
+                      : 'border-[#e07c24]/20 hover:border-[#e07c24] bg-gradient-to-r from-[#f7f3e9] to-[#e9e1d3] dark:from-[#1a1814] dark:to-[#2a241e]'
+                      }`}
                   >
                     <div className="flex items-start justify-between gap-3">
                       <div className="flex-1">

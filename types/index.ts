@@ -54,33 +54,7 @@ export interface Concept {
     author: string
     url?: string
   }[]
-}
-
-export interface Matha {
-  id: string
-  name: string
-  sanskrit: string
-  direction: 'North' | 'South' | 'East' | 'West'
-  location: {
-    city: string
-    state: string
-    region: string
-  }
-  coordinates?: {
-    lat: number
-    lng: number
-  }
-  established: string
-  veda: string
-  mahavakya: string
-  mahavahyaMeaning: string
-  firstAcharya: string
-  presidingDeity: string
-  description: string
-  significance: string[]
-  website?: string
-  historicalBackground: string
-  currentActivities: string[]
+  slug: string
 }
 
 export interface Teacher {
@@ -143,4 +117,56 @@ export interface Organization {
   website?: string
   locations?: string[]
   resources?: string[]
+}
+
+export interface Matha {
+  id: string
+  name: string
+  sanskrit: string
+  direction: 'North' | 'South' | 'East' | 'West'
+  location: {
+    city: string
+    state: string
+    region: string
+  }
+  coordinates?: {
+    lat: number
+    lng: number
+  }
+  established: string
+  veda: string
+  mahavakya: string
+  mahavahyaMeaning: string
+  firstAcharya: string
+  presidingDeity: string
+  description: string
+  significance: string[]
+  website?: string
+  historicalBackground: string
+  currentActivities: string[]
+  currentShankaracharya?: {
+    name: string
+    title: string
+    period: string
+    note: string
+  }
+  lineageCount?: number
+  uniqueFeatures?: string[]
+}
+
+export interface TravelLocation {
+  id: string
+  name: string
+  state: string
+  description?: string
+  coordinates: {
+    lat: number
+    lng: number
+  }
+  visitYear: string
+  purpose: string
+  significance: string
+  events: string[]
+  period?: string
+  connection?: string
 }

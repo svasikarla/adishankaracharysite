@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation"
 import Link from "next/link"
-import { concepts } from "@/data/concepts"
+import { CONCEPTS } from "@/data/concepts"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ArrowLeftIcon, BookOpenIcon, ExternalLinkIcon, SparklesIcon } from "lucide-react"
@@ -13,13 +13,13 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return concepts.map((concept) => ({
+  return CONCEPTS.map((concept) => ({
     id: concept.id,
   }))
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const concept = concepts.find((c) => c.id === params.id)
+  const concept = CONCEPTS.find((c) => c.id === params.id)
 
   if (!concept) {
     return {
@@ -34,14 +34,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default function ConceptPage({ params }: PageProps) {
-  const concept = concepts.find((c) => c.id === params.id)
+  const concept = CONCEPTS.find((c) => c.id === params.id)
 
   if (!concept) {
     notFound()
   }
 
-  const relatedConcepts = concepts.filter((c) =>
-    concept.relatedConcepts.includes(c.id)
+  const relatedConcepts = CONCEPTS.filter((c) =>
+    concept.relatedConcepts?.includes(c.id)
   )
 
   return (

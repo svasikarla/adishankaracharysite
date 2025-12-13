@@ -91,13 +91,22 @@ Educational website dedicated to Adi Shankaracharya (788-820 CE) and the philoso
 /home/user/adishankaracharysite/
 ├── app/                              # Next.js App Router (v15)
 │   ├── layout.tsx                   # Root layout with metadata
-│   ├── page.tsx                     # Main landing page (single-page design)
-│   └── globals.css                  # Global styles + Tailwind directives
+│   ├── page.tsx                     # Main landing page (refactored)
+│   ├── globals.css                  # Global styles + Tailwind directives
+│   └── (public)/                    # Public pages (Route Group)
+│       ├── about/page.tsx           # "About" page
+│       └── credits/page.tsx         # "Credits" page
 │
 ├── components/                       # React components
 │   ├── dark-mode-toggle.tsx         # Custom dark mode toggle (localStorage)
 │   ├── Header.tsx                   # Site header (with inline styles)
 │   ├── theme-provider.tsx           # next-themes wrapper
+│   ├── Footer.tsx                   # Standalone Footer component
+│   ├── ui-custom/                   # Project-specific reusable components
+│   │   ├── Hero.tsx
+│   │   ├── Section.tsx
+│   │   ├── FeatureCard.tsx
+│   │   └── ConceptCard.tsx
 │   └── ui/                          # shadcn/ui components (50 components)
 │       ├── accordion.tsx
 │       ├── alert-dialog.tsx
@@ -144,6 +153,7 @@ Educational website dedicated to Adi Shankaracharya (788-820 CE) and the philoso
 - **`components/`**: Reusable React components. The `ui/` subdirectory contains shadcn/ui components.
 - **`lib/`**: Utility functions and helpers. Currently only contains the `cn()` class merging function.
 - **`hooks/`**: Custom React hooks for shared logic.
+- **data/homepage.ts**: Extracted static data for homepage.
 - **`public/`**: Static assets served at root path. All images are referenced as `/image-name.ext`.
 
 ---

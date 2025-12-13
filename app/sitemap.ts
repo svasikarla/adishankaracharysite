@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { concepts } from '@/data/concepts'
+import { CONCEPTS } from '@/data/concepts'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://adishankaracharya.org'
@@ -9,14 +9,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/biography',
     '/teachings',
-    '/teachings/bhaja-govindam',
-    '/teachings/atma-bodha',
     '/philosophy',
     '/mathas',
     '/teachers',
     '/resources',
     '/study-paths',
     '/chant-counter',
+    '/about',
+    '/credits',
   ].map(route => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -24,13 +24,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1.0 : 0.8,
   }))
 
-  // Dynamic philosophy concept pages
-  const conceptPages = concepts.map(concept => ({
-    url: `${baseUrl}/philosophy/${concept.id}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }))
-
-  return [...staticPages, ...conceptPages]
+  return [...staticPages]
 }

@@ -4,65 +4,77 @@
 
 @layer base {
   :root {
-    --background: 40 30% 96%;
-    --foreground: 30 20% 30%;
+    /* #f7f3e9 - Light Beigey Background */
+    --background: 43 40% 94%; 
+    /* #5a4a3f - Dark Brown Text */
+    --foreground: 24 18% 30%;
 
+    /* #ffffff - White Card */
     --card: 0 0% 100%;
-    --card-foreground: 30 20% 30%;
+    --card-foreground: 24 18% 30%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 30 20% 30%;
+    --popover-foreground: 24 18% 30%;
 
-    --primary: 30 60% 50%;
+    /* #e07c24 - Primary Orange */
+    --primary: 28 75% 51%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 30% 85%;
-    --secondary-foreground: 30 20% 30%;
+    /* #e9e1d3 - Secondary Light Beige */
+    --secondary: 38 35% 87%;
+    --secondary-foreground: 24 18% 30%;
 
-    --muted: 30 30% 85%;
-    --muted-foreground: 30 10% 40%;
+    --muted: 38 35% 87%;
+    --muted-foreground: 24 18% 40%;
 
-    --accent: 30 30% 85%;
-    --accent-foreground: 30 20% 30%;
+    /* #8b5d33 - Accent Brown */
+    --accent: 29 46% 37%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 85% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 30 60% 50%;
-    --input: 30 30% 85%;
-    --ring: 30 60% 50%;
+    --border: 28 75% 51%; /* Using primary for border as seen in UI */
+    --input: 38 35% 87%;
+    --ring: 28 75% 51%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* Rounded-xl */
   }
 
   .dark {
-    --background: 30 20% 9%;
-    --foreground: 30 30% 85%;
+    /* #1a1814 - Dark Background */
+    --background: 24 13% 9%;
+    /* #d9c5a9 - Light Text */
+    --foreground: 35 36% 76%;
 
-    --card: 30 20% 9%;
-    --card-foreground: 30 30% 85%;
+    /* #1a1814 - Dark Card */
+    --card: 24 13% 9%;
+    --card-foreground: 35 36% 76%;
 
-    --popover: 30 20% 9%;
-    --popover-foreground: 30 30% 85%;
+    --popover: 24 13% 9%;
+    --popover-foreground: 35 36% 76%;
 
-    --primary: 30 60% 50%;
+    /* #e07c24 - Primary Orange (Same in dark mode usually, or slightly adjusted) */
+    --primary: 28 75% 51%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 20% 15%;
-    --secondary-foreground: 30 30% 85%;
+    /* #2a241e - Secondary Dark Brown */
+    --secondary: 24 17% 14%;
+    --secondary-foreground: 35 36% 76%;
 
-    --muted: 30 20% 15%;
-    --muted-foreground: 30 20% 70%;
+    --muted: 24 17% 14%;
+    --muted-foreground: 35 36% 60%;
 
-    --accent: 30 20% 15%;
-    --accent-foreground: 30 30% 85%;
+    /* #e07c24 - Accent in dark mode often same as primary or lighter */
+    --accent: 28 75% 51%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 30 30% 85%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 30 60% 50%;
-    --input: 30 20% 15%;
-    --ring: 30 60% 50%;
+    --border: 28 75% 51%;
+    --input: 24 17% 14%;
+    --ring: 28 75% 51%;
   }
 }
 
